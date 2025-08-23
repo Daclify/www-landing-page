@@ -4,15 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Daclify — Where decentralization meets integrity</title>
-         <meta
-       name="description"
-       content="Daclify: a platform for creating and running DAOs and DACs."
-     />
-     
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <meta
+      name="description"
+      content="Daclify: a platform for creating and running DAOs and DACs."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       :root {
@@ -47,18 +50,18 @@
       }
 
       /* HERO */
-             .hero {
-         position: relative;
-         padding: clamp(48px, 8vw, 96px) 24px clamp(24px, 4vw, 48px) 24px;
-         background: radial-gradient(
-             1200px 700px at 20% -10%,
-             #8c79e0 0%,
-             transparent 60%
-           ),
-           linear-gradient(180deg, var(--violet-1), var(--violet-2));
-         color: var(--text);
-         overflow: hidden;
-       }
+      .hero {
+        position: relative;
+        padding: clamp(48px, 8vw, 96px) 24px clamp(24px, 4vw, 48px) 24px;
+        background: radial-gradient(
+            1200px 700px at 20% -10%,
+            #8c79e0 0%,
+            transparent 60%
+          ),
+          linear-gradient(180deg, var(--violet-1), var(--violet-2));
+        color: var(--text);
+        overflow: hidden;
+      }
       .wrap {
         max-width: 1024px;
         margin: 0 auto;
@@ -79,64 +82,62 @@
         display: grid;
         place-items: center;
       }
-                                                                                                               .hero-title {
-            font-weight: 600;
-            font-size: 36px; /* mobile */
-            margin: 0 0 8px 0;
-            letter-spacing: 0.2px;
-            color: #fff;
-            font-family: 'Nunito Sans', sans-serif;
-          }
+      .hero-title {
+        font-weight: 600;
+        font-size: 36px; /* mobile */
+        margin: 0 0 8px 0;
+        letter-spacing: 0.2px;
+        color: #fff;
+        font-family: "Nunito Sans", sans-serif;
+      }
 
-          @media (min-width: 768px) {
-            .hero-title {
-              font-size: 48px; /* tablet */
-			  margin-top: 30px;
-            }
-          }
+      @media (min-width: 768px) {
+        .hero-title {
+          font-size: 48px; /* tablet */
+          margin-top: 30px;
+        }
+      }
 
-          @media (min-width: 1024px) {
-            .hero-title {
-              font-size: 52px; /* desktop */
-			  margin-top: 40px;
-            }
-          }
+      @media (min-width: 1024px) {
+        .hero-title {
+          font-size: 52px; /* desktop */
+          margin-top: 40px;
+        }
+      }
       .tagline {
         font-size: clamp(16px, 2.4vw, 22px);
         color: var(--cream);
         margin: 0px 0 24px 0;
       }
 
-             /* Hero content styling */
-               .hero-content {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 3rem;
-          margin: 0rem 0;
-          width: 100%;
-          max-width: 800px;
-          align-items: center;
-          min-height: 200px;
-        }
+      /* Hero content styling */
+      .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        margin: 0rem 0;
+        width: 100%;
+        max-width: 800px;
+        align-items: center;
+        min-height: 200px;
+      }
 
-               .left-column {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          justify-content: center;
-          height: 100%;
-        }
+      .left-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+      }
 
-        .right-column {
-          display: flex;
-		  margin-top: 40px;
-          justify-content: center;
-          align-items: center;
-          height: 100%;
-        }
-
-
+      .right-column {
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
 
       .assistant-image {
         width: 200px;
@@ -157,33 +158,33 @@
         }
       }
 
-             .cta {
-         display: flex;
-         gap: 12px;
-         flex-wrap: wrap;
-         align-items: center;
-         justify-content: center;
-         margin-top: 8px;
-       }
+      .cta {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+      }
 
-       @media (max-width: 768px) {
-         .cta {
-           flex-direction: column;
-           align-items: center;
-           gap: 16px;
-         }
-         
-         .cta input[type="email"] {
-           min-width: 280px;
-           width: 100%;
-           max-width: 320px;
-         }
-         
-         .cta button {
-           width: 100%;
-           max-width: 320px;
-         }
-       }
+      @media (max-width: 768px) {
+        .cta {
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+        }
+
+        .cta input[type="email"] {
+          min-width: 280px;
+          width: 100%;
+          max-width: 320px;
+        }
+
+        .cta button {
+          width: 100%;
+          max-width: 320px;
+        }
+      }
       .cta input[type="email"] {
         min-width: 260px;
         padding: 14px 16px;
@@ -210,11 +211,11 @@
         background: var(--accent-dark);
       }
 
-             /* CARDS */
-       .section {
-         padding: 56px 24px;
-         font-family: 'Lato', sans-serif;
-       }
+      /* CARDS */
+      .section {
+        padding: 56px 24px;
+        font-family: "Lato", sans-serif;
+      }
       .section h2 {
         text-align: center;
         margin: 0 0 20px 0;
@@ -276,34 +277,34 @@
         color: #cfc9e6;
         padding: 28px 24px;
       }
-             .foot {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         gap: 16px;
-         flex-wrap: wrap;
-         max-width: 1100px;
-         margin: 0 auto;
-       }
+      .foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
 
-       @media (max-width: 768px) {
-         .foot {
-           flex-direction: column;
-           gap: 20px;
-           text-align: center;
-         }
-         
-         .links {
-           display: flex;
-           flex-direction: column;
-           gap: 12px;
-           align-items: center;
-         }
-         
-         .links a {
-           margin-left: 0;
-         }
-       }
+      @media (max-width: 768px) {
+        .foot {
+          flex-direction: column;
+          gap: 20px;
+          text-align: center;
+        }
+
+        .links {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          align-items: center;
+        }
+
+        .links a {
+          margin-left: 0;
+        }
+      }
       .foot small {
         opacity: 0.85;
       }
@@ -312,248 +313,470 @@
         text-decoration: none;
         margin-left: 14px;
       }
-             .links a:hover {
-         text-decoration: underline;
-       }
+      .links a:hover {
+        text-decoration: underline;
+      }
 
-       .social-link {
-         display: inline-flex;
-         align-items: center;
-         gap: 8px;
-         padding: 8px 16px;
-         background: rgba(255, 255, 255, 0.1);
-         border-radius: 6px;
-         transition: background 0.2s ease;
-       }
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        transition: background 0.2s ease;
+      }
 
-       .social-link:hover {
-         background: rgba(255, 255, 255, 0.2);
-         text-decoration: none;
-       }
+      .social-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+        text-decoration: none;
+      }
 
-       .social-link svg {
-         width: 16px;
-         height: 16px;
-       }
-                              .notice {
-           font-size: 12px;
-           opacity: 0.8;
-           margin-top: 8px;
-           font-family: 'Nunito Sans', sans-serif;
-         }
+      .social-link svg {
+        width: 16px;
+        height: 16px;
+      }
+      .notice {
+        font-size: 12px;
+        opacity: 0.8;
+        margin-top: 8px;
+        font-family: "Nunito Sans", sans-serif;
+      }
 
-         .coming-soon-btn {
-           margin-top: 20px;
-           margin-bottom: 0;
-           padding: 14px 28px;
-           background: rgba(255, 255, 255, 0.15);
-           color: rgba(255, 255, 255, 0.6);
-           border: 1px solid rgba(255, 255, 255, 0.2);
-           border-radius: 12px;
-           font-size: 16px;
-           font-weight: 600;
-           font-family: 'Nunito Sans', sans-serif;
-           cursor: not-allowed;
-           opacity: 0.7;
-           transition: all 0.2s ease;
-         }
+      .coming-soon-btn {
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding: 14px 28px;
+        background: rgba(255, 255, 255, 0.15);
+        color: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "Nunito Sans", sans-serif;
+        cursor: not-allowed;
+        opacity: 0.7;
+        transition: all 0.2s ease;
+      }
 
-         .coming-soon-btn:hover {
-           background: rgba(255, 255, 255, 0.15);
-           transform: none;
-         }
+      .coming-soon-btn:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: none;
+      }
 
-                 .old-version-btn {
-           display: inline-block;
-           padding: 16px 32px;
-           background: var(--violet-1);
-           color: #fff;
-           text-decoration: none;
-           border-radius: 12px;
-           border: 2px solid var(--violet-1);
-           font-size: 16px;
-           font-weight: 600;
-           transition: all 0.2s ease;
-           font-family: 'Lato', sans-serif;
-           box-shadow: var(--shadow);
-         }
+      .old-version-btn {
+        display: inline-block;
+        padding: 16px 32px;
+        background: var(--violet-1);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 12px;
+        border: 2px solid var(--violet-1);
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        font-family: "Lato", sans-serif;
+        box-shadow: var(--shadow);
+      }
 
-         .old-version-btn:hover {
-           background: #4a3d75;
-           border-color: #4a3d75;
-           transform: translateY(-2px);
-           box-shadow: 0 10px 28px rgba(28, 23, 58, 0.18);
-         }
+      .old-version-btn:hover {
+        background: #4a3d75;
+        border-color: #4a3d75;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 28px rgba(28, 23, 58, 0.18);
+      }
 
-        .partners-section {
+      .partners-section {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #eee7ff;
+      }
+
+      .partners-section h3 {
+        margin: 0 0 1.5rem 0;
+        color: #3c356d;
+        font-size: 1.5rem;
+      }
+
+      .partner-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .partner-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        border: 2px solid transparent;
+        max-width: 200px;
+        justify-content: center;
+      }
+
+      .partner-btn {
+        background: #5f4d93;
+        color: white;
+      }
+
+      .partner-btn:hover {
+        background: #4a3d75;
+        transform: translateY(-2px);
+      }
+
+      .btn-icon {
+        font-size: 1.2rem;
+      }
+
+      /* EVOLUTION SECTION */
+      .evolution-section {
+        background: var(--cream);
+        padding: 80px 24px;
+        border-top: 1px solid #eee7ff;
+      }
+
+      .evolution-section h2 {
+        text-align: center;
+        margin: 0 0 20px 0;
+        font-size: clamp(24px, 4vw, 36px);
+        color: #2b2445;
+        font-family: "Lato", sans-serif;
+      }
+
+      .evolution-section .lead {
+        text-align: center;
+        margin: 0 auto 48px;
+        max-width: 800px;
+        color: #5c5871;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .evolution-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 4rem;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .evolution-text h3 {
+        color: #3c356d;
+        margin: 0 0 12px 0;
+        font-size: 20px;
+        font-family: "Lato", sans-serif;
+      }
+
+      .evolution-text p {
+        color: #4e4a63;
+        margin: 0 0 24px 0;
+        line-height: 1.6;
+        font-family: "Lato", sans-serif;
+      }
+
+      .evolution-text p:last-child {
+        margin-bottom: 0;
+      }
+
+      .evolution-action {
+        text-align: center;
+      }
+
+      .evolution-note {
+        font-size: 14px;
+        color: #6b7280;
+        margin-top: 12px;
+        font-style: italic;
+        font-family: "Lato", sans-serif;
+      }
+
+      @media (max-width: 768px) {
+        .evolution-content {
+          grid-template-columns: 1fr;
+          gap: 2rem;
           text-align: center;
-          margin-top: 3rem;
-          padding-top: 2rem;
-          border-top: 1px solid #eee7ff;
         }
+      }
 
-        .partners-section h3 {
-          margin: 0 0 1.5rem 0;
-          color: #3c356d;
-          font-size: 1.5rem;
-        }
+      /* Language Switcher */
+      .language-switcher {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+      }
 
-        .partner-buttons {
-          display: flex;
-          gap: 1rem;
-          justify-content: center;
-          flex-wrap: wrap;
-        }
+      .lang-dropdown-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
 
-                 .partner-btn {
-           display: inline-flex;
-           align-items: center;
-           gap: 0.5rem;
-           padding: 12px 24px;
-           border-radius: 8px;
-           text-decoration: none;
-           font-weight: 600;
-           transition: all 0.2s ease;
-           border: 2px solid transparent;
-           max-width: 200px;
-           justify-content: center;
-         }
+      .lang-dropdown-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-1px);
+      }
 
-        .partner-btn {
-          background: #5f4d93;
-          color: white;
-        }
+      .lang-dropdown-btn.active {
+        background: var(--accent);
+        border-color: var(--accent);
+      }
 
-        .partner-btn:hover {
-          background: #4a3d75;
-          transform: translateY(-2px);
-        }
+      .lang-dropdown {
+        position: absolute;
+        top: 100%; /* Position below the button */
+        left: 0;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        z-index: 100;
+        width: 180px; /* Adjust width as needed */
+        padding: 10px 0;
+        display: none; /* Hidden by default */
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
 
-                 .btn-icon {
-           font-size: 1.2rem;
-         }
+      .lang-dropdown.active {
+        display: block;
+      }
 
-         /* EVOLUTION SECTION */
-         .evolution-section {
-           background: var(--cream);
-           padding: 80px 24px;
-           border-top: 1px solid #eee7ff;
-         }
+      .lang-option {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 16px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        color: #333;
+        min-height: 44px;
+      }
 
-         .evolution-section h2 {
-           text-align: center;
-           margin: 0 0 20px 0;
-           font-size: clamp(24px, 4vw, 36px);
-           color: #2b2445;
-           font-family: 'Lato', sans-serif;
-         }
+      .lang-option:hover {
+        background: #f5f5f5;
+      }
 
-         .evolution-section .lead {
-           text-align: center;
-           margin: 0 auto 48px;
-           max-width: 800px;
-           color: #5c5871;
-           font-size: 18px;
-           line-height: 1.6;
-         }
+      .lang-option.active {
+        background: #e8f0fe;
+        font-weight: 600;
+        color: #1a73e8;
+      }
 
-         .evolution-content {
-           display: grid;
-           grid-template-columns: 2fr 1fr;
-           gap: 4rem;
-           align-items: center;
-           max-width: 900px;
-           margin: 0 auto;
-         }
+      .lang-flag-uk {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+        margin: -5px 0;
+        padding: 10;
+      }
 
-         .evolution-text h3 {
-           color: #3c356d;
-           margin: 0 0 12px 0;
-           font-size: 20px;
-           font-family: 'Lato', sans-serif;
-         }
+      .lang-flag-es {
+        width: 22px;
+        height: 22px;
+        border-radius: 0%;
+        object-fit: cover;
+        flex-shrink: 0;
+        margin: 0;
+        padding: 0;
+      }
 
-         .evolution-text p {
-           color: #4e4a63;
-           margin: 0 0 24px 0;
-           line-height: 1.6;
-           font-family: 'Lato', sans-serif;
-         }
+      .lang-name {
+        font-size: 14px;
+        line-height: 1;
+        align-self: center;
+      }
 
-         .evolution-text p:last-child {
-           margin-bottom: 0;
-         }
+      .globe-icon {
+        width: 20px;
+        height: 20px;
+      }
 
-         .evolution-action {
-           text-align: center;
-         }
+      .dropdown-arrow {
+        width: 16px;
+        height: 16px;
+      }
 
-         .evolution-note {
-           font-size: 14px;
-           color: #6b7280;
-           margin-top: 12px;
-           font-style: italic;
-           font-family: 'Lato', sans-serif;
-         }
+      /* Hide non-active language content */
+      body [data-lang]:not(.lang-option) {
+        display: none !important;
+      }
 
-         @media (max-width: 768px) {
-           .evolution-content {
-             grid-template-columns: 1fr;
-             gap: 2rem;
-             text-align: center;
-           }
-         }
-       </style>
+      body [data-lang].active:not(.lang-option) {
+        display: block !important;
+      }
+
+      /* Handle elements that might have other display properties */
+      body [data-lang].active.hero-title,
+      body [data-lang].active.tagline,
+      body [data-lang].active.notice,
+      body [data-lang].active.cta button,
+      body [data-lang].active.coming-soon-btn {
+        display: block !important;
+      }
+
+      /* Show English content by default */
+      body [data-lang="en"] {
+        display: block !important;
+      }
+
+      /* Ensure language dropdown options are always visible */
+      .lang-option {
+        display: flex !important;
+      }
+    </style>
   </head>
 
   <body>
     <!-- HERO -->
     <header class="hero">
+      <div class="language-switcher">
+        <button class="lang-dropdown-btn" id="langDropdownBtn">
+          <svg
+            class="globe-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+            />
+          </svg>
+          <span class="current-lang">EN</span>
+          <svg
+            class="dropdown-arrow"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M7 10l5 5 5-5z" />
+          </svg>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <div class="lang-option" data-lang="en">
+            <img src="uk-48.png" alt="UK Flag" class="lang-flag-uk" />
+            <span class="lang-name">EN</span>
+          </div>
+          <div class="lang-option" data-lang="es">
+            <img src="spain-48.png" alt="Spain Flag" class="lang-flag-es" />
+            <span class="lang-name">ES</span>
+          </div>
+        </div>
+      </div>
+
       <div class="wrap">
         <div class="hero-inner">
-                     <img
-             src="daclifyLogo.png"
-             alt="Daclify Logo"
-             width="250"
-             height="250"
-           />
-                       <div class="hero-title">Daclify</div>
-						<div class="tagline">Where decentralization meets integrity.</div>
-
-           <div class="hero-content">
-             <div class="left-column">
-				<div class="notice">
-					Sign up to get updates!<br>
-					You will be notified when we launch!
-				  </div>
-               <form
-                 class="cta"
-                 action="https://formspree.io/f/mayplach"
-                 method="POST"
-                 onsubmit="return validateEmail(this)"
-               >
-                 <label class="sr-only" for="email">Email</label>
-                 <input
-                   id="email"
-                   name="email"
-                   type="email"
-                   placeholder="you@domain.com"
-                   required
-                 />
-                                   <button type="submit">Subscribe</button>
-                </form>
-                
-                               </div>
-             <div class="right-column">
-               <img
-                 src="daclify-assistant.png"
-                 alt="Daclify Assistant"
-                 class="assistant-image"
-               />
-             </div>
-           </div>
-		   <button class="coming-soon-btn" disabled>App Coming Soon!</button>
+          <img
+            src="daclifyLogo.png"
+            alt="Daclify Logo"
+            width="250"
+            height="250"
+          />
+          <div class="hero-title" data-lang="en" data-text="Daclify">
+            Daclify
           </div>
+          <div class="hero-title" data-lang="es" data-text="Daclify">
+            Daclify
+          </div>
+
+          <div
+            class="tagline"
+            data-lang="en"
+            data-text="Where decentralization meets integrity."
+          >
+            Where decentralization meets integrity.
+          </div>
+          <div
+            class="tagline"
+            data-lang="es"
+            data-text="Donde la descentralización se encuentra con la integridad."
+          >
+            Donde la descentralización se encuentra con la integridad.
+          </div>
+
+          <div class="hero-content">
+            <div class="left-column">
+              <div
+                class="notice"
+                data-lang="en"
+                data-text="Sign up to get updates!<br>You will be notified when we launch!"
+              >
+                Sign up to get updates!<br />You will be notified when we
+                launch!
+              </div>
+              <div
+                class="notice"
+                data-lang="es"
+                data-text="¡Regístrate para recibir actualizaciones!<br>¡Serás notificado cuando lancemos!"
+              >
+                ¡Regístrate para recibir actualizaciones!<br />¡Serás notificado
+                cuando lancemos!
+              </div>
+
+              <form
+                class="cta"
+                action="https://formspree.io/f/mayplach"
+                method="POST"
+                onsubmit="return validateEmail(this)"
+              >
+                <label class="sr-only" for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@domain.com"
+                  required
+                />
+                <button type="submit" data-lang="en" data-text="Subscribe">
+                  Subscribe
+                </button>
+                <button type="submit" data-lang="es" data-text="Suscribirse">
+                  Suscribirse
+                </button>
+              </form>
+            </div>
+            <div class="right-column">
+              <img
+                src="daclify-assistant.png"
+                alt="Daclify Assistant"
+                class="assistant-image"
+              />
+            </div>
+          </div>
+          <button
+            class="coming-soon-btn"
+            disabled
+            data-lang="en"
+            data-text="App Coming Soon!"
+          >
+            App Coming Soon!
+          </button>
+          <button
+            class="coming-soon-btn"
+            disabled
+            data-lang="es"
+            data-text="¡App Próximamente!"
+          >
+            ¡App Próximamente!
+          </button>
         </div>
       </div>
     </header>
@@ -561,154 +784,458 @@
     <!-- CONCEPT CARDS -->
     <main class="section">
       <div class="wrap">
-        <h2>Build, govern, and grow together</h2>
-        <p class="lead">
+        <h2 data-lang="en" data-text="Build, govern, and grow together">
+          Build, govern, and grow together
+        </h2>
+        <h2 data-lang="es" data-text="Construye, gobierna y crece juntos">
+          Construye, gobierna y crece juntos
+        </h2>
+
+        <p
+          class="lead"
+          data-lang="en"
+          data-text="Daclify helps communities launch and run DAOs/DACs with transparent governance, modular tools, and human‑friendly UX."
+        >
           Daclify helps communities launch and run DAOs/DACs with transparent
           governance, modular tools, and human‑friendly UX.
         </p>
+        <p
+          class="lead"
+          data-lang="es"
+          data-text="Daclify ayuda a las comunidades a lanzar y ejecutar DAOs/DACs con gobernanza transparente, herramientas modulares y UX amigable para humanos."
+        >
+          Daclify ayuda a las comunidades a lanzar y ejecutar DAOs/DACs con
+          gobernanza transparente, herramientas modulares y UX amigable para
+          humanos.
+        </p>
 
-                          <div class="grid">
-            <article class="card">
-              <div class="badge">🚀</div>
-              <h3>Launch your DAO</h3>
-              <p>
-                Bootstrap a new organization in minutes: roles, permissions, and
-                on‑chain policies that scale with your community.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="badge">👁️</div>
-              <h3>Transparent governance</h3>
-              <p>
-                Deliberation, proposals, and weighted voting—auditable by design.
-                Clarity that builds trust.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="badge">🤖</div>
-              <h3>Your AI Buddy</h3>
-              <p>
-                Every user gets an AI agent to help navigate decisions, propose ideas, and keep track of your contributions — making the complex simple.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="badge">⭐</div>
-              <h3>Reputation that Matters</h3>
-              <p>
-                Earn reputation by engaging, voting, and contributing. Your reputation is your voice — transparent, fair, and visible to the whole community.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="badge">🌍</div>
-              <h3>Partnership for Impact</h3>
-              <p>
-                Together with the Time2Planet project, we align decentralized decision-making with real-world environmental and social good.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="badge">🔐</div>
-              <h3>Trust Through Identity</h3>
-              <p>
-                With Tonomy blockchain's KYC integration, we make sure every member is real — adding accountability while preserving privacy.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="badge">🧩</div>
-              <h3>Free & Modular</h3>
-              <p>
-                Start with the free basic version, and expand as your community grows. Daclify is modular by design — flexible, scalable, and open-source.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="badge">📊</div>
-              <h3>Analytics & Insights</h3>
-              <p>
-                Track your DAO's health with real-time metrics. Monitor engagement, proposal success rates, and member activity to make data-driven decisions for your community.
-              </p>
-            </article>
-
-            <article class="card">
-              <div class="badge">🎯</div>
-              <h3>Smart Templates</h3>
-              <p>
-                Pre-built governance structures for different community types. Launch with proven frameworks for nonprofits, startups, or creative collectives — customize as you grow.
-              </p>
-                        </article>
-          </div>
-
-          <div class="partners-section">
-            <h3>Check out our partners projects!</h3>
-            <div class="partner-buttons">
-              <a href="https://tonomy.io/" class="partner-btn" target="_blank">
-                <span class="btn-icon"><img src="TonomyLogo.svg" alt="Tonomy Logo" width="100%" height="30px"></span>
-              </a>
-              <a href="https://time2planet.com/" class="partner-btn" target="_blank">
-                <span class="btn-icon"><img src="Time2PlanetLogo.png" alt="Time2Planet Logo" width="100%" height="50px"></span>
-              </a>
-            </div>
-                     </div>
-         </div>
-       </main>
-
-       <!-- EVOLUTION SECTION -->
-       <section class="evolution-section">
-         <div class="wrap">
-                       <h2>From Beta to Production</h2>
-            <p class="lead">
-              Daclify is evolving from a beta version to a full-featured platform. We're building AI-powered governance, enhanced transparency, and modular tools that will scale with your vision.
+        <div class="grid">
+          <article class="card">
+            <div class="badge">🚀</div>
+            <h3 data-lang="en" data-text="Launch your DAO">Launch your DAO</h3>
+            <h3 data-lang="es" data-text="Lanza tu DAO">Lanza tu DAO</h3>
+            <p
+              data-lang="en"
+              data-text="Bootstrap a new organization in minutes: roles, permissions, and on‑chain policies that scale with your community."
+            >
+              Bootstrap a new organization in minutes: roles, permissions, and
+              on‑chain policies that scale with your community.
             </p>
-            <div class="evolution-content">
-              <div class="evolution-text">
-                <h3>Learning from the Beta</h3>
-                <p>
-                  Our beta version helped us understand the real challenges communities face with decentralized governance. We're now building a more robust, user-friendly platform that will make DAO management truly accessible.
-                </p>
-                <h3>Coming Soon: Next-Generation Features</h3>
-                <p>
-                  Building on our beta experience, we're developing AI assistance, advanced analytics, and smart templates that will transform how communities make decisions and grow together.
-                </p>
-              </div>
-              <div class="evolution-action">
-                <a href="https://daclify.animus.is" class="old-version-btn" target="_blank">
-                  View Beta Demo
-                </a>
-                <p class="evolution-note">See our previous beta version</p>
-              </div>
-           </div>
-         </div>
-       </section>
+            <p
+              data-lang="es"
+              data-text="Inicia una nueva organización en minutos: roles, permisos y políticas en cadena que escalan con tu comunidad."
+            >
+              Inicia una nueva organización en minutos: roles, permisos y
+              políticas en cadena que escalan con tu comunidad.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="badge">👁️</div>
+            <h3 data-lang="en" data-text="Transparent governance">
+              Transparent governance
+            </h3>
+            <h3 data-lang="es" data-text="Gobernanza transparente">
+              Gobernanza transparente
+            </h3>
+            <p
+              data-lang="en"
+              data-text="Deliberation, proposals, and weighted voting—auditable by design. Clarity that builds trust."
+            >
+              Deliberation, proposals, and weighted voting—auditable by design.
+              Clarity that builds trust.
+            </p>
+            <p
+              data-lang="es"
+              data-text="Deliberación, propuestas y votación ponderada—auditable por diseño. Claridad que construye confianza."
+            >
+              Deliberación, propuestas y votación ponderada—auditable por
+              diseño. Claridad que construye confianza.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="badge">🤖</div>
+            <h3 data-lang="en" data-text="Your AI Buddy">Your AI Buddy</h3>
+            <h3 data-lang="es" data-text="Tu Compañero IA">Tu Compañero IA</h3>
+            <p
+              data-lang="en"
+              data-text="Every user gets an AI agent to help navigate decisions, propose ideas, and keep track of your contributions — making the complex simple."
+            >
+              Every user gets an AI agent to help navigate decisions, propose
+              ideas, and keep track of your contributions — making the complex
+              simple.
+            </p>
+            <p
+              data-lang="es"
+              data-text="Cada usuario obtiene un agente IA para ayudar a navegar decisiones, proponer ideas y hacer seguimiento de tus contribuciones — haciendo lo complejo simple."
+            >
+              Cada usuario obtiene un agente IA para ayudar a navegar
+              decisiones, proponer ideas y hacer seguimiento de tus
+              contribuciones — haciendo lo complejo simple.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="badge">⭐</div>
+            <h3 data-lang="en" data-text="Reputation that Matters">
+              Reputation that Matters
+            </h3>
+            <h3 data-lang="es" data-text="Reputación que Importa">
+              Reputación que Importa
+            </h3>
+            <p
+              data-lang="en"
+              data-text="Earn reputation by engaging, voting, and contributing. Your reputation is your voice — transparent, fair, and visible to the whole community."
+            >
+              Earn reputation by engaging, voting, and contributing. Your
+              reputation is your voice — transparent, fair, and visible to the
+              whole community.
+            </p>
+            <p
+              data-lang="es"
+              data-text="Gana reputación participando, votando y contribuyendo. Tu reputación es tu voz — transparente, justa y visible para toda la comunidad."
+            >
+              Gana reputación participando, votando y contribuyendo. Tu
+              reputación es tu voz — transparente, justa y visible para toda la
+              comunidad.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="badge">🌍</div>
+            <h3 data-lang="en" data-text="Partnership for Impact">
+              Partnership for Impact
+            </h3>
+            <h3 data-lang="es" data-text="Alianza para el Impacto">
+              Alianza para el Impacto
+            </h3>
+            <p
+              data-lang="en"
+              data-text="Together with the Time2Planet project, we align decentralized decision-making with real-world environmental and social good."
+            >
+              Together with the Time2Planet project, we align decentralized
+              decision-making with real-world environmental and social good.
+            </p>
+            <p
+              data-lang="es"
+              data-text="Junto con el proyecto Time2Planet, alineamos la toma de decisiones descentralizada con el bien ambiental y social del mundo real."
+            >
+              Junto con el proyecto Time2Planet, alineamos la toma de decisiones
+              descentralizada con el bien ambiental y social del mundo real.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="badge">🔐</div>
+            <h3 data-lang="en" data-text="Trust Through Identity">
+              Trust Through Identity
+            </h3>
+            <h3 data-lang="es" data-text="Confianza a Través de la Identidad">
+              Confianza a Través de la Identidad
+            </h3>
+            <p
+              data-lang="en"
+              data-text="With Tonomy blockchain's KYC integration, we make sure every member is real — adding accountability while preserving privacy."
+            >
+              With Tonomy blockchain's KYC integration, we make sure every
+              member is real — adding accountability while preserving privacy.
+            </p>
+            <p
+              data-lang="es"
+              data-text="Con la integración KYC de la blockchain Tonomy, nos aseguramos de que cada miembro sea real — agregando responsabilidad mientras preservamos la privacidad."
+            >
+              Con la integración KYC de la blockchain Tonomy, nos aseguramos de
+              que cada miembro sea real — agregando responsabilidad mientras
+              preservamos la privacidad.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="badge">🧩</div>
+            <h3 data-lang="en" data-text="Free & Modular">Free & Modular</h3>
+            <h3 data-lang="es" data-text="Gratis y Modular">
+              Gratis y Modular
+            </h3>
+            <p
+              data-lang="en"
+              data-text="Start with the free basic version, and expand as your community grows. Daclify is modular by design — flexible, scalable, and open-source."
+            >
+              Start with the free basic version, and expand as your community
+              grows. Daclify is modular by design — flexible, scalable, and
+              open-source.
+            </p>
+            <p
+              data-lang="es"
+              data-text="Comienza con la versión básica gratuita y expande a medida que tu comunidad crece. Daclify es modular por diseño — flexible, escalable y de código abierto."
+            >
+              Comienza con la versión básica gratuita y expande a medida que tu
+              comunidad crece. Daclify es modular por diseño — flexible,
+              escalable y de código abierto.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="badge">📊</div>
+            <h3 data-lang="en" data-text="Analytics & Insights">
+              Analytics & Insights
+            </h3>
+            <h3 data-lang="es" data-text="Analíticas y Perspectivas">
+              Analíticas y Perspectivas
+            </h3>
+            <p
+              data-lang="en"
+              data-text="Track your DAO's health with real-time metrics. Monitor engagement, proposal success rates, and member activity to make data-driven decisions for your community."
+            >
+              Track your DAO's health with real-time metrics. Monitor
+              engagement, proposal success rates, and member activity to make
+              data-driven decisions for your community.
+            </p>
+            <p
+              data-lang="es"
+              data-text="Rastrea la salud de tu DAO con métricas en tiempo real. Monitorea el compromiso, las tasas de éxito de propuestas y la actividad de miembros para tomar decisiones basadas en datos para tu comunidad."
+            >
+              Rastrea la salud de tu DAO con métricas en tiempo real. Monitorea
+              el compromiso, las tasas de éxito de propuestas y la actividad de
+              miembros para tomar decisiones basadas en datos para tu comunidad.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="badge">🎯</div>
+            <h3 data-lang="en" data-text="Smart Templates">Smart Templates</h3>
+            <h3 data-lang="es" data-text="Plantillas Inteligentes">
+              Plantillas Inteligentes
+            </h3>
+            <p
+              data-lang="en"
+              data-text="Pre-built governance structures for different community types. Launch with proven frameworks for nonprofits, startups, or creative collectives — customize as you grow."
+            >
+              Pre-built governance structures for different community types.
+              Launch with proven frameworks for nonprofits, startups, or
+              creative collectives — customize as you grow.
+            </p>
+            <p
+              data-lang="es"
+              data-text="Estructuras de gobernanza pre-construidas para diferentes tipos de comunidades. Lanza con marcos probados para organizaciones sin fines de lucro, startups o colectivos creativos — personaliza a medida que creces."
+            >
+              Estructuras de gobernanza pre-construidas para diferentes tipos de
+              comunidades. Lanza con marcos probados para organizaciones sin
+              fines de lucro, startups o colectivos creativos — personaliza a
+              medida que creces.
+            </p>
+          </article>
+        </div>
+
+        <div class="partners-section">
+          <h3 data-lang="en" data-text="Check out our partners projects!">
+            Check out our partners projects!
+          </h3>
+          <h3
+            data-lang="es"
+            data-text="¡Mira los proyectos de nuestros socios!"
+          >
+            ¡Mira los proyectos de nuestros socios!
+          </h3>
+          <div class="partner-buttons">
+            <a href="https://tonomy.io/" class="partner-btn" target="_blank">
+              <span class="btn-icon"
+                ><img
+                  src="TonomyLogo.svg"
+                  alt="Tonomy Logo"
+                  width="100%"
+                  height="30px"
+              /></span>
+            </a>
+            <a
+              href="https://time2planet.com/"
+              class="partner-btn"
+              target="_blank"
+            >
+              <span class="btn-icon"
+                ><img
+                  src="Time2PlanetLogo.png"
+                  alt="Time2Planet Logo"
+                  width="100%"
+                  height="50px"
+              /></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- EVOLUTION SECTION -->
+    <section class="evolution-section">
+      <div class="wrap">
+        <h2 data-lang="en" data-text="From Beta to Production">
+          From Beta to Production
+        </h2>
+        <h2 data-lang="es" data-text="De Beta a Producción">
+          De Beta a Producción
+        </h2>
+
+        <p
+          class="lead"
+          data-lang="en"
+          data-text="Daclify is evolving from a beta version to a full-featured platform. We're building AI-powered governance, enhanced transparency, and modular tools that will scale with your vision."
+        >
+          Daclify is evolving from a beta version to a full-featured platform.
+          We're building AI-powered governance, enhanced transparency, and
+          modular tools that will scale with your vision.
+        </p>
+        <p
+          class="lead"
+          data-lang="es"
+          data-text="Daclify está evolucionando de una versión beta a una plataforma completa. Estamos construyendo gobernanza impulsada por IA, transparencia mejorada y herramientas modulares que escalarán con tu visión."
+        >
+          Daclify está evolucionando de una versión beta a una plataforma
+          completa. Estamos construyendo gobernanza impulsada por IA,
+          transparencia mejorada y herramientas modulares que escalarán con tu
+          visión.
+        </p>
+        <div class="evolution-content">
+          <div class="evolution-text">
+            <h3 data-lang="en" data-text="Learning from the Beta">
+              Learning from the Beta
+            </h3>
+            <h3 data-lang="es" data-text="Aprendiendo de la Beta">
+              Aprendiendo de la Beta
+            </h3>
+            <p
+              data-lang="en"
+              data-text="Our beta version helped us understand the real challenges communities face with decentralized governance. We're now building a more robust, user-friendly platform that will make DAO management truly accessible."
+            >
+              Our beta version helped us understand the real challenges
+              communities face with decentralized governance. We're now building
+              a more robust, user-friendly platform that will make DAO
+              management truly accessible.
+            </p>
+            <p
+              data-lang="es"
+              data-text="Nuestra versión beta nos ayudó a entender los verdaderos desafíos que enfrentan las comunidades con la gobernanza descentralizada. Ahora estamos construyendo una plataforma más robusta y fácil de usar que hará que la gestión de DAOs sea verdaderamente accesible."
+            >
+              Nuestra versión beta nos ayudó a entender los verdaderos desafíos
+              que enfrentan las comunidades con la gobernanza descentralizada.
+              Ahora estamos construyendo una plataforma más robusta y fácil de
+              usar que hará que la gestión de DAOs sea verdaderamente accesible.
+            </p>
+
+            <h3
+              data-lang="en"
+              data-text="Coming Soon: Next-Generation Features"
+            >
+              Coming Soon: Next-Generation Features
+            </h3>
+            <h3
+              data-lang="es"
+              data-text="Próximamente: Funciones de Próxima Generación"
+            >
+              Próximamente: Funciones de Próxima Generación
+            </h3>
+            <p
+              data-lang="en"
+              data-text="Building on our beta experience, we're developing AI assistance, advanced analytics, and smart templates that will transform how communities make decisions and grow together."
+            >
+              Building on our beta experience, we're developing AI assistance,
+              advanced analytics, and smart templates that will transform how
+              communities make decisions and grow together.
+            </p>
+            <p
+              data-lang="es"
+              data-text="Construyendo sobre nuestra experiencia beta, estamos desarrollando asistencia IA, analíticas avanzadas y plantillas inteligentes que transformarán cómo las comunidades toman decisiones y crecen juntas."
+            >
+              Construyendo sobre nuestra experiencia beta, estamos desarrollando
+              asistencia IA, analíticas avanzadas y plantillas inteligentes que
+              transformarán cómo las comunidades toman decisiones y crecen
+              juntas.
+            </p>
+          </div>
+          <div class="evolution-action">
+            <a
+              href="https://daclify.animus.is"
+              class="old-version-btn"
+              target="_blank"
+              data-lang="en"
+              data-text="View Beta Demo"
+              >View Beta Demo</a
+            >
+            <a
+              href="https://daclify.animus.is"
+              class="old-version-btn"
+              target="_blank"
+              data-lang="es"
+              data-text="Ver Demo Beta"
+              >Ver Demo Beta</a
+            >
+            <p
+              class="evolution-note"
+              data-lang="en"
+              data-text="See our previous beta version"
+            >
+              See our previous beta version
+            </p>
+            <p
+              class="evolution-note"
+              data-lang="es"
+              data-text="Ver nuestra versión beta anterior"
+            >
+              Ver nuestra versión beta anterior
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
       <div class="foot">
-        <small>© <span id="year"></span> Daclify. All rights reserved.</small>
-                 <nav class="links" aria-label="Footer">
-           <a href="https://t.me/daclify_community" class="social-link" target="_blank">
-             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-               <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
-             </svg>
-             Telegram
-           </a>
-                       <a href="https://github.com/Daclify" class="social-link" target="_blank">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              GitHub
-            </a>
-            <a href="https://patreon.com/Daclify" class="social-link" target="_blank">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M15.386 6.001c-4.763 0-8.641 3.877-8.641 8.641 0 4.763 3.878 8.641 8.641 8.641 4.763 0 8.641-3.878 8.641-8.641 0-4.764-3.878-8.641-8.641-8.641zM1.996 21.602V2.398h1.996v19.204h-1.996z"/>
-              </svg>
-              Support Us
-            </a>
-         </nav>
+        <small data-lang="en" data-text="© {year} Daclify. All rights reserved."
+          >© <span id="year"></span> Daclify. All rights reserved.</small
+        >
+        <small
+          data-lang="es"
+          data-text="© {year} Daclify. Todos los derechos reservados."
+          >© <span id="year"></span> Daclify. Todos los derechos
+          reservados.</small
+        >
+        <nav class="links" aria-label="Footer">
+          <a href="https://t.me/daclify" class="social-link" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"
+              />
+            </svg>
+            <span data-lang="en" data-text="Telegram">Telegram</span>
+            <span data-lang="es" data-text="Telegram">Telegram</span>
+          </a>
+          <a
+            href="https://github.com/Daclify"
+            class="social-link"
+            target="_blank"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            <span data-lang="en" data-text="GitHub">GitHub</span>
+            <span data-lang="es" data-text="GitHub">GitHub</span>
+          </a>
+          <a
+            href="https://patreon.com/Daclify"
+            class="social-link"
+            target="_blank"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M15.386 6.001c-4.763 0-8.641 3.877-8.641 8.641 0 4.763 3.878 8.641 8.641 8.641 4.763 0 8.641-3.878 8.641-8.641 0-4.764-3.878-8.641-8.641-8.641zM1.996 21.602V2.398h1.996v19.204h-1.996z"
+              />
+            </svg>
+            <span data-lang="en" data-text="Support Us">Support Us</span>
+            <span data-lang="es" data-text="Apóyanos">Apóyanos</span>
+          </a>
+        </nav>
       </div>
     </footer>
 
@@ -733,6 +1260,94 @@
         }
         return true; // Let the form submit to Formspree or your backend
       }
+
+      // Language switching functionality
+      function switchLanguage(lang) {
+        // Update HTML lang attribute
+        document.documentElement.lang = lang;
+
+        // Update page title
+        const titles = {
+          en: "Daclify — Where decentralization meets integrity",
+          es: "Daclify — Donde la descentralización se encuentra con la integridad",
+        };
+        document.title = titles[lang];
+
+        // Update meta description
+        const descriptions = {
+          en: "Daclify: a platform for creating and running DAOs and DACs.",
+          es: "Daclify: una plataforma para crear y ejecutar DAOs y DACs.",
+        };
+        document
+          .querySelector('meta[name="description"]')
+          .setAttribute("content", descriptions[lang]);
+
+        // Show/hide language-specific content
+        document.querySelectorAll("[data-lang]").forEach((el) => {
+          el.classList.remove("active");
+        });
+        document.querySelectorAll(`[data-lang="${lang}"]`).forEach((el) => {
+          el.classList.add("active");
+        });
+
+        // Update current language display
+        const currentLangSpan = document.querySelector(".current-lang");
+        if (currentLangSpan) {
+          currentLangSpan.textContent = lang.toUpperCase();
+        }
+
+        // Store language preference
+        localStorage.setItem("preferred-language", lang);
+      }
+
+      // Initialize language switcher
+      document.addEventListener("DOMContentLoaded", function () {
+        // Set initial language (default to English)
+        const savedLang = localStorage.getItem("preferred-language") || "en";
+        switchLanguage(savedLang);
+
+        // Language dropdown functionality
+        const langDropdownBtn = document.getElementById("langDropdownBtn");
+        const langDropdown = document.getElementById("langDropdown");
+
+        // Toggle dropdown when button is clicked
+        langDropdownBtn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          langDropdown.classList.toggle("active");
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", function (e) {
+          if (
+            !langDropdownBtn.contains(e.target) &&
+            !langDropdown.contains(e.target)
+          ) {
+            langDropdown.classList.remove("active");
+          }
+        });
+
+        // Handle language selection
+        document.querySelectorAll(".lang-option").forEach((option) => {
+          option.addEventListener("click", function () {
+            const lang = this.getAttribute("data-lang");
+            switchLanguage(lang);
+
+            // Update active state in dropdown
+            document.querySelectorAll(".lang-option").forEach((opt) => {
+              opt.classList.remove("active");
+            });
+            this.classList.add("active");
+
+            // Close dropdown
+            langDropdown.classList.remove("active");
+          });
+        });
+
+        // Set initial active state in dropdown
+        document
+          .querySelector(`.lang-option[data-lang="${savedLang}"]`)
+          .classList.add("active");
+      });
     </script>
   </body>
 </html>
