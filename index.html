@@ -667,6 +667,11 @@
       .lang-option {
         display: flex !important;
       }
+
+      /* Hide Brevo's hidden input field */
+      .input--hidden {
+        display: none !important;
+      }
     </style>
   </head>
 
@@ -760,18 +765,26 @@
 
               <form
                 class="cta"
-                action="https://formspree.io/f/mayplach"
+                action="https://76a9dc9e.sibforms.com/serve/MUIFAMI89spcdDulvLLvj80rLnhSH95g8mY1idzLeyKg6OXEtDTAR_oJjw4p9Gl_ToAiMkPSu5HgRymWQGl07i_0z-BabBpC1dYoZAUrjnqEHS1ZZTiaroxc5-aAwBZ38ZOYBtdVCq2YScsN_g5sbFAQScV29fUSf0pNjkTxBqZ51F0SQFIHLJzSoIdqTiwTqiu_2v1fXgN3Clov"
                 method="POST"
                 onsubmit="return validateEmail(this)"
               >
                 <label class="sr-only" for="email">Email</label>
                 <input
                   id="email"
-                  name="email"
+                  name="EMAIL"
                   type="email"
                   placeholder="you@domain.com"
                   required
                 />
+                <input
+                  type="text"
+                  name="email_address_check"
+                  value=""
+                  class="input--hidden"
+                />
+                <input type="hidden" name="locale" value="en" />
+                <input type="hidden" name="html_type" value="simple" />
                 <button type="submit" data-lang="en" data-text="Subscribe">
                   Subscribe
                 </button>
@@ -1280,12 +1293,12 @@
 
       // Basic email validation UX (client-side)
       function validateEmail(form) {
-        const email = form.email.value.trim();
+        const email = form.EMAIL.value.trim();
         if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
           alert("Please enter a valid email address.");
           return false;
         }
-        return true; // Let the form submit to Formspree or your backend
+        return true; // Let the form submit to Brevo
       }
 
       // Language switching functionality
