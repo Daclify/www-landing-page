@@ -526,11 +526,27 @@
         transition: all 0.2s ease;
         backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.3);
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+        outline: none;
       }
 
       .lang-dropdown-btn:hover {
         background: rgba(255, 255, 255, 0.3);
         transform: translateY(-1px);
+      }
+
+      .lang-dropdown-btn:focus {
+        background: rgba(255, 255, 255, 0.3);
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+      }
+
+      .lang-dropdown-btn:active {
+        background: rgba(255, 255, 255, 0.4);
+        transform: translateY(0);
       }
 
       .lang-dropdown-btn.active {
