@@ -672,6 +672,57 @@
       .input--hidden {
         display: none !important;
       }
+
+      /* Documentation Links */
+      .documentation-links {
+        margin: 24px 0;
+      }
+
+      .documentation-links h4 {
+        color: #3c356d;
+        margin: 0 0 12px 0;
+        font-size: 20px;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+      }
+
+      .documentation-links ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .documentation-links li {
+        margin: 8px 0;
+        color: #4e4a63;
+        font-family: "Lato", sans-serif;
+        line-height: 1.6;
+        position: relative;
+        padding-left: 20px;
+      }
+
+      .documentation-links li::before {
+        content: "•";
+        color: var(--violet-1);
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .documentation-links a {
+        color: var(--violet-1);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+        display: inline-block;
+        padding: 4px 0;
+      }
+
+      .documentation-links a:hover {
+        color: var(--accent);
+        text-decoration: underline;
+      }
     </style>
   </head>
 
@@ -1160,6 +1211,43 @@
               Ahora estamos construyendo una plataforma más robusta y fácil de
               usar que hará que la gestión de DAOs sea verdaderamente accesible.
             </p>
+
+            <div class="documentation-links">
+              <h4 data-lang="en" data-text="Documentation">Documentation</h4>
+              <h4 data-lang="es" data-text="Documentación (solo en inglés)">
+                Documentación (solo en inglés)
+              </h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://deepwiki.com/Daclify/daclifymodules"
+                    target="_blank"
+                    >Daclify Modules</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://deepwiki.com/Daclify/daclifyfrontend"
+                    target="_blank"
+                    >Daclify Frontend</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://deepwiki.com/Daclify/daclifyhub"
+                    target="_blank"
+                    >Daclify Hub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://deepwiki.com/Daclify/daclifycore"
+                    target="_blank"
+                    >Daclify Core</a
+                  >
+                </li>
+              </ul>
+            </div>
 
             <h3
               data-lang="en"
