@@ -723,6 +723,93 @@
         color: var(--accent);
         text-decoration: underline;
       }
+
+      /* Projects Section */
+      .projects-section {
+        background: #fff;
+        padding: 80px 24px;
+        border-top: 1px solid #eee7ff;
+      }
+
+      .projects-section h2 {
+        text-align: center;
+        margin: 0 0 20px 0;
+        font-size: clamp(24px, 4vw, 36px);
+        color: #2b2445;
+        font-family: "Lato", sans-serif;
+      }
+
+      .projects-section .lead {
+        text-align: center;
+        margin: 0 auto 48px;
+        max-width: 800px;
+        color: #5c5871;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .project-card {
+        display: block;
+        background: #fff;
+        border: 2px solid #eee7ff;
+        border-radius: 16px;
+        padding: 2rem;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.3s ease;
+        text-align: center;
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(95, 77, 147, 0.15);
+        border-color: var(--violet-1);
+      }
+
+      .project-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .project-card h3 {
+        color: #3c356d;
+        margin: 0 0 1rem 0;
+        font-size: 1.5rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+      }
+
+      .project-card p {
+        color: #4e4a63;
+        margin: 0;
+        line-height: 1.6;
+        font-family: "Lato", sans-serif;
+      }
+
+      @media (max-width: 768px) {
+        .projects-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
+        .project-card {
+          min-height: 240px;
+          padding: 1.5rem;
+        }
+      }
     </style>
   </head>
 
@@ -1311,6 +1398,84 @@
               Ver nuestra versión beta anterior
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section">
+      <div class="wrap">
+        <h2 data-lang="en" data-text="Our Projects">Our Projects</h2>
+        <h2 data-lang="es" data-text="Nuestros Proyectos">
+          Nuestros Proyectos
+        </h2>
+
+        <p
+          class="lead"
+          data-lang="en"
+          data-text="Explore our existing projects and platforms that are already making an impact."
+        >
+          Explore our existing projects and platforms that are already making an
+          impact.
+        </p>
+        <p
+          class="lead"
+          data-lang="es"
+          data-text="Explora nuestros proyectos y plataformas existentes que ya están generando impacto."
+        >
+          Explora nuestros proyectos y plataformas existentes que ya están
+          generando impacto.
+        </p>
+
+        <div class="projects-grid">
+          <a href="https://fiddl.art" class="project-card" target="_blank">
+            <div class="project-icon">
+              <img
+                src="fiddlLogo.svg"
+                alt="Fiddl.art Logo"
+                width="150"
+                height="150"
+                style="object-fit: contain"
+              />
+            </div>
+            <h3>Fiddl.art</h3>
+            <p
+              data-lang="en"
+              data-text="Creative platform for digital artists and creators"
+            >
+              Creative platform for digital artists and creators
+            </p>
+            <p
+              data-lang="es"
+              data-text="Plataforma creativa para artistas digitales y creadores"
+            >
+              Plataforma creativa para artistas digitales y creadores
+            </p>
+          </a>
+
+          <a href="https://boid.com" class="project-card" target="_blank">
+            <div class="project-icon">
+              <img
+                src="boid_logo.png"
+                alt="Boid Logo"
+                width="200"
+                height="200"
+                style="object-fit: contain"
+              />
+            </div>
+            <p
+              data-lang="en"
+              data-text="Decentralized computing platform and network"
+            >
+              Decentralized computing platform and network
+            </p>
+            <p
+              data-lang="es"
+              data-text="Plataforma y red de computación descentralizada"
+            >
+              Plataforma y red de computación descentralizada
+            </p>
+          </a>
         </div>
       </div>
     </section>
