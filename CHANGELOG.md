@@ -1,9 +1,15 @@
 # Changelog
 
+## 2.0.0-alpha.2
+
+- Match the frontend's rounded `d.` tile, `daclify` wordmark and `GOVERN TOGETHER` tagline across every page and illustration.
+- Generate social cards and a 64×64 favicon/organization logo from the same markup, styling and actual Inter font; remove the initially introduced D/arrow symbol.
+- Add a brand regression across all languages and a clipping check during favicon generation.
+
 ## 2.0.0-alpha.1
 
 - Rebuild the public site around modular community governance and the actual Daclify V2 development status.
-- Introduce an amber/espresso visual identity, D/arrow monogram, local Inter fonts and localized social cards.
+- Apply the frontend's amber/espresso identity, local Inter fonts and localized social cards.
 - Publish complete English, Spanish and Polish source content across home, platform, modules, privacy and roadmap topics, with topic-preserving language links.
 - Generate canonical/hreflang and social metadata, honest JSON-LD, robots.txt, sitemap.xml, llms.txt, full public text and Markdown pages.
 - Add strict TypeScript static generation, reproducible root exports, verification-only CI and semantic/browser/accessibility regression coverage.

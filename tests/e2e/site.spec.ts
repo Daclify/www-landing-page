@@ -17,6 +17,11 @@ for (const path of groups.flat()) {
     expect(response?.status()).toBe(200);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
     await expect(page.locator('main')).toBeVisible();
+    const logo = page.locator('.site-header .brand');
+    await expect(logo.locator('.brand-mark')).toHaveText('d.');
+    await expect(logo.locator('.brand-caption')).toHaveText('GOVERN TOGETHER');
+    await expect(logo).toContainText('daclify');
+    await expect(logo.locator('svg')).toHaveCount(0);
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
     ).toBe(true);

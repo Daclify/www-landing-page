@@ -1,5 +1,6 @@
 import type { Card, Locale, PageId, Section } from './types.ts';
 import { content } from './content/index.ts';
+import { brandLockup, brandMark as mark } from './brand.ts';
 import {
   communityUrl,
   languageNames,
@@ -25,8 +26,6 @@ export function serializeJson(value: unknown): string {
 }
 const arrow =
   '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-const mark =
-  '<svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M10 7h10a13 13 0 1 1 0 26H10V7Z" stroke="currentColor" stroke-width="3"/><path d="M10 20h13M17 13l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="9" r="3" fill="currentColor"/></svg>';
 
 function nav(locale: Locale, pageId: PageId): string {
   return pages
@@ -56,7 +55,12 @@ export function structuredData(locale: Locale, pageId: PageId) {
         '@id': `${origin}/#organization`,
         name: 'Daclify',
         url: `${origin}/`,
-        logo: { '@type': 'ImageObject', url: `${origin}/assets/brand-mark.svg` },
+        logo: {
+          '@type': 'ImageObject',
+          url: `${origin}/assets/brand-mark.png`,
+          width: 64,
+          height: 64,
+        },
         sameAs: ['https://github.com/Daclify', communityUrl],
       },
       {
@@ -144,14 +148,14 @@ ${locales
 <meta name="twitter:description" content="${escapeHtml(page.description)}">
 <meta name="twitter:image" content="${image}">
 <meta name="twitter:image:alt" content="${escapeHtml(imageAlt)}">
-<link rel="icon" type="image/svg+xml" href="/assets/brand-mark.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/brand-mark.png">
 <link rel="preload" href="/assets/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">${serializeJson(structuredData(locale, pageId))}</script>
 </head>
 <body>
 <a class="skip-link" href="#main">${escapeHtml(copy.skip)}</a>
-<header class="site-header"><div class="container header-inner"><a class="brand" href="${routes[locale].home}" aria-label="Daclify — ${escapeHtml(copy.nav.home)}">${mark}<span>daclify<span class="brand-period">.</span></span></a><nav class="desktop-nav" aria-label="${escapeHtml(copy.menu)}">${nav(locale, pageId)}</nav><div class="header-end"><nav class="language-nav" aria-label="${escapeHtml(copy.language)}">${locales.map((lang) => `<a href="${routes[lang][pageId]}" lang="${lang}" hreflang="${lang}" aria-label="${languageNames[lang]}" title="${languageNames[lang]}"${locale === lang ? ' aria-current="true"' : ''}>${lang.toUpperCase()}</a>`).join('')}</nav><details class="mobile-menu"><summary>${escapeHtml(copy.menu)}<span aria-hidden="true">＋</span></summary><nav aria-label="${escapeHtml(copy.menu)}">${nav(locale, pageId)}</nav></details></div></div></header>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="${routes[locale].home}" aria-label="Daclify — ${escapeHtml(copy.nav.home)}">${brandLockup}</a><nav class="desktop-nav" aria-label="${escapeHtml(copy.menu)}">${nav(locale, pageId)}</nav><div class="header-end"><nav class="language-nav" aria-label="${escapeHtml(copy.language)}">${locales.map((lang) => `<a href="${routes[lang][pageId]}" lang="${lang}" hreflang="${lang}" aria-label="${languageNames[lang]}" title="${languageNames[lang]}"${locale === lang ? ' aria-current="true"' : ''}>${lang.toUpperCase()}</a>`).join('')}</nav><details class="mobile-menu"><summary>${escapeHtml(copy.menu)}<span aria-hidden="true">＋</span></summary><nav aria-label="${escapeHtml(copy.menu)}">${nav(locale, pageId)}</nav></details></div></div></header>
 <main id="main" tabindex="-1">
 ${!home ? `<div class="container breadcrumbs"><a href="${routes[locale].home}">${escapeHtml(copy.nav.home)}</a><span aria-hidden="true">/</span><span>${escapeHtml(copy.nav[pageId])}</span></div>` : ''}
 <section class="container hero ${home ? '' : 'detail-hero'}" aria-labelledby="page-title"><div class="hero-copy"><p class="eyebrow"><span aria-hidden="true"></span>${escapeHtml(page.eyebrow)}</p><h1 id="page-title">${page.heading
@@ -168,7 +172,7 @@ ${home ? `<div class="brand-strip"><div class="container"><span>ANTELOPE / C++</
 ${home ? `<section class="container faq-section" aria-labelledby="faq-title"><div><p class="eyebrow">FAQ</p><h2 id="faq-title">${escapeHtml(copy.questions)}</h2></div><div class="faq-list">${copy.faq.map((item) => `<details><summary>${escapeHtml(item.question)}<span aria-hidden="true">＋</span></summary><p>${escapeHtml(item.answer)}</p></details>`).join('')}</div></section>` : ''}
 <section class="container closing-section" aria-labelledby="closing-title"><div class="closing-orbit" aria-hidden="true"></div><p class="eyebrow">DACLIFY / V2</p><h2 id="closing-title">${escapeHtml(copy.ctaTitle)}</h2><p>${escapeHtml(copy.ctaText)}</p><div class="hero-actions"><a class="button primary" href="${communityUrl}">${escapeHtml(copy.community)}${arrow}</a><a class="text-link" href="${routes[locale].roadmap}">${escapeHtml(copy.nav.roadmap)}${arrow}</a></div></section>
 </main>
-<footer class="site-footer"><div class="container footer-main"><div><a class="brand" href="${routes[locale].home}">${mark}<span>daclify<span class="brand-period">.</span></span></a><p class="footer-tagline">${escapeHtml(copy.footer)}</p><p class="footer-note">${escapeHtml(copy.footerNote)}</p></div><nav aria-label="${escapeHtml(copy.menu)}">${nav(locale, pageId)}</nav><div class="footer-links"><a href="${communityUrl}">Telegram ${arrow}</a><a href="https://github.com/Daclify">GitHub ${arrow}</a><a href="/llms.txt">llms.txt ${arrow}</a><a href="/sitemap.xml">sitemap.xml ${arrow}</a></div></div><div class="container footer-bottom"><span>© Daclify</span><span>EN / ES / PL</span><span>${escapeHtml(copy.status.development)}</span></div></footer>
+<footer class="site-footer"><div class="container footer-main"><div><a class="brand" href="${routes[locale].home}">${brandLockup}</a><p class="footer-tagline">${escapeHtml(copy.footer)}</p><p class="footer-note">${escapeHtml(copy.footerNote)}</p></div><nav aria-label="${escapeHtml(copy.menu)}">${nav(locale, pageId)}</nav><div class="footer-links"><a href="${communityUrl}">Telegram ${arrow}</a><a href="https://github.com/Daclify">GitHub ${arrow}</a><a href="/llms.txt">llms.txt ${arrow}</a><a href="/sitemap.xml">sitemap.xml ${arrow}</a></div></div><div class="container footer-bottom"><span>© Daclify</span><span>EN / ES / PL</span><span>${escapeHtml(copy.status.development)}</span></div></footer>
 </body>
 </html>\n`;
 }

@@ -1,6 +1,6 @@
 {
   "name": "@daclify/website",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.0-alpha.2",
   "private": true,
   "type": "module",
   "engines": {
@@ -15,8 +15,8 @@
     "typecheck": "tsc --noEmit",
     "test": "npm run build && SITE_DIR=dist node --test tests/site.test.ts",
     "test:e2e": "playwright test",
-    "format": "prettier --write src tools tests *.json *.ts docs README.md CHANGELOG.md assets/site.css assets/README.md .github/workflows",
-    "format:check": "prettier --check src tools tests *.json *.ts docs README.md CHANGELOG.md assets/site.css assets/README.md .github/workflows",
+    "format": "prettier --write src tools tests *.json *.ts docs README.md CHANGELOG.md assets/*.css assets/README.md .github/workflows",
+    "format:check": "prettier --check src tools tests *.json *.ts docs README.md CHANGELOG.md assets/*.css assets/README.md .github/workflows",
     "check:export": "node tools/export.ts --check"
   },
   "devDependencies": {

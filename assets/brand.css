@@ -1,0 +1,53 @@
+/* Canonical identity: daclify-frontend/src/App.vue and src/styles.css (13784ed).
+   Layout margins belong to the host screen; letterforms, colors and lockup match the app. */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 29px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #f3eadf;
+  min-height: 44px;
+}
+.brand:hover {
+  text-decoration: none;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  color: #f4b35d;
+  border: 1px solid rgba(245, 167, 74, 0.34);
+  background: linear-gradient(160deg, rgba(244, 179, 93, 0.22), rgba(219, 113, 35, 0.12));
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  letter-spacing: -3px;
+  padding-right: 4px;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: normal;
+  flex-shrink: 0;
+}
+.brand-wordmark {
+  line-height: normal;
+}
+.brand-caption {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  line-height: 1.4;
+  margin-top: 4px;
+  color: #b8a791;
+}
+@media (max-width: 600px) {
+  .brand {
+    font-size: 25px;
+  }
+  .brand .brand-mark {
+    width: 36px;
+    height: 36px;
+    font-size: 25px;
+  }
+}

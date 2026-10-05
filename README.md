@@ -21,8 +21,9 @@ The preview is at `http://127.0.0.1:4179`. It serves the generated `dist/` direc
 - `src/routes.ts`: canonical origin, language/topic paths and community links.
 - `src/render.ts`: shared accessible HTML, metadata, JSON-LD and machine-readable text.
 - `assets/site.css`: visual system and responsive behavior.
-- `assets/brand-mark.svg`: D/arrow monogram and favicon.
-- `tools/social.ts`: explicit localized 1200×630 social-card generation. Run `npm run assets:social` after relevant headline/design changes; this requires Playwright Chromium. Commit the reviewed PNGs. Ordinary builds do not require a browser.
+- `src/brand.ts` and `assets/brand.css`: established frontend `d.` tile, wordmark and brand tagline.
+- `assets/brand-mark.png`: favicon/organization logo generated from that same markup, font and styling.
+- `tools/social.ts`: explicit localized 1200×630 social-card and favicon generation. Run `npm run assets:social` after relevant headline/design changes; this requires Playwright Chromium. Commit the reviewed PNGs. Ordinary builds do not require a browser.
 
 English stays at `/`; Spanish uses `/es/`, Polish `/pl/`. Each language has home, platform, modules, privacy and roadmap pages with localized slugs. Language links preserve the topic. HTML contains self-canonical URLs and reciprocal en/es/pl/x-default alternates.
 

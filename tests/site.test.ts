@@ -109,6 +109,27 @@ test('English has a self-referencing canonical and all language alternatives', (
   assert.match(html, /hreflang="x-default"/);
 });
 
+test('brand matches the frontend d. tile and wordmark instead of a new symbol', () => {
+  for (const path of paths.flat()) {
+    const nodes = elements(parse(load(path)));
+    const marks = nodes.filter((node) => attr(node, 'class') === 'brand-mark');
+    assert.ok(marks.length >= 2);
+    for (const mark of marks) {
+      assert.equal(mark.tagName, 'span');
+      assert.equal(text(mark), 'd.');
+    }
+    const captions = nodes.filter((node) => attr(node, 'class') === 'brand-caption');
+    assert.equal(captions.length, 2);
+    for (const caption of captions) assert.equal(text(caption), 'GOVERN TOGETHER');
+    assert.doesNotMatch(load(path), /M10 7h10a13|brand-period|brand-mark\.svg/);
+  }
+  const favicon = readFileSync(resolve(root, 'assets/brand-mark.png'));
+  assert.equal(favicon.subarray(1, 4).toString(), 'PNG');
+  assert.equal(favicon.readUInt32BE(16), 64);
+  assert.equal(favicon.readUInt32BE(20), 64);
+  assert.equal(existsSync(resolve(root, 'assets/brand-mark.svg')), false);
+});
+
 for (const group of paths) {
   for (const [index, path] of group.entries()) {
     test(`${path} is complete, localized and crawlable without JavaScript`, () => {
