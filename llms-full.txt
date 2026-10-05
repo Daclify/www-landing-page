@@ -1,0 +1,1084 @@
+# Daclify — complete public website content
+
+# Daclify — Modular DAO governance for real communities
+
+> Discover Daclify V2: a modular DAO platform for community decisions, funded work and encrypted documents. Explore the vision and development roadmap.
+
+https://daclify.com/
+
+Daclify V2 is in development. Public launch follows contract verification and release review.
+
+Bring people, decisions and meaningful work together. Daclify is building a modular DAO platform where communities choose their rules, their tools and their way forward.
+
+## More than a vote. A way to work together.
+
+A community needs more than a chat group and a treasury address. It needs a clear path from an idea to a shared decision, a funded contribution and a lasting record.
+
+### Give people a place
+
+Membership and roles define who can participate. Internal identities are designed to make joining possible without a native blockchain account.
+
+### Make decisions count
+
+Choose a voting policy, record the outcome and connect approved decisions to bounded actions. Governance should be understandable to the people using it.
+
+### Turn agreement into work
+
+Fund milestones, review deliverables and track approved payments. Keep responsibility and progress visible instead of losing them in a conversation.
+
+
+## Start with your purpose. Choose your tools.
+
+The V2 development implementation connects a shared core to focused first-party modules. The goal is useful defaults, clear configuration and room for a community to grow.
+
+### Decide — In development
+
+Proposals, voting and durable outcomes. Development flows include creating ballots, casting votes and finalizing results.
+
+### Works — In development
+
+Milestone funding with submission, review, revision and acceptance. Approval creates a tracked obligation rather than an unaccountable promise.
+
+### Payroll — In development
+
+Funded schedules and approved payment obligations. Existing development flows preserve accepted payments after module removal.
+
+
+## One vision. Two ways to make it yours.
+
+Start in a shared deployment or operate your own contracts. Both modes are part of the V2 design; the complete independent deployment journey is still being built.
+
+### A shared home — In development
+
+Many DAOs can use the same core contracts while keeping their own membership, configuration and treasury records isolated.
+
+### Your own foundation — Planned
+
+An independent DAO controls its deployment and connects to the Hub for discovery. It must also be able to operate directly without the Hub.
+
+
+## Shared knowledge. Thoughtful privacy.
+
+Keep small descriptive records as bounded JSON and larger documents through IPFS references. Encrypt protected content before publication, with explicit choices about who holds the keys.
+
+- User-controlled and managed recovery are different, clearly labelled account modes.
+- Private content does not make membership, voting or transfers invisible on a public blockchain.
+- Removing a member can restrict future access; it cannot erase information already received.
+
+## Good questions. Straight answers.
+
+### What is Daclify?
+
+Daclify is a modular DAO platform being rebuilt to help communities manage membership, make decisions, fund work and keep shared records. A DAO is an organization whose agreed rules and decisions can be recorded and executed through smart contracts.
+
+### Does every member need a blockchain account?
+
+The V2 design supports internal identities in the smart contract, so members can participate without creating their own native blockchain account. Native wallet linking, social login and Telegram entry are additional planned paths; their production journeys are not ready yet.
+
+### Are governance credits real money?
+
+No. Internal governance credits represent a DAO’s configured voting power. They are separate from treasury assets and cannot be withdrawn as money. Native-token governance follows an explicit supported staking or weight policy.
+
+### Can a DAO keep its information private?
+
+Protected documents can be encrypted before publication, with keys granted to eligible members. Encryption protects content, not public blockchain metadata. A member can retain information already received, and managed decryption recovery gives the relevant service access to keys.
+
+### Will Daclify be free?
+
+The plan is to keep basic governance useful for free, with defined resource allowances. Hosted automation, notifications and additional services may be paid. Prices and limits have not been finalized. Subscription expiry must not take control of DAO funds or accepted obligations.
+
+### Can we use V2 with real funds now?
+
+V2 is a development implementation, not a qualified production release. Contract verification, account integrations, independent deployment support and operating procedures still need work. Follow the roadmap for the distinction between implemented development flows and release-ready capabilities.
+
+## Telegram
+
+Building a community, cooperative or contributor network? Help shape what Daclify becomes. Follow the roadmap and talk with us on Telegram.
+
+https://t.me/daclify
+
+
+---
+
+# DAO platform, accounts and deployment choices | Daclify
+
+> Learn how Daclify V2 brings internal accounts, native wallets, DAO-owned contracts and Hub discovery into a modular governance platform.
+
+https://daclify.com/platform/
+
+Daclify V2 is in development. Public launch follows contract verification and release review.
+
+Different communities need different rules. Daclify V2 is designed around a stable core for identity, authority and treasury, with focused modules that serve the way your community works.
+
+## People first. Accounts that fit.
+
+An internal identity lives in the smart contract and does not require a member to own a native blockchain account. Membership and roles belong to the DAO; linking another credential must not create another vote.
+
+### User-controlled accounts — In development
+
+Separate signing and encryption keys stay under the user’s control. Development flows include an encrypted local vault and recovery credentials. Social login alone cannot reconstruct these keys.
+
+### Managed recovery — Planned
+
+The planned managed mode supports service-assisted recovery and clearly discloses operator authority. An open-source key service is being evaluated; production recovery operations are not yet qualified.
+
+### More ways to participate — Planned
+
+Native Telos account linking, social and Telegram entry, and capability-gated Telos EVM identities are planned. These paths must preserve the same membership and permissions.
+
+
+## Shared contracts or your own deployment.
+
+A shared runtime provides DAO-specific state within common contracts. An independent deployment uses the same public interfaces under the DAO’s own upgrade and treasury policies.
+
+### Shared deployment — In development
+
+The development implementation supports DAO creation, roles, credits and treasury records in a shared runtime. Full isolation and native contract verification remain release gates.
+
+### Independent deployment — Planned
+
+DAO-owned contracts, direct connections and multi-runtime routing are planned. An independent DAO must remain usable if the discovery Hub or hosted services are unavailable.
+
+
+## The Hub connects. It does not govern.
+
+The discovery Hub is intended to list DAOs, identify their deployments and describe supported capabilities. A listing must not give the platform control of a DAO’s votes, treasury or contract upgrades.
+
+- Authority comes from the DAO’s explicit roles and policies.
+- Module permissions are bounded and reviewable.
+- Public interfaces, versions and documentation travel together.
+
+## A foundation built for accountable governance.
+
+The core uses Antelope C++ contracts. The application and services use strict TypeScript, with a Vue frontend. Authoritative decisions and financial records belong to the contracts; a browser display cannot authorize a payment.
+
+- DAO-specific governance credits are separate from money.
+- Native-token governance needs a supported staking or weight policy.
+- Broader chain support is added through bounded, independently verified adapters.
+
+## Telegram
+
+Building a community, cooperative or contributor network? Help shape what Daclify becomes. Follow the roadmap and talk with us on Telegram.
+
+https://t.me/daclify
+
+
+---
+
+# Decide, Works and payroll DAO modules | Daclify
+
+> Explore Daclify’s modular governance vision: Decide voting, Works milestone funding, payroll, shared documents and planned hosted Operations.
+
+https://daclify.com/modules/
+
+Daclify V2 is in development. Public launch follows contract verification and release review.
+
+Choose the capabilities that match your organization. Each module has a focused job, a clear configuration and explicit authority. The current modules are development implementations, not production-ready services.
+
+## Decide — a clear path to a shared decision.
+
+Decide draws useful patterns from Telos governance and adapts them to Daclify’s internal identity model. Development flows include ballots, voting and finalization; richer elections, committees and proposal execution still need work.
+
+- Define who is eligible and how voting power is evaluated.
+- Make quorum, approval and timing rules understandable.
+- Keep a durable result; finalization and execution are separate responsibilities.
+
+## Works — fund outcomes, not vague promises.
+
+Works connects funding to milestone reports and authorized review. Current development flows cover proposals, reservation, submission, requested changes, acceptance and cancellation. Persistent custom policy and complete dispute/deadline behavior remain unfinished.
+
+- Freeze approved amounts and document commitments.
+- A report alone does not authorize payment.
+- Accepted unpaid obligations survive module removal.
+
+## Payroll — predictable commitments.
+
+The development payroll module supports funded fixed-term schedules and tracked obligations. Due-payment workflows must remain idempotent, with explicit policies for delays, catch-up, cancellation and insufficient funds.
+
+- Separate future schedules from approved liabilities.
+- Retries must not duplicate a payment.
+- Keep a manual execution path when automation is unavailable.
+
+## Knowledge and Operations.
+
+Versioned JSON and hosted public/private files connect records to decisions and work. Planned hosted Operations adds bounded scheduling, notifications and selected integrations without granting governance authority.
+
+### Documents — In development
+
+Development flows cover versioned records, client-encrypted files, verified uploads and downloads. Live Pinata availability and retention operations remain to be qualified.
+
+### Hosted Operations — Planned
+
+Scheduled execution, Telegram notifications, webhooks and resource allowances are planned as an optional paid service package. Final pricing has not been chosen.
+
+
+## Useful free governance. Optional services.
+
+The business direction is a usable free foundation with measured limits, plus paid convenience and operating capacity. Buying a service must not grant extra votes; expiry must not seize keys, block safe withdrawals or erase accepted work.
+
+- Choose modules with understandable presets.
+- Review requested authority before enabling a module.
+- Keep compatible independent and self-hosted options.
+
+## Telegram
+
+Building a community, cooperative or contributor network? Help shape what Daclify becomes. Follow the roadmap and talk with us on Telegram.
+
+https://t.me/daclify
+
+
+---
+
+# Encrypted DAO documents and account custody | Daclify
+
+> Understand Daclify’s privacy design: encrypted DAO documents, member key access, user-controlled or managed recovery, and the limits of public blockchains.
+
+https://daclify.com/privacy/
+
+Daclify V2 is in development. Public launch follows contract verification and release review.
+
+A DAO may need a public treasury and private working documents. Daclify’s direction is to encrypt protected content before publication and make key ownership an explicit decision.
+
+## Encrypt before you publish.
+
+Small descriptive records can use bounded JSON; larger content uses IPFS CIDs. Protected titles, filenames and document bytes must be encrypted in the client before reaching a content provider or the public chain. Provider access links alone are not member encryption.
+
+- Signing keys and encryption keys have separate purposes.
+- Versioned envelopes and content commitments support integrity checks.
+- Member grants and DAO key epochs define access to protected content.
+
+## Choose who can recover the keys.
+
+Account recovery and document confidentiality are related but different. The DAO’s admission policy must match the custody mode it permits. Complete managed recovery and membership lifecycle integration are still planned.
+
+### User-controlled content keys — Design principle
+
+The user keeps the decryption keys and recovery credential. A successful social login cannot restore a lost vault by itself. A DAO can require this mode when it wants no routine service custody.
+
+### Managed recovery allowed — Planned
+
+Service-assisted recovery means the relevant operator can access recoverable keys. That trust must be disclosed, with a tested recovery and exit policy rather than a promise of operator exclusion.
+
+
+## Member changes need an access policy.
+
+A DAO must choose whether newly admitted members receive historical access or future access only. Removing a member requires future-access rotation and explicit handling of previously granted keys. Complete admission, rotation and custody-transition journeys remain unfinished.
+
+- An existing authorized key holder is needed to grant protected access.
+- A blind backend cannot create decryption keys it does not hold.
+- Former members may retain historical keys and plaintext they already received.
+
+## What encryption does not hide.
+
+Public-chain membership references, transaction activity, vote records and amounts may remain visible. Encrypting a document does not make a DAO anonymous or turn public contract execution into a secret ballot.
+
+- Members can copy or share content they are authorized to read.
+- A compromised device or malicious client update can expose unlocked keys.
+- Deleting a pin cannot erase blockchain history or every third-party copy.
+
+## Durable records, honest availability.
+
+Development flows already exercise encrypted upload, retrieval checks, lost-response recovery and version history using a labelled local provider. Live Pinata integration, export, re-pinning, retention and complete recovery operations still need verification before a public release.
+
+- Integrity checks and availability are separate requirements.
+- Private search and notifications must follow the same content policy.
+- A clear export and custody exit path is part of the product direction.
+
+## Telegram
+
+Building a community, cooperative or contributor network? Help shape what Daclify becomes. Follow the roadmap and talk with us on Telegram.
+
+https://t.me/daclify
+
+
+---
+
+# Daclify V2 development roadmap and release status
+
+> See what Daclify V2 implements today and what remains: contract verification, accounts, independent deployments, Pinata, EVM and hosted Operations.
+
+https://daclify.com/roadmap/
+
+Daclify V2 is in development. Public launch follows contract verification and release review.
+
+V2 is an active development implementation. Working local journeys are useful evidence, but they are not a production release. This roadmap separates implemented slices from the work required to launch responsibly.
+
+## 01 / The foundation is taking shape.
+
+The development checkpoint includes Antelope C++ core/Hub contracts, internal user-controlled accounts, a TypeScript API, shared DAO creation, governance credits, treasury flows and generated documentation.
+
+### Connected governance — In development
+
+Decide voting/finalization, Works submission/review/revision and funded payroll are exercised in local flows.
+
+### Records and privacy — In development
+
+Versioned JSON and public/private file flows include integrity checks and upload reconciliation.
+
+### A usable interface — In development
+
+The Vue/TypeScript application has recovery, governance, documents, treasury and contextual help screens.
+
+
+## 02 / Qualify the core before launch.
+
+A confirmed native contract authorization defect and incomplete on-chain module code enforcement are release blockers. Full native verification, deployment hash checks, resource bounds, compatibility/release tooling and independent review remain required. V2 must not be used with real funds as a qualified product yet.
+
+- Fix and verify contract authority on the actual native runtime.
+- Bind reviewed code, interfaces and documentation to tested releases.
+- Complete shared and independent deployment conformance.
+
+## 03 / Complete the account and document journeys.
+
+Production admission, native-wallet linking, managed recovery, social/Telegram login and member key lifecycle still need implementation and verification. Live Pinata, retention/export and supported client testing are also unfinished.
+
+- Both custody modes need complete loss/recovery and exit flows.
+- Private-content policies must hold across member changes.
+- Real provider evidence remains separate from local fixtures.
+
+## 04 / Extend what communities can do.
+
+Planned extensions include committees and proposal execution, richer Works/payroll policies, capability-gated Telos EVM support, hosted Operations and measured service allowances. Other-chain adapters follow selected use cases with explicit proof and finality models.
+
+- EVM identity and payments are distinct capabilities.
+- A transaction hash alone is not verified settlement.
+- Paid service expiry must preserve core rights and approved liabilities.
+
+## A release is a commitment, not a countdown.
+
+Deployment/migration tooling, backups, operator procedures and security review must accompany the code. Legacy documents and liabilities need a real inventory; missing data cannot be invented. There is no announced public launch date or finalized pricing on this website.
+
+- Follow development and contribute feedback through the community.
+- Useful basic governance is intended to remain free within defined limits.
+- Testnet and production publication follow explicit release review.
+
+## Telegram
+
+Building a community, cooperative or contributor network? Help shape what Daclify becomes. Follow the roadmap and talk with us on Telegram.
+
+https://t.me/daclify
+
+
+---
+
+# Daclify — Gobernanza DAO modular para comunidades reales
+
+> Descubre Daclify V2: una plataforma DAO modular para decisiones comunitarias, trabajo financiado y documentos cifrados. Explora la visión y la hoja de ruta.
+
+https://daclify.com/es/
+
+Daclify V2 está en desarrollo. El lanzamiento público requiere verificar los contratos y revisar la versión.
+
+Conecta personas, decisiones y trabajo que importa. Daclify está creando una plataforma DAO modular donde cada comunidad elige sus reglas, sus herramientas y su camino.
+
+## Más que votar. Una forma de trabajar juntos.
+
+Una comunidad necesita algo más que un chat y una dirección de tesorería. Necesita pasar de una idea a una decisión compartida, una contribución financiada y un registro duradero.
+
+### Un lugar para cada persona
+
+Los miembros y roles definen quién puede participar. Las identidades internas buscan facilitar la incorporación sin exigir una cuenta blockchain nativa.
+
+### Decisiones que importan
+
+Elige una política de voto, registra el resultado y conecta las decisiones aprobadas con acciones delimitadas. La gobernanza debe ser comprensible para quienes la usan.
+
+### Del acuerdo al trabajo
+
+Financia hitos, revisa entregables y sigue los pagos aprobados. Conserva la responsabilidad y el progreso en lugar de perderlos en una conversación.
+
+
+## Empieza por tu propósito. Elige tus herramientas.
+
+La implementación de V2 conecta un núcleo compartido con módulos propios y especializados. El objetivo es ofrecer configuraciones útiles, opciones claras y espacio para crecer.
+
+### Decide — En desarrollo
+
+Propuestas, votaciones y resultados duraderos. Los flujos de desarrollo incluyen crear votaciones, emitir votos y finalizar resultados.
+
+### Works — En desarrollo
+
+Financiación por hitos con entrega, revisión, cambios y aceptación. La aprobación crea una obligación registrada, no una promesa sin seguimiento.
+
+### Payroll — En desarrollo
+
+Calendarios financiados y obligaciones de pago aprobadas. Los flujos actuales conservan pagos aceptados aunque se retire el módulo.
+
+
+## Una visión. Dos formas de hacerla tuya.
+
+Usa un despliegue compartido u opera tus propios contratos. Ambos modos forman parte del diseño de V2; el flujo completo de despliegue independiente sigue en construcción.
+
+### Un espacio compartido — En desarrollo
+
+Varias DAO pueden usar los mismos contratos centrales y mantener separados sus miembros, configuración y registros de tesorería.
+
+### Tus propios cimientos — Previsto
+
+Una DAO independiente controla su despliegue y se conecta al Hub para aparecer en el directorio. También debe funcionar directamente sin el Hub.
+
+
+## Conocimiento compartido. Privacidad consciente.
+
+Conserva pequeños registros descriptivos como JSON acotado y documentos mayores mediante referencias IPFS. Cifra el contenido protegido antes de publicarlo y decide expresamente quién conserva las claves.
+
+- Las cuentas con claves propias y la recuperación gestionada son modos distintos y claramente identificados.
+- El contenido privado no oculta miembros, votos ni transferencias en una cadena pública.
+- Retirar a un miembro puede limitar su acceso futuro; no borra la información que ya recibió.
+
+## Buenas preguntas. Respuestas claras.
+
+### ¿Qué es Daclify?
+
+Daclify es una plataforma modular para DAO que se está reconstruyendo para gestionar miembros, tomar decisiones, financiar trabajo y conservar documentos compartidos. Una DAO es una organización cuyas reglas y decisiones pueden registrarse y ejecutarse mediante contratos inteligentes.
+
+### ¿Cada miembro necesita una cuenta blockchain?
+
+El diseño de V2 contempla identidades internas en el contrato, para participar sin crear una cuenta nativa propia. Vincular una cartera nativa, iniciar sesión con un proveedor social o entrar mediante Telegram son vías adicionales previstas; sus flujos de producción aún no están listos.
+
+### ¿Los créditos de gobernanza son dinero?
+
+No. Los créditos internos representan el poder de voto definido por cada DAO. Son independientes de los activos de tesorería y no se pueden retirar como dinero. La gobernanza con tokens nativos requiere una política explícita y compatible de depósito o ponderación.
+
+### ¿Puede una DAO mantener privada su información?
+
+Los documentos protegidos pueden cifrarse antes de publicarlos y las claves entregarse a los miembros autorizados. El cifrado protege el contenido, no los metadatos públicos de la cadena. Un miembro puede conservar información ya recibida; la recuperación gestionada permite al servicio correspondiente acceder a las claves.
+
+### ¿Daclify será gratuito?
+
+El objetivo es mantener una gobernanza básica útil y gratuita, con límites de recursos definidos. La automatización alojada, las notificaciones y otros servicios pueden ser de pago. Los precios y límites no están cerrados. El fin de una suscripción no debe dar al proveedor el control de los fondos ni de las obligaciones aceptadas.
+
+### ¿Podemos usar V2 con fondos reales?
+
+V2 es una implementación en desarrollo, no una versión validada para producción. Faltan verificaciones de contratos, integraciones de cuentas, despliegues independientes y procedimientos operativos. La hoja de ruta distingue los flujos implementados en desarrollo de las capacidades listas para lanzar.
+
+## Telegram
+
+¿Estás creando una comunidad, cooperativa o red de colaboradores? Ayúdanos a dar forma a Daclify. Consulta la hoja de ruta y habla con nosotros en Telegram.
+
+https://t.me/daclify
+
+
+---
+
+# Plataforma DAO, cuentas y opciones de despliegue | Daclify
+
+> Conoce cómo Daclify V2 conecta cuentas internas, carteras nativas, contratos propios de cada DAO y un Hub de descubrimiento en una plataforma modular.
+
+https://daclify.com/es/plataforma/
+
+Daclify V2 está en desarrollo. El lanzamiento público requiere verificar los contratos y revisar la versión.
+
+Cada comunidad necesita sus propias reglas. V2 se diseña alrededor de un núcleo estable de identidad, autoridad y tesorería, con módulos especializados al servicio de cada organización.
+
+## Primero las personas. Cuentas que encajan.
+
+Una identidad interna vive en el contrato inteligente y no exige al miembro tener una cuenta nativa. Los miembros y roles pertenecen a la DAO; vincular otra credencial no debe crear otro voto.
+
+### Claves bajo tu control — En desarrollo
+
+Las claves de firma y cifrado son distintas y las controla el usuario. Los flujos de desarrollo incluyen una bóveda local cifrada y credenciales de recuperación. El inicio de sesión social por sí solo no reconstruye esas claves.
+
+### Recuperación gestionada — Previsto
+
+El modo previsto permite asistencia del servicio y explica la autoridad del operador. Se está evaluando un servicio de claves de código abierto; la recuperación de producción aún no está validada.
+
+### Más formas de participar — Previsto
+
+Se prevén vinculación de cuentas Telos nativas, acceso social y Telegram, e identidades Telos EVM según capacidades verificadas. Todas deben conservar los mismos miembros y permisos.
+
+
+## Contratos compartidos o despliegue propio.
+
+El entorno compartido mantiene el estado específico de cada DAO en contratos comunes. Un despliegue independiente usa las mismas interfaces públicas y las políticas de actualización y tesorería de la DAO.
+
+### Despliegue compartido — En desarrollo
+
+La implementación permite crear DAO, roles, créditos y registros de tesorería en un entorno compartido. El aislamiento completo y la verificación de los contratos nativos siguen siendo requisitos de lanzamiento.
+
+### Despliegue independiente — Previsto
+
+Se prevén contratos propios, conexiones directas y acceso a varios entornos. La DAO debe seguir funcionando cuando el Hub o los servicios alojados no estén disponibles.
+
+
+## El Hub conecta. No gobierna.
+
+El Hub de descubrimiento busca listar DAO, identificar sus despliegues y describir sus capacidades. Aparecer en el directorio no debe dar a la plataforma control sobre votos, tesorería o actualizaciones.
+
+- La autoridad procede de los roles y políticas explícitos de cada DAO.
+- Los permisos de los módulos son delimitados y revisables.
+- Interfaces públicas, versiones y documentación avanzan juntas.
+
+## Una base para la gobernanza responsable.
+
+El núcleo usa contratos Antelope C++. La aplicación y los servicios usan TypeScript estricto, con una interfaz Vue. Las decisiones y registros financieros autoritativos pertenecen a los contratos; una pantalla no puede autorizar un pago.
+
+- Los créditos de gobernanza de cada DAO son independientes del dinero.
+- La gobernanza con tokens nativos necesita una política compatible de depósito o ponderación.
+- El soporte de otras cadenas se añade mediante adaptadores delimitados y verificados.
+
+## Telegram
+
+¿Estás creando una comunidad, cooperativa o red de colaboradores? Ayúdanos a dar forma a Daclify. Consulta la hoja de ruta y habla con nosotros en Telegram.
+
+https://t.me/daclify
+
+
+---
+
+# Módulos DAO de Decide, Works y nóminas | Daclify
+
+> Explora la gobernanza modular de Daclify: votaciones Decide, financiación por hitos Works, nóminas, documentos y servicios Operations previstos.
+
+https://daclify.com/es/modulos/
+
+Daclify V2 está en desarrollo. El lanzamiento público requiere verificar los contratos y revisar la versión.
+
+Elige las capacidades que necesita tu organización. Cada módulo tiene un cometido concreto, configuración clara y autoridad explícita. Los módulos actuales son implementaciones de desarrollo, no servicios listos para producción.
+
+## Decide — un camino claro hacia el acuerdo.
+
+Decide adapta patrones útiles de la gobernanza de Telos al modelo de identidad interna de Daclify. Sus flujos incluyen votaciones, emisión de votos y finalización; faltan elecciones más completas, comités y ejecución de propuestas.
+
+- Define quién participa y cómo se calcula el poder de voto.
+- Haz comprensibles el quórum, la aprobación y los plazos.
+- Conserva un resultado duradero; finalizar y ejecutar son responsabilidades distintas.
+
+## Works — financia resultados, no promesas vagas.
+
+Works conecta la financiación con informes de hitos y revisión autorizada. Los flujos actuales cubren propuestas, reservas, entregas, cambios solicitados, aceptación y cancelación. Faltan políticas personalizadas persistentes y reglas completas de disputas y plazos.
+
+- Fija los importes aprobados y compromisos documentales.
+- Un informe por sí solo no autoriza el pago.
+- Las obligaciones aceptadas y pendientes sobreviven a la retirada del módulo.
+
+## Payroll — compromisos previsibles.
+
+El módulo de nóminas soporta calendarios financiados de plazo fijo y obligaciones registradas. Los pagos deben ser idempotentes, con políticas explícitas ante retrasos, recuperación de periodos, cancelación y fondos insuficientes.
+
+- Separa calendarios futuros de obligaciones aprobadas.
+- Reintentar nunca debe duplicar un pago.
+- Conserva la ejecución manual cuando no haya automatización.
+
+## Conocimiento y Operations.
+
+Los registros JSON versionados y archivos públicos o privados conectan documentos, decisiones y trabajo. Operations prevé programación delimitada, notificaciones e integraciones seleccionadas sin otorgar autoridad de gobernanza.
+
+### Documentos — En desarrollo
+
+Los flujos incluyen registros versionados, cifrado en el cliente y verificación de cargas y descargas. La disponibilidad real de Pinata y las operaciones de retención aún deben validarse.
+
+### Operations alojado — Previsto
+
+La ejecución programada, las notificaciones de Telegram, los webhooks y los recursos se prevén como paquete opcional de pago. El precio final aún no se ha elegido.
+
+
+## Gobernanza básica útil. Servicios opcionales.
+
+La dirección comercial es una base gratuita viable con límites medidos y servicios de pago para comodidad y capacidad operativa. Comprar no debe otorgar votos; el vencimiento no debe retener claves, bloquear retiradas seguras ni borrar trabajo aceptado.
+
+- Elige módulos con configuraciones comprensibles.
+- Revisa la autoridad solicitada antes de activar un módulo.
+- Mantén opciones compatibles de despliegue independiente y alojamiento propio.
+
+## Telegram
+
+¿Estás creando una comunidad, cooperativa o red de colaboradores? Ayúdanos a dar forma a Daclify. Consulta la hoja de ruta y habla con nosotros en Telegram.
+
+https://t.me/daclify
+
+
+---
+
+# Documentos DAO cifrados y custodia de cuentas | Daclify
+
+> Entiende la privacidad de Daclify: documentos DAO cifrados, acceso mediante claves, recuperación propia o gestionada y límites de las cadenas públicas.
+
+https://daclify.com/es/privacidad/
+
+Daclify V2 está en desarrollo. El lanzamiento público requiere verificar los contratos y revisar la versión.
+
+Una DAO puede necesitar una tesorería pública y documentos de trabajo privados. Daclify busca cifrar el contenido protegido antes de publicarlo y convertir la propiedad de las claves en una decisión explícita.
+
+## Cifra antes de publicar.
+
+Los pequeños registros descriptivos pueden usar JSON acotado; los contenidos grandes usan CID de IPFS. Títulos, nombres de archivo y contenido protegido deben cifrarse en el cliente antes de llegar al proveedor o a la cadena pública. Los enlaces restringidos del proveedor no sustituyen al cifrado de miembros.
+
+- Las claves de firma y de cifrado cumplen funciones separadas.
+- Los formatos versionados y compromisos de contenido permiten verificar integridad.
+- Las concesiones a miembros y las épocas de claves definen el acceso.
+
+## Elige quién puede recuperar las claves.
+
+Recuperar una cuenta y proteger la confidencialidad son cuestiones relacionadas, pero distintas. La política de admisión debe corresponder al tipo de custodia permitido. La recuperación gestionada completa y el ciclo de membresía siguen previstos.
+
+### Claves de contenido propias — Principio de diseño
+
+El usuario conserva las claves de descifrado y la credencial de recuperación. Un acceso social no restaura por sí solo una bóveda perdida. Una DAO puede exigir este modo para evitar la custodia habitual del servicio.
+
+### Recuperación gestionada permitida — Previsto
+
+La recuperación asistida permite al operador acceder a claves recuperables. Esa confianza debe explicarse y acompañarse de políticas comprobadas de recuperación y salida, no de una promesa de exclusión del operador.
+
+
+## Los cambios de miembros necesitan una política.
+
+La DAO elige si los nuevos miembros reciben acceso histórico o solo futuro. Retirar a un miembro exige rotar el acceso futuro y gestionar las claves ya concedidas. Faltan flujos completos de admisión, rotación y cambio de custodia.
+
+- Un titular autorizado debe conceder acceso al contenido protegido.
+- Un servidor sin acceso a las claves no puede crear claves de descifrado que no posee.
+- Los antiguos miembros pueden conservar claves históricas y contenido ya recibido.
+
+## Lo que el cifrado no oculta.
+
+Las referencias de miembros, actividad de transacciones, registros de voto e importes pueden seguir siendo públicos. Cifrar un documento no hace anónima a una DAO ni convierte la ejecución pública en una votación secreta.
+
+- Un miembro puede copiar o compartir el contenido que está autorizado a leer.
+- Un dispositivo comprometido o una actualización maliciosa puede exponer claves desbloqueadas.
+- Eliminar un pin no borra la historia de la cadena ni todas las copias ajenas.
+
+## Registros duraderos y disponibilidad clara.
+
+Los flujos actuales prueban cargas cifradas, integridad, recuperación tras respuestas perdidas e historial con un proveedor local identificado. Faltan verificación real de Pinata, exportación, reanclaje, retención y recuperación completa antes del lanzamiento.
+
+- La integridad y la disponibilidad son requisitos distintos.
+- Las búsquedas y notificaciones privadas deben respetar la misma política.
+- La exportación y la salida de custodia forman parte del producto previsto.
+
+## Telegram
+
+¿Estás creando una comunidad, cooperativa o red de colaboradores? Ayúdanos a dar forma a Daclify. Consulta la hoja de ruta y habla con nosotros en Telegram.
+
+https://t.me/daclify
+
+
+---
+
+# Hoja de ruta y estado de desarrollo de Daclify V2
+
+> Consulta qué implementa Daclify V2 y qué falta: verificación de contratos, cuentas, despliegues independientes, Pinata, EVM y Operations alojado.
+
+https://daclify.com/es/hoja-de-ruta/
+
+Daclify V2 está en desarrollo. El lanzamiento público requiere verificar los contratos y revisar la versión.
+
+V2 es una implementación activa en desarrollo. Los flujos locales aportan evidencia útil, pero no constituyen una versión de producción. Esta hoja de ruta separa lo implementado del trabajo necesario para lanzar.
+
+## 01 / Los cimientos toman forma.
+
+La versión de desarrollo incluye contratos Antelope C++ del núcleo y Hub, cuentas internas con claves propias, API TypeScript, creación de DAO compartidas, créditos, tesorería y documentación generada.
+
+### Gobernanza conectada — En desarrollo
+
+Votaciones y finalización de Decide, entregas y revisiones de Works y nóminas financiadas se prueban en flujos locales.
+
+### Registros y privacidad — En desarrollo
+
+JSON versionado y archivos públicos o privados incluyen comprobaciones de integridad y conciliación de cargas.
+
+### Una interfaz útil — En desarrollo
+
+La aplicación Vue/TypeScript tiene recuperación, gobernanza, documentos, tesorería y ayuda contextual.
+
+
+## 02 / Validar el núcleo antes del lanzamiento.
+
+Un defecto confirmado de autorización nativa y el control incompleto del código de módulos bloquean el lanzamiento. Faltan verificaciones nativas completas, comprobaciones de despliegue, límites de recursos, herramientas de versiones y revisión independiente. V2 aún no debe tratarse como producto validado para fondos reales.
+
+- Corregir y verificar la autoridad de los contratos en el entorno nativo real.
+- Vincular código revisado, interfaces y documentación a versiones comprobadas.
+- Completar la conformidad de los despliegues compartidos e independientes.
+
+## 03 / Completar cuentas y documentos.
+
+Faltan admisión de producción, vinculación nativa, recuperación gestionada, acceso social y Telegram y ciclo de claves. También siguen pendientes Pinata real, retención, exportación y pruebas en los clientes compatibles.
+
+- Ambos modos de custodia necesitan recuperación y salida completas.
+- La política privada debe mantenerse cuando cambian los miembros.
+- Las pruebas con proveedores reales se distinguen de las simulaciones locales.
+
+## 04 / Ampliar lo que pueden hacer las comunidades.
+
+Se prevén comités, ejecución de propuestas, políticas más completas de Works y nóminas, soporte Telos EVM según capacidades, Operations y recursos medidos. Los adaptadores de otras cadenas responden a casos concretos con modelos explícitos de prueba y finalidad.
+
+- La identidad EVM y los pagos son capacidades distintas.
+- Un hash de transacción por sí solo no prueba un pago.
+- El vencimiento de servicios debe preservar derechos básicos y obligaciones aprobadas.
+
+## Lanzar es un compromiso, no una cuenta atrás.
+
+El código necesita herramientas de despliegue y migración, copias, procedimientos y revisión de seguridad. Documentos y pasivos antiguos requieren un inventario real; no se pueden inventar datos perdidos. Este sitio no anuncia una fecha pública ni precios definitivos.
+
+- Sigue el desarrollo y comparte comentarios en la comunidad.
+- La gobernanza básica busca seguir siendo gratuita dentro de límites definidos.
+- La publicación en testnet y producción requiere una revisión expresa.
+
+## Telegram
+
+¿Estás creando una comunidad, cooperativa o red de colaboradores? Ayúdanos a dar forma a Daclify. Consulta la hoja de ruta y habla con nosotros en Telegram.
+
+https://t.me/daclify
+
+
+---
+
+# Daclify — Modułowa platforma DAO dla społeczności
+
+> Poznaj Daclify V2: modułową platformę DAO do wspólnych decyzji, finansowania pracy i szyfrowanych dokumentów. Sprawdź wizję i plan rozwoju.
+
+https://daclify.com/pl/
+
+Daclify V2 jest w rozwoju. Publiczne uruchomienie wymaga weryfikacji kontraktów i przeglądu wydania.
+
+Połącz ludzi, decyzje i pracę, która ma znaczenie. Daclify tworzy modułową platformę DAO, na której społeczności wybierają własne zasady, narzędzia i kierunek.
+
+## Więcej niż głosowanie. Sposób na wspólną pracę.
+
+Społeczność potrzebuje czegoś więcej niż czatu i adresu skarbca. Potrzebuje drogi od pomysłu do wspólnej decyzji, sfinansowanego wkładu i trwałego zapisu.
+
+### Miejsce dla ludzi
+
+Członkostwo i role określają zasady udziału. Wewnętrzne tożsamości mają ułatwić dołączenie bez własnego natywnego konta blockchain.
+
+### Decyzje z realnym znaczeniem
+
+Wybierz politykę głosowania, zapisz wynik i połącz zatwierdzone decyzje z ograniczonymi uprawnieniami do działania. Zarządzanie powinno być zrozumiałe dla uczestników.
+
+### Od zgody do działania
+
+Finansuj etapy, oceniaj rezultaty i śledź zatwierdzone płatności. Zachowaj widoczną odpowiedzialność i postęp zamiast gubić je w rozmowach.
+
+
+## Zacznij od celu. Wybierz narzędzia.
+
+Implementacja V2 łączy wspólny rdzeń z wyspecjalizowanymi modułami. Celem są użyteczne ustawienia, jasna konfiguracja i miejsce na rozwój społeczności.
+
+### Decide — W rozwoju
+
+Wnioski, głosowania i trwałe wyniki. Przepływy rozwojowe obejmują tworzenie głosowań, oddawanie głosów i finalizację rezultatów.
+
+### Works — W rozwoju
+
+Finansowanie etapów z przekazaniem pracy, oceną, poprawkami i akceptacją. Zatwierdzenie tworzy zapisane zobowiązanie, a nie obietnicę bez rozliczenia.
+
+### Payroll — W rozwoju
+
+Sfinansowane harmonogramy i zatwierdzone zobowiązania płatnicze. Obecne przepływy zachowują zaakceptowane płatności po usunięciu modułu.
+
+
+## Jedna wizja. Dwie drogi do własnego DAO.
+
+Korzystaj ze wspólnego wdrożenia lub uruchom własne kontrakty. Oba warianty należą do projektu V2; kompletna obsługa niezależnego wdrożenia nadal powstaje.
+
+### Wspólna przestrzeń — W rozwoju
+
+Wiele DAO może korzystać z tych samych kontraktów rdzenia, zachowując oddzielne członkostwo, konfigurację i zapisy skarbca.
+
+### Własny fundament — Planowane
+
+Niezależne DAO kontroluje wdrożenie i łączy się z Hubem dla widoczności. Musi też móc działać bezpośrednio bez Huba.
+
+
+## Wspólna wiedza. Przemyślana prywatność.
+
+Małe zapisy opisowe przechowuj jako ograniczony JSON, większe dokumenty przez odwołania IPFS. Szyfruj chronioną treść przed publikacją i jawnie określ, kto posiada klucze.
+
+- Klucze pod kontrolą użytkownika i zarządzane odzyskiwanie to oddzielne, jasno opisane tryby.
+- Prywatna treść nie ukrywa członkostwa, głosów ani przelewów na publicznej sieci.
+- Usunięcie członka może ograniczyć przyszły dostęp, ale nie wymazuje już otrzymanych informacji.
+
+## Dobre pytania. Konkretne odpowiedzi.
+
+### Czym jest Daclify?
+
+Daclify to przebudowywana modułowa platforma DAO do zarządzania członkostwem, podejmowania decyzji, finansowania pracy i przechowywania wspólnych dokumentów. DAO to organizacja, której ustalone zasady i decyzje mogą być zapisywane i wykonywane przez smart kontrakty.
+
+### Czy każdy członek potrzebuje konta blockchain?
+
+Projekt V2 zakłada wewnętrzne tożsamości w kontrakcie, więc udział nie wymaga własnego konta natywnego. Łączenie portfela, logowanie społecznościowe i Telegram to dodatkowe planowane ścieżki; ich kompletne wersje produkcyjne nie są jeszcze gotowe.
+
+### Czy kredyty zarządzania są pieniędzmi?
+
+Nie. Wewnętrzne kredyty określają siłę głosu zgodnie z polityką DAO. Są oddzielone od aktywów skarbca i nie można wypłacić ich jako pieniędzy. Głosowanie tokenami natywnymi wymaga jawnej, obsługiwanej polityki depozytu lub wyznaczania wagi.
+
+### Czy DAO może zachować prywatność informacji?
+
+Chronione dokumenty można szyfrować przed publikacją, a klucze udostępniać uprawnionym członkom. Szyfrowanie chroni treść, nie publiczne metadane blockchaina. Członek może zachować wcześniej otrzymane informacje, a zarządzane odzyskiwanie daje odpowiedniej usłudze dostęp do kluczy.
+
+### Czy Daclify będzie bezpłatne?
+
+Plan zakłada użyteczne, bezpłatne podstawy zarządzania z określonymi limitami zasobów. Hostowana automatyzacja, powiadomienia i dodatkowe usługi mogą być płatne. Ceny i limity nie są ustalone. Wygaśnięcie subskrypcji nie może przejmować kontroli nad środkami DAO ani zaakceptowanymi zobowiązaniami.
+
+### Czy można już używać V2 z prawdziwymi środkami?
+
+V2 to implementacja rozwojowa, a nie zweryfikowane wydanie produkcyjne. Potrzebne są dalsze kontrole kontraktów, integracje kont, niezależne wdrożenia i procedury operacyjne. Plan rozwoju odróżnia zaimplementowane lokalne przepływy od funkcji gotowych do uruchomienia.
+
+## Telegram
+
+Tworzysz społeczność, spółdzielnię lub sieć współpracowników? Pomóż nadać kierunek Daclify. Zobacz plan rozwoju i porozmawiaj z nami na Telegramie.
+
+https://t.me/daclify
+
+
+---
+
+# Platforma DAO, konta i warianty wdrożenia | Daclify
+
+> Sprawdź, jak Daclify V2 łączy konta wewnętrzne, portfele natywne, własne kontrakty DAO i Hub odkrywania w modułowej platformie zarządzania.
+
+https://daclify.com/pl/platforma/
+
+Daclify V2 jest w rozwoju. Publiczne uruchomienie wymaga weryfikacji kontraktów i przeglądu wydania.
+
+Różne społeczności potrzebują różnych zasad. V2 powstaje wokół stabilnego rdzenia tożsamości, uprawnień i skarbca oraz modułów wspierających sposób pracy danej organizacji.
+
+## Najpierw ludzie. Konta dopasowane do potrzeb.
+
+Tożsamość wewnętrzna znajduje się w kontrakcie i nie wymaga własnego konta natywnego. Członkostwo i role należą do DAO; połączenie kolejnego poświadczenia nie może tworzyć dodatkowego głosu.
+
+### Konta pod kontrolą użytkownika — W rozwoju
+
+Użytkownik kontroluje oddzielne klucze podpisu i szyfrowania. Przepływy obejmują zaszyfrowany lokalny sejf i poświadczenia odzyskiwania. Samo logowanie społecznościowe nie odtwarza kluczy.
+
+### Zarządzane odzyskiwanie — Planowane
+
+Planowany tryb umożliwia odzyskanie z pomocą usługi i ujawnia uprawnienia operatora. Oceniane jest otwarte oprogramowanie do zarządzania kluczami; produkcyjne odzyskiwanie nie jest jeszcze zweryfikowane.
+
+### Więcej sposobów udziału — Planowane
+
+Planowane są konta natywne Telos, logowanie społecznościowe, Telegram i tożsamości Telos EVM zgodnie ze zweryfikowanymi możliwościami. Muszą zachować to samo członkostwo i uprawnienia.
+
+
+## Wspólne kontrakty albo własne wdrożenie.
+
+Wspólne środowisko przechowuje stan poszczególnych DAO w tych samych kontraktach. Niezależne wdrożenie używa tych samych interfejsów publicznych z własną polityką aktualizacji i skarbca.
+
+### Wdrożenie współdzielone — W rozwoju
+
+Implementacja obsługuje tworzenie DAO, role, kredyty i zapisy skarbca we wspólnym środowisku. Pełna izolacja i weryfikacja natywnych kontraktów pozostają warunkami wydania.
+
+### Wdrożenie niezależne — Planowane
+
+Własne kontrakty, połączenia bezpośrednie i obsługa wielu środowisk są planowane. DAO musi działać także wtedy, gdy Hub lub usługi hostowane są niedostępne.
+
+
+## Hub łączy. Nie zarządza.
+
+Hub ma prezentować DAO, wskazywać ich wdrożenia i obsługiwane możliwości. Wpis w katalogu nie może dawać platformie kontroli nad głosami, skarbcem ani aktualizacjami kontraktów.
+
+- Uprawnienia wynikają z jawnych ról i polityk DAO.
+- Uprawnienia modułów są ograniczone i możliwe do sprawdzenia.
+- Interfejsy publiczne, wersje i dokumentacja tworzą spójną całość.
+
+## Fundament odpowiedzialnego zarządzania.
+
+Rdzeń używa kontraktów Antelope C++. Aplikacja i usługi korzystają ze ścisłego TypeScriptu oraz interfejsu Vue. Wiążące decyzje i zapisy finansowe należą do kontraktów; sam widok w przeglądarce nie autoryzuje płatności.
+
+- Kredyty zarządzania DAO są oddzielone od pieniędzy.
+- Głosowanie tokenami natywnymi wymaga obsługiwanej polityki depozytu lub wagi.
+- Kolejne sieci wymagają ograniczonych i osobno zweryfikowanych adapterów.
+
+## Telegram
+
+Tworzysz społeczność, spółdzielnię lub sieć współpracowników? Pomóż nadać kierunek Daclify. Zobacz plan rozwoju i porozmawiaj z nami na Telegramie.
+
+https://t.me/daclify
+
+
+---
+
+# Moduły DAO Decide, Works i wypłat | Daclify
+
+> Poznaj moduły Daclify: głosowania Decide, finansowanie etapów Works, wypłaty, wspólne dokumenty i planowane hostowane usługi Operations.
+
+https://daclify.com/pl/moduly/
+
+Daclify V2 jest w rozwoju. Publiczne uruchomienie wymaga weryfikacji kontraktów i przeglądu wydania.
+
+Wybierz możliwości dopasowane do organizacji. Każdy moduł ma określone zadanie, czytelną konfigurację i jawne uprawnienia. Obecne moduły są implementacjami rozwojowymi, nie gotowymi usługami produkcyjnymi.
+
+## Decide — jasna droga do wspólnej decyzji.
+
+Decide adaptuje użyteczne wzorce zarządzania Telos do wewnętrznych tożsamości Daclify. Przepływy obejmują głosowania i finalizację; rozbudowane wybory, komitety i wykonanie wniosków nadal wymagają pracy.
+
+- Określ uczestników i sposób wyliczania siły głosu.
+- Czytelnie zdefiniuj kworum, próg akceptacji i terminy.
+- Zachowaj trwały wynik; finalizacja i wykonanie to różne zadania.
+
+## Works — finansuj rezultaty, nie ogólne obietnice.
+
+Works łączy finansowanie z raportami etapów i uprawnioną oceną. Obecne przepływy obejmują propozycje, rezerwacje, przekazanie pracy, poprawki, akceptację i anulowanie. Trwałe własne polityki oraz kompletne zasady sporów i terminów są niedokończone.
+
+- Utrwal zaakceptowane kwoty i zobowiązania do treści dokumentów.
+- Sam raport nie uprawnia do wypłaty.
+- Zaakceptowane niezapłacone zobowiązania pozostają po usunięciu modułu.
+
+## Payroll — przewidywalne zobowiązania.
+
+Moduł wypłat obsługuje sfinansowane harmonogramy o ustalonym okresie i zapisane zobowiązania. Wypłaty muszą być idempotentne, z jawnymi zasadami opóźnień, nadrabiania okresów, anulowania i braku środków.
+
+- Oddziel przyszły harmonogram od zaakceptowanych zobowiązań.
+- Ponowienie nie może powodować podwójnej wypłaty.
+- Zachowaj ręczne wykonanie przy niedostępnej automatyzacji.
+
+## Wiedza i Operations.
+
+Wersjonowany JSON i pliki publiczne lub prywatne łączą zapisy z decyzjami i pracą. Planowane Operations dodaje ograniczoną automatyzację, powiadomienia i wybrane integracje bez nadawania władzy nad DAO.
+
+### Dokumenty — W rozwoju
+
+Przepływy obejmują wersje, szyfrowanie po stronie klienta oraz weryfikację wysyłania i pobierania. Dostępność Pinata i zasady przechowywania wymagają rzeczywistej walidacji.
+
+### Hostowane Operations — Planowane
+
+Planowane są harmonogramy wykonania, powiadomienia Telegram, webhooki i limity zasobów w opcjonalnym płatnym pakiecie. Ostateczna cena nie została wybrana.
+
+
+## Użyteczne bezpłatne podstawy. Opcjonalne usługi.
+
+Kierunek biznesowy to bezpłatny fundament z ustalonymi limitami oraz płatna wygoda i zasoby operacyjne. Zakup nie daje głosów; wygaśnięcie nie może zatrzymywać kluczy, blokować bezpiecznych wypłat ani usuwać zaakceptowanej pracy.
+
+- Wybieraj moduły z czytelnymi ustawieniami.
+- Sprawdź żądane uprawnienia przed włączeniem modułu.
+- Zachowaj zgodne opcje niezależnego wdrożenia i własnego hostingu.
+
+## Telegram
+
+Tworzysz społeczność, spółdzielnię lub sieć współpracowników? Pomóż nadać kierunek Daclify. Zobacz plan rozwoju i porozmawiaj z nami na Telegramie.
+
+https://t.me/daclify
+
+
+---
+
+# Szyfrowane dokumenty DAO i kontrola nad kluczami | Daclify
+
+> Poznaj prywatność Daclify: szyfrowane dokumenty DAO, dostęp przez klucze, własne lub zarządzane odzyskiwanie i ograniczenia publicznego blockchaina.
+
+https://daclify.com/pl/prywatnosc/
+
+Daclify V2 jest w rozwoju. Publiczne uruchomienie wymaga weryfikacji kontraktów i przeglądu wydania.
+
+DAO może potrzebować publicznego skarbca i prywatnych dokumentów roboczych. Daclify zakłada szyfrowanie chronionej treści przed publikacją i jawną decyzję o własności kluczy.
+
+## Szyfruj przed publikacją.
+
+Małe zapisy opisowe mogą używać ograniczonego JSON, większe treści identyfikatorów CID w IPFS. Chronione tytuły, nazwy plików i treść muszą być szyfrowane na urządzeniu przed wysłaniem do dostawcy lub publicznej sieci. Ograniczone linki dostawcy nie zastępują szyfrowania dla członków.
+
+- Klucze podpisu i szyfrowania mają różne funkcje.
+- Wersjonowane formaty i zobowiązania do treści umożliwiają kontrolę integralności.
+- Przydziały dla członków i epoki kluczy określają dostęp.
+
+## Wybierz, kto odzyskuje klucze.
+
+Odzyskiwanie konta i poufność dokumentów to powiązane, lecz różne sprawy. Zasady przyjmowania członków muszą odpowiadać dozwolonej kontroli nad kluczami. Pełne odzyskiwanie zarządzane i integracja cyklu członkostwa są jeszcze planowane.
+
+### Klucze treści użytkownika — Założenie projektu
+
+Użytkownik przechowuje klucze deszyfrowania i poświadczenie odzyskiwania. Samo logowanie społecznościowe nie odtwarza sejfu. DAO może wymagać tego trybu, by usługa nie przechowywała jego kluczy.
+
+### Dozwolone zarządzane odzyskiwanie — Planowane
+
+Pomoc usługi oznacza, że operator może mieć dostęp do odzyskiwalnych kluczy. To zaufanie wymaga jawnego opisu oraz sprawdzonej polityki odzyskiwania i wyjścia, a nie obietnicy wykluczenia operatora.
+
+
+## Zmiana członków wymaga zasad dostępu.
+
+DAO wybiera, czy nowi członkowie widzą historię, czy tylko przyszłe dokumenty. Usunięcie członka wymaga rotacji przyszłego dostępu i obsługi już przydzielonych kluczy. Kompletne ścieżki przyjęcia, rotacji i zmiany trybu kluczy są niedokończone.
+
+- Uprawniony posiadacz klucza musi nadać chroniony dostęp.
+- Serwer bez kluczy nie może tworzyć kluczy deszyfrowania, których nie ma.
+- Byli członkowie mogą zachować historyczne klucze i otrzymaną treść.
+
+## Czego szyfrowanie nie ukrywa.
+
+Odwołania do członkostwa, transakcje, zapisy głosów i kwoty mogą pozostać publiczne. Zaszyfrowany dokument nie czyni DAO anonimowym i nie zmienia publicznego wykonania kontraktu w tajne głosowanie.
+
+- Członek może kopiować lub udostępniać informacje, które wolno mu czytać.
+- Przejęte urządzenie lub złośliwa aktualizacja klienta może ujawnić odblokowane klucze.
+- Usunięcie przypięcia nie kasuje historii blockchaina ani wszystkich cudzych kopii.
+
+## Trwałe zapisy i jasno określona dostępność.
+
+Obecne przepływy sprawdzają szyfrowane wysyłanie, integralność, odzyskiwanie po utraconej odpowiedzi i historię wersji z oznaczonym lokalnym dostawcą. Rzeczywiste Pinata, eksport, ponowne przypinanie, retencja i pełne odzyskiwanie wymagają weryfikacji przed uruchomieniem.
+
+- Integralność i dostępność są oddzielnymi wymaganiami.
+- Prywatne wyszukiwanie i powiadomienia muszą respektować tę samą politykę.
+- Eksport i wyjście z zarządzanej kontroli kluczy należą do wizji produktu.
+
+## Telegram
+
+Tworzysz społeczność, spółdzielnię lub sieć współpracowników? Pomóż nadać kierunek Daclify. Zobacz plan rozwoju i porozmawiaj z nami na Telegramie.
+
+https://t.me/daclify
+
+
+---
+
+# Plan rozwoju i status Daclify V2
+
+> Sprawdź, co działa w Daclify V2 i co pozostało: weryfikacja kontraktów, konta, niezależne wdrożenia, Pinata, EVM i hostowane Operations.
+
+https://daclify.com/pl/plan-rozwoju/
+
+Daclify V2 jest w rozwoju. Publiczne uruchomienie wymaga weryfikacji kontraktów i przeglądu wydania.
+
+V2 to aktywna implementacja rozwojowa. Działające lokalne przepływy są ważnym dowodem, ale nie wydaniem produkcyjnym. Plan oddziela gotowe fragmenty od pracy potrzebnej do odpowiedzialnego uruchomienia.
+
+## 01 / Fundament nabiera kształtu.
+
+Wersja rozwojowa obejmuje kontrakty rdzenia i Huba w Antelope C++, konta wewnętrzne z własnymi kluczami, API TypeScript, tworzenie współdzielonych DAO, kredyty, skarbiec i generowaną dokumentację.
+
+### Połączone zarządzanie — W rozwoju
+
+Głosowanie i finalizacja Decide, przekazanie pracy i ocena Works oraz sfinansowane wypłaty są sprawdzane lokalnie.
+
+### Zapisy i prywatność — W rozwoju
+
+Wersjonowany JSON i pliki publiczne lub prywatne mają kontrole integralności oraz uzgadnianie wysyłek.
+
+### Użyteczny interfejs — W rozwoju
+
+Aplikacja Vue/TypeScript zawiera odzyskiwanie, zarządzanie, dokumenty, skarbiec i pomoc kontekstową.
+
+
+## 02 / Zweryfikować rdzeń przed uruchomieniem.
+
+Potwierdzony błąd autoryzacji natywnej i niepełna kontrola kodu modułów blokują wydanie. Nadal potrzebne są pełne testy natywne, weryfikacja wdrożeń, limity zasobów, narzędzia wydań i niezależny przegląd. V2 nie należy jeszcze traktować jako zweryfikowanego produktu dla prawdziwych środków.
+
+- Naprawić i sprawdzić uprawnienia na rzeczywistym środowisku natywnym.
+- Powiązać sprawdzony kod, interfejsy i dokumentację ze zweryfikowanymi wydaniami.
+- Dokończyć zgodność wdrożeń wspólnych i niezależnych.
+
+## 03 / Dokończyć konta i dokumenty.
+
+Przyjmowanie członków, łączenie kont natywnych, zarządzane odzyskiwanie, logowanie społecznościowe i Telegram oraz cykl kluczy wymagają dalszej pracy. Nieskończone są też Pinata, retencja, eksport i testy rzeczywistych klientów.
+
+- Oba tryby kluczy wymagają kompletnych ścieżek utraty, odzyskania i wyjścia.
+- Polityka prywatności musi obowiązywać przy zmianie członkostwa.
+- Dowody z rzeczywistych dostawców są oddzielone od lokalnych symulacji.
+
+## 04 / Rozszerzyć możliwości społeczności.
+
+Planowane są komitety, wykonanie wniosków, pełniejsze polityki Works i wypłat, zweryfikowane możliwości Telos EVM, Operations i mierzone limity usług. Adaptery innych sieci odpowiadają na konkretne potrzeby, z jawną weryfikacją i finalnością.
+
+- Tożsamość EVM i płatności to różne możliwości.
+- Sam hash transakcji nie potwierdza rozliczenia.
+- Wygaśnięcie usług musi zachować podstawowe prawa i zatwierdzone zobowiązania.
+
+## Wydanie to zobowiązanie, nie odliczanie.
+
+Kod wymaga narzędzi wdrożenia i migracji, kopii zapasowych, procedur oraz przeglądu bezpieczeństwa. Stare dokumenty i zobowiązania potrzebują rzeczywistej inwentaryzacji; brakujących danych nie wolno wymyślać. Strona nie ogłasza daty uruchomienia ani ostatecznych cen.
+
+- Obserwuj rozwój i dziel się opinią w społeczności.
+- Użyteczne podstawy mają pozostać bezpłatne w określonych limitach.
+- Uruchomienie na testnecie i produkcji wymaga osobnego przeglądu.
+
+## Telegram
+
+Tworzysz społeczność, spółdzielnię lub sieć współpracowników? Pomóż nadać kierunek Daclify. Zobacz plan rozwoju i porozmawiaj z nami na Telegramie.
+
+https://t.me/daclify
+
+
+---

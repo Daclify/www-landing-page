@@ -1,0 +1,31 @@
+{
+  "name": "@daclify/website",
+  "version": "2.0.0-alpha.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.21 <25",
+    "npm": ">=11.19 <12"
+  },
+  "scripts": {
+    "build": "node tools/build.ts",
+    "assets:social": "node tools/social.ts",
+    "export": "npm run build && node tools/export.ts",
+    "dev": "npm run build && node tools/serve.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && SITE_DIR=dist node --test tests/site.test.ts",
+    "test:e2e": "playwright test",
+    "format": "prettier --write src tools tests *.json *.ts docs README.md CHANGELOG.md assets/site.css assets/README.md .github/workflows",
+    "format:check": "prettier --check src tools tests *.json *.ts docs README.md CHANGELOG.md assets/site.css assets/README.md .github/workflows",
+    "check:export": "node tools/export.ts --check"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@fontsource-variable/inter": "5.3.0",
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.19.1",
+    "parse5": "8.0.1",
+    "prettier": "3.9.9",
+    "typescript": "5.9.3"
+  }
+}

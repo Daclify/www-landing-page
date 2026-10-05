@@ -1,0 +1,37 @@
+# Daclify
+
+> Daclify V2 is a modular DAO platform in development, focused on membership, governance, funded work and encrypted documents.
+
+This public website describes the vision and actual development status. V2 is not a qualified production release. Managed recovery, social/Telegram entry, complete independent deployments and EVM support remain unfinished or capability-gated. Basic governance is intended to be free within defined resource limits; final prices and launch dates are not announced.
+
+Private V2 repositories are not public documentation. The Telegram community is at https://t.me/daclify.
+
+## English
+
+- [Daclify — Modular DAO governance for real communities](https://daclify.com/): Discover Daclify V2: a modular DAO platform for community decisions, funded work and encrypted documents. Explore the vision and development roadmap. Markdown: https://daclify.com/index.md
+- [DAO platform, accounts and deployment choices | Daclify](https://daclify.com/platform/): Learn how Daclify V2 brings internal accounts, native wallets, DAO-owned contracts and Hub discovery into a modular governance platform. Markdown: https://daclify.com/platform/index.md
+- [Decide, Works and payroll DAO modules | Daclify](https://daclify.com/modules/): Explore Daclify’s modular governance vision: Decide voting, Works milestone funding, payroll, shared documents and planned hosted Operations. Markdown: https://daclify.com/modules/index.md
+- [Encrypted DAO documents and account custody | Daclify](https://daclify.com/privacy/): Understand Daclify’s privacy design: encrypted DAO documents, member key access, user-controlled or managed recovery, and the limits of public blockchains. Markdown: https://daclify.com/privacy/index.md
+- [Daclify V2 development roadmap and release status](https://daclify.com/roadmap/): See what Daclify V2 implements today and what remains: contract verification, accounts, independent deployments, Pinata, EVM and hosted Operations. Markdown: https://daclify.com/roadmap/index.md
+
+## Español
+
+- [Daclify — Gobernanza DAO modular para comunidades reales](https://daclify.com/es/): Descubre Daclify V2: una plataforma DAO modular para decisiones comunitarias, trabajo financiado y documentos cifrados. Explora la visión y la hoja de ruta. Markdown: https://daclify.com/es/index.md
+- [Plataforma DAO, cuentas y opciones de despliegue | Daclify](https://daclify.com/es/plataforma/): Conoce cómo Daclify V2 conecta cuentas internas, carteras nativas, contratos propios de cada DAO y un Hub de descubrimiento en una plataforma modular. Markdown: https://daclify.com/es/plataforma/index.md
+- [Módulos DAO de Decide, Works y nóminas | Daclify](https://daclify.com/es/modulos/): Explora la gobernanza modular de Daclify: votaciones Decide, financiación por hitos Works, nóminas, documentos y servicios Operations previstos. Markdown: https://daclify.com/es/modulos/index.md
+- [Documentos DAO cifrados y custodia de cuentas | Daclify](https://daclify.com/es/privacidad/): Entiende la privacidad de Daclify: documentos DAO cifrados, acceso mediante claves, recuperación propia o gestionada y límites de las cadenas públicas. Markdown: https://daclify.com/es/privacidad/index.md
+- [Hoja de ruta y estado de desarrollo de Daclify V2](https://daclify.com/es/hoja-de-ruta/): Consulta qué implementa Daclify V2 y qué falta: verificación de contratos, cuentas, despliegues independientes, Pinata, EVM y Operations alojado. Markdown: https://daclify.com/es/hoja-de-ruta/index.md
+
+## Polski
+
+- [Daclify — Modułowa platforma DAO dla społeczności](https://daclify.com/pl/): Poznaj Daclify V2: modułową platformę DAO do wspólnych decyzji, finansowania pracy i szyfrowanych dokumentów. Sprawdź wizję i plan rozwoju. Markdown: https://daclify.com/pl/index.md
+- [Platforma DAO, konta i warianty wdrożenia | Daclify](https://daclify.com/pl/platforma/): Sprawdź, jak Daclify V2 łączy konta wewnętrzne, portfele natywne, własne kontrakty DAO i Hub odkrywania w modułowej platformie zarządzania. Markdown: https://daclify.com/pl/platforma/index.md
+- [Moduły DAO Decide, Works i wypłat | Daclify](https://daclify.com/pl/moduly/): Poznaj moduły Daclify: głosowania Decide, finansowanie etapów Works, wypłaty, wspólne dokumenty i planowane hostowane usługi Operations. Markdown: https://daclify.com/pl/moduly/index.md
+- [Szyfrowane dokumenty DAO i kontrola nad kluczami | Daclify](https://daclify.com/pl/prywatnosc/): Poznaj prywatność Daclify: szyfrowane dokumenty DAO, dostęp przez klucze, własne lub zarządzane odzyskiwanie i ograniczenia publicznego blockchaina. Markdown: https://daclify.com/pl/prywatnosc/index.md
+- [Plan rozwoju i status Daclify V2](https://daclify.com/pl/plan-rozwoju/): Sprawdź, co działa w Daclify V2 i co pozostało: weryfikacja kontraktów, konta, niezależne wdrożenia, Pinata, EVM i hostowane Operations. Markdown: https://daclify.com/pl/plan-rozwoju/index.md
+
+## Optional
+
+- [Full website text](https://daclify.com/llms-full.txt): Complete public content in all three languages.
+- [Daclify community](https://t.me/daclify): Project discussion and feedback.
+- [Daclify GitHub organization](https://github.com/Daclify): Public organization profile; repository availability varies.
