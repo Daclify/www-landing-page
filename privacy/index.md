@@ -1,60 +1,60 @@
-# Encrypted DAO documents and account custody | Daclify
+# Private DAO documents and encrypted shared records | Daclify
 
-> Understand Daclify’s privacy design: encrypted DAO documents, member key access, user-controlled or managed recovery, and the limits of public blockchains.
+> Keep DAO documents organized and protect private content with encryption. Understand member access, recovery keys and the limits of public blockchain records.
 
 https://daclify.com/privacy/
 
-Daclify V2 is in development. Public launch follows contract verification and release review.
+Some information belongs in public. Some belongs with the people doing the work. Daclify connects shared records and encrypted documents to your DAO, with clear choices about access and recovery.
 
-A DAO may need a public treasury and private working documents. Daclify’s direction is to encrypt protected content before publication and make key ownership an explicit decision.
+## Protect the content before storing it.
 
-## Encrypt before you publish.
+Private files are encrypted on the user’s device before upload. The stored file contains encrypted content; an eligible member needs the correct key to read it. A public storage link alone does not unlock the document.
 
-Small descriptive records can use bounded JSON; larger content uses IPFS CIDs. Protected titles, filenames and document bytes must be encrypted in the client before reaching a content provider or the public chain. Provider access links alone are not member encryption.
+- Keep signing keys separate from document encryption keys.
+- Use version history to follow updates to a record.
+- Check file integrity when retrieving stored content.
 
-- Signing keys and encryption keys have separate purposes.
-- Versioned envelopes and content commitments support integrity checks.
-- Member grants and DAO key epochs define access to protected content.
+## Know who holds the keys.
 
-## Choose who can recover the keys.
+User-controlled accounts keep recovery credentials with the member. Managed recovery is a planned alternative and will carry a different trust relationship: a service that can recover decryption keys can also access them.
 
-Account recovery and document confidentiality are related but different. The DAO’s admission policy must match the custody mode it permits. Complete managed recovery and membership lifecycle integration are still planned.
+### User-controlled recovery
 
-### User-controlled content keys — Design principle
+Back up your recovery credential and keep it safe. Without the credential or another authorized key holder, a lost decryption key can mean losing access to protected content.
 
-The user keeps the decryption keys and recovery credential. A successful social login cannot restore a lost vault by itself. A DAO can require this mode when it wants no routine service custody.
+### Managed recovery — On the roadmap
 
-### Managed recovery allowed — Planned
-
-Service-assisted recovery means the relevant operator can access recoverable keys. That trust must be disclosed, with a tested recovery and exit policy rather than a promise of operator exclusion.
+Planned service-assisted recovery will explain what the operator can recover and access. DAOs will need an explicit policy on whether they allow this mode.
 
 
-## Member changes need an access policy.
+## Private documents do not make every action private.
 
-A DAO must choose whether newly admitted members receive historical access or future access only. Removing a member requires future-access rotation and explicit handling of previously granted keys. Complete admission, rotation and custody-transition journeys remain unfinished.
+Encryption protects document content. Membership references, vote records, transfers and other activity on a public blockchain may remain visible. Daclify does not promise anonymous membership or secret ballots.
 
-- An existing authorized key holder is needed to grant protected access.
-- A blind backend cannot create decryption keys it does not hold.
-- Former members may retain historical keys and plaintext they already received.
+- An authorized member can copy or share information they can read.
+- Removing a member cannot erase information already received.
+- Public chain history and third-party file copies cannot be recalled.
 
-## What encryption does not hide.
+## Plan for changes in membership.
 
-Public-chain membership references, transaction activity, vote records and amounts may remain visible. Encrypting a document does not make a DAO anonymous or turn public contract execution into a secret ballot.
+A DAO needs rules for who can read historical documents and how future access changes when people join or leave. The roadmap includes fuller member-access and key-rotation workflows; the handbook describes the supported behavior for each deployment.
 
-- Members can copy or share content they are authorized to read.
-- A compromised device or malicious client update can expose unlocked keys.
-- Deleting a pin cannot erase blockchain history or every third-party copy.
+- Choose who should receive access to past records.
+- Treat key rotation and member removal as related steps.
+- Make recovery responsibilities clear before sharing sensitive content.
 
-## Durable records, honest availability.
+## Keep records useful over time.
 
-Development flows already exercise encrypted upload, retrieval checks, lost-response recovery and version history using a labelled local provider. Live Pinata integration, export, re-pinning, retention and complete recovery operations still need verification before a public release.
+Compact information fits in contract records; larger documents use IPFS references. A content reference helps identify a file, while continued storage and access still depend on the configured provider and retained keys.
 
-- Integrity checks and availability are separate requirements.
-- Private search and notifications must follow the same content policy.
-- A clear export and custody exit path is part of the product direction.
+- Keep essential recovery credentials backed up.
+- Understand your deployment’s file-storage configuration.
+- Use the handbook for current document and access procedures.
 
-## Telegram
+## Give your community a place to move forward.
 
-Building a community, cooperative or contributor network? Help shape what Daclify becomes. Follow the roadmap and talk with us on Telegram.
+Explore DAOs in the app, find the tools your community needs and use the handbook to learn how they work.
 
-https://t.me/daclify
+- [Open app](https://app.daclify.com/)
+- [Read the docs](https://app.daclify.com/docs)
+- [Join the community](https://t.me/daclify)

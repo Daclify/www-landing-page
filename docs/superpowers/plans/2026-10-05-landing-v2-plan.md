@@ -15,3 +15,11 @@
 - [x] Add Playwright journeys for every route/language, topic-preserving language changes, mobile navigation, FAQ keyboard behavior, no-JavaScript rendering, axe and narrow screens. Inspect actual desktop/mobile screenshots.
 - [x] Generate and export the complete static tree. Document `npm ci`, `npm run export`, `npm run dev`, checks and hosting/DNS/Search Console review in README and docs/seo.md. Add verification-only CI.
 - [x] Run `npm run typecheck`, `npm test`, `npm run test:e2e`, `npm run format:check`, `npm run check:export`; review the diff and record real results. Deliver a reviewable branch and local preview.
+
+## Product-copy revision requested after design review
+
+- [x] Verify the app's handbook route in frontend `src/main.ts` and inspect current feature/account/privacy support before choosing claims.
+- [x] Add app/handbook acceptance checks for all pages and readable exports; observe them fail on missing actions and destinations before implementation.
+- [x] Rewrite complete English, Spanish and Polish copy around membership, voting, funded work and shared records; retain planned labels for unavailable options and honest privacy/pricing limits.
+- [x] Centralize the intended app/handbook URLs; connect hero/closing/footer actions and desktop/mobile handbook navigation. Update Markdown, llms.txt, social images and generated HTML/metadata.
+- [x] Exercise deterministic app/handbook navigation fixtures, no-JavaScript navigation, all routes, accessibility and mobile layout. Review screenshots and the source diff; document the separate production publication requirement.

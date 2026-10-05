@@ -1,60 +1,65 @@
-# Módulos DAO de Decide, Works y nóminas | Daclify
+# Votaciones DAO, proyectos y pagos a colaboradores | Daclify
 
-> Explora la gobernanza modular de Daclify: votaciones Decide, financiación por hitos Works, nóminas, documentos y servicios Operations previstos.
+> Descubre los módulos de Daclify para votaciones, financiación por hitos, pagos y documentos compartidos. Elige las herramientas que necesita tu comunidad.
 
 https://daclify.com/es/modulos/
 
-Daclify V2 está en desarrollo. El lanzamiento público requiere verificar los contratos y revisar la versión.
+Cada comunidad trabaja de una forma distinta. Elige herramientas específicas para votar, financiar proyectos y pagar a colaboradores, con cuentas y registros compartidos en toda la DAO.
 
-Elige las capacidades que necesita tu organización. Cada módulo tiene un cometido concreto, configuración clara y autoridad explícita. Los módulos actuales son implementaciones de desarrollo, no servicios listos para producción.
+## Decide — da una voz clara a los miembros.
 
-## Decide — un camino claro hacia el acuerdo.
+Recoge votos y registra un resultado. Define quién puede participar, cómo se calcula el peso del voto y cuándo termina la votación, para que los miembros conozcan las reglas desde el principio.
 
-Decide adapta patrones útiles de la gobernanza de Telos al modelo de identidad interna de Daclify. Sus flujos incluyen votaciones, emisión de votos y finalización; faltan elecciones más completas, comités y ejecución de propuestas.
+- Crea una votación con una pregunta y opciones claras.
+- Permite votar a los miembros autorizados desde el espacio de la DAO.
+- Finaliza la votación y conserva el resultado como registro compartido.
 
-- Define quién participa y cómo se calcula el poder de voto.
-- Haz comprensibles el quórum, la aprobación y los plazos.
-- Conserva un resultado duradero; finalizar y ejecutar son responsabilidades distintas.
+## Works — conecta financiación y entregas.
 
-## Works — financia resultados, no promesas vagas.
+Convierte una propuesta en hitos acordados. Los colaboradores presentan su trabajo y los revisores autorizados pueden solicitar cambios o aceptarlo. Sigue la financiación y el pago aprobado junto al proyecto.
 
-Works conecta la financiación con informes de hitos y revisión autorizada. Los flujos actuales cubren propuestas, reservas, entregas, cambios solicitados, aceptación y cancelación. Faltan políticas personalizadas persistentes y reglas completas de disputas y plazos.
+- Acuerda el alcance, el importe y los hitos.
+- Mantén entregas, comentarios y aprobaciones en un mismo proceso.
+- Consulta qué compromisos se han aceptado y cuáles siguen pendientes.
 
-- Fija los importes aprobados y compromisos documentales.
-- Un informe por sí solo no autoriza el pago.
-- Las obligaciones aceptadas y pendientes sobreviven a la retirada del módulo.
+## Payroll — organiza colaboraciones periódicas.
 
-## Payroll — compromisos previsibles.
+Crea calendarios financiados y de duración definida para quienes colaboran con tu DAO durante un periodo. Haz que los compromisos de pago sean comprensibles para la organización y los colaboradores.
 
-El módulo de nóminas soporta calendarios financiados de plazo fijo y obligaciones registradas. Los pagos deben ser idempotentes, con políticas explícitas ante retrasos, recuperación de periodos, cancelación y fondos insuficientes.
+- Define el destinatario, el importe y el calendario de pagos.
+- Sigue los pagos vencidos y las obligaciones aprobadas.
+- Conecta los registros de tesorería con los compromisos de los colaboradores.
 
-- Separa calendarios futuros de obligaciones aprobadas.
-- Reintentar nunca debe duplicar un pago.
-- Conserva la ejecución manual cuando no haya automatización.
+## Documentos — recuerda el motivo de una decisión.
 
-## Conocimiento y Operations.
+Mantén propuestas, notas, acuerdos y archivos cerca de las decisiones que respaldan. El historial de versiones ayuda a seguir los cambios y los archivos cifrados protegen el contenido de acceso limitado.
 
-Los registros JSON versionados y archivos públicos o privados conectan documentos, decisiones y trabajo. Operations prevé programación delimitada, notificaciones e integraciones seleccionadas sin otorgar autoridad de gobernanza.
+### Registros compartidos
 
-### Documentos — En desarrollo
+Usa registros JSON compactos para la información cotidiana y referencias IPFS para archivos grandes. Conserva versiones anteriores para consultar el contexto.
 
-Los flujos incluyen registros versionados, cifrado en el cliente y verificación de cargas y descargas. La disponibilidad real de Pinata y las operaciones de retención aún deben validarse.
+### Documentos protegidos
 
-### Operations alojado — Previsto
-
-La ejecución programada, las notificaciones de Telegram, los webhooks y los recursos se prevén como paquete opcional de pago. El precio final aún no se ha elegido.
+Cifra el contenido privado antes de almacenarlo y proporciona las claves a los miembros autorizados. Aprende qué protege el cifrado y qué sigue siendo público.
 
 
-## Gobernanza básica útil. Servicios opcionales.
+## Empieza con lo esencial. Añade lo que ayude.
 
-La dirección comercial es una base gratuita viable con límites medidos y servicios de pago para comodidad y capacidad operativa. Comprar no debe otorgar votos; el vencimiento no debe retener claves, bloquear retiradas seguras ni borrar trabajo aceptado.
+El objetivo es mantener gratuita una base útil de gobernanza. Se prevén módulos y servicios alojados de pago opcionales para comunidades que necesiten más capacidad o comodidad. Los precios y límites se publicarán antes de ofrecerlos.
 
-- Elige módulos con configuraciones comprensibles.
-- Revisa la autoridad solicitada antes de activar un módulo.
-- Mantén opciones compatibles de despliegue independiente y alojamiento propio.
+### Elige tu forma de trabajar
 
-## Telegram
+Activa las herramientas adecuadas para tu comunidad, revisa sus permisos y consulta el manual para entender su configuración.
 
-¿Estás creando una comunidad, cooperativa o red de colaboradores? Ayúdanos a dar forma a Daclify. Consulta la hoja de ruta y habla con nosotros en Telegram.
+### Operaciones alojadas — En la hoja de ruta
 
-https://t.me/daclify
+La automatización, las notificaciones y algunas integraciones están en la hoja de ruta como servicios opcionales. Apoyan el trabajo de la DAO respetando sus reglas de gobernanza.
+
+
+## Dale a tu comunidad un espacio para avanzar.
+
+Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.
+
+- [Abrir la app](https://app.daclify.com/)
+- [Leer la documentación](https://app.daclify.com/docs)
+- [Únete a la comunidad](https://t.me/daclify)

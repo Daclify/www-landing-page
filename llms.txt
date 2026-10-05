@@ -1,34 +1,37 @@
 # Daclify
 
-> Daclify V2 is a modular DAO platform in development, focused on membership, governance, funded work and encrypted documents.
+> Daclify is a modular DAO platform for membership, governance, funded work, contributor payments and shared documents.
 
-This public website describes the vision and actual development status. V2 is not a qualified production release. Managed recovery, social/Telegram entry, complete independent deployments and EVM support remain unfinished or capability-gated. Basic governance is intended to be free within defined resource limits; final prices and launch dates are not announced.
+Use the app to explore DAO workspaces and the versioned handbook for accounts, voting, projects, treasury and document guides. The roadmap identifies planned capabilities, including social/Telegram login, managed recovery, independent deployments, hosted services and future chain integrations. Prices and delivery dates for these options are not announced. Encryption protects document content; public blockchain activity may remain visible.
 
-Private V2 repositories are not public documentation. The Telegram community is at https://t.me/daclify.
+## App and documentation
+
+- [Daclify app](https://app.daclify.com/): DAO Hub and community workspaces.
+- [Daclify handbook](https://app.daclify.com/docs): Product guides in the app; check versions and deployment-specific feature availability.
 
 ## English
 
-- [Daclify — Modular DAO governance for real communities](https://daclify.com/): Discover Daclify V2: a modular DAO platform for community decisions, funded work and encrypted documents. Explore the vision and development roadmap. Markdown: https://daclify.com/index.md
-- [DAO platform, accounts and deployment choices | Daclify](https://daclify.com/platform/): Learn how Daclify V2 brings internal accounts, native wallets, DAO-owned contracts and Hub discovery into a modular governance platform. Markdown: https://daclify.com/platform/index.md
-- [Decide, Works and payroll DAO modules | Daclify](https://daclify.com/modules/): Explore Daclify’s modular governance vision: Decide voting, Works milestone funding, payroll, shared documents and planned hosted Operations. Markdown: https://daclify.com/modules/index.md
-- [Encrypted DAO documents and account custody | Daclify](https://daclify.com/privacy/): Understand Daclify’s privacy design: encrypted DAO documents, member key access, user-controlled or managed recovery, and the limits of public blockchains. Markdown: https://daclify.com/privacy/index.md
-- [Daclify V2 development roadmap and release status](https://daclify.com/roadmap/): See what Daclify V2 implements today and what remains: contract verification, accounts, independent deployments, Pinata, EVM and hosted Operations. Markdown: https://daclify.com/roadmap/index.md
+- [Daclify — DAO tools for communities that govern together](https://daclify.com/): Manage DAO members, vote on proposals, fund projects and organize shared documents with Daclify. Explore the app and learn how it works in the handbook. Markdown: https://daclify.com/index.md
+- [DAO membership, accounts and community workspaces | Daclify](https://daclify.com/platform/): Bring members, roles, voting and shared funds together in Daclify. Learn about DAO accounts, the discovery Hub and shared or independent deployments. Markdown: https://daclify.com/platform/index.md
+- [DAO voting, project funding and contributor payments | Daclify](https://daclify.com/modules/): Discover Daclify modules for DAO voting, milestone funding, payroll and shared documents. Choose the tools that fit how your community works. Markdown: https://daclify.com/modules/index.md
+- [Private DAO documents and encrypted shared records | Daclify](https://daclify.com/privacy/): Keep DAO documents organized and protect private content with encryption. Understand member access, recovery keys and the limits of public blockchain records. Markdown: https://daclify.com/privacy/index.md
+- [Daclify roadmap — accounts, DAO deployments and integrations](https://daclify.com/roadmap/): Follow Daclify’s roadmap for social and Telegram login, independent DAO contracts, hosted services and future blockchain integrations. Explore the app and handbook. Markdown: https://daclify.com/roadmap/index.md
 
 ## Español
 
-- [Daclify — Gobernanza DAO modular para comunidades reales](https://daclify.com/es/): Descubre Daclify V2: una plataforma DAO modular para decisiones comunitarias, trabajo financiado y documentos cifrados. Explora la visión y la hoja de ruta. Markdown: https://daclify.com/es/index.md
-- [Plataforma DAO, cuentas y opciones de despliegue | Daclify](https://daclify.com/es/plataforma/): Conoce cómo Daclify V2 conecta cuentas internas, carteras nativas, contratos propios de cada DAO y un Hub de descubrimiento en una plataforma modular. Markdown: https://daclify.com/es/plataforma/index.md
-- [Módulos DAO de Decide, Works y nóminas | Daclify](https://daclify.com/es/modulos/): Explora la gobernanza modular de Daclify: votaciones Decide, financiación por hitos Works, nóminas, documentos y servicios Operations previstos. Markdown: https://daclify.com/es/modulos/index.md
-- [Documentos DAO cifrados y custodia de cuentas | Daclify](https://daclify.com/es/privacidad/): Entiende la privacidad de Daclify: documentos DAO cifrados, acceso mediante claves, recuperación propia o gestionada y límites de las cadenas públicas. Markdown: https://daclify.com/es/privacidad/index.md
-- [Hoja de ruta y estado de desarrollo de Daclify V2](https://daclify.com/es/hoja-de-ruta/): Consulta qué implementa Daclify V2 y qué falta: verificación de contratos, cuentas, despliegues independientes, Pinata, EVM y Operations alojado. Markdown: https://daclify.com/es/hoja-de-ruta/index.md
+- [Daclify — Herramientas DAO para comunidades que deciden juntas](https://daclify.com/es/): Gestiona miembros de tu DAO, vota propuestas, financia proyectos y organiza documentos con Daclify. Explora la app y aprende a usarla con su manual. Markdown: https://daclify.com/es/index.md
+- [Miembros, cuentas y espacios de trabajo DAO | Daclify](https://daclify.com/es/plataforma/): Reúne miembros, roles, votaciones y fondos compartidos en Daclify. Conoce las cuentas DAO, el Hub y las opciones de despliegue compartido o independiente. Markdown: https://daclify.com/es/plataforma/index.md
+- [Votaciones DAO, proyectos y pagos a colaboradores | Daclify](https://daclify.com/es/modulos/): Descubre los módulos de Daclify para votaciones, financiación por hitos, pagos y documentos compartidos. Elige las herramientas que necesita tu comunidad. Markdown: https://daclify.com/es/modulos/index.md
+- [Documentos DAO privados y registros cifrados | Daclify](https://daclify.com/es/privacidad/): Organiza documentos de tu DAO y protege el contenido privado mediante cifrado. Comprende el acceso de miembros, la recuperación y los límites de la blockchain pública. Markdown: https://daclify.com/es/privacidad/index.md
+- [Hoja de ruta de Daclify — cuentas, DAOs e integraciones](https://daclify.com/es/hoja-de-ruta/): Conoce la hoja de ruta de Daclify: acceso social y Telegram, contratos DAO propios, servicios alojados y futuras conexiones blockchain. Explora la app y su manual. Markdown: https://daclify.com/es/hoja-de-ruta/index.md
 
 ## Polski
 
-- [Daclify — Modułowa platforma DAO dla społeczności](https://daclify.com/pl/): Poznaj Daclify V2: modułową platformę DAO do wspólnych decyzji, finansowania pracy i szyfrowanych dokumentów. Sprawdź wizję i plan rozwoju. Markdown: https://daclify.com/pl/index.md
-- [Platforma DAO, konta i warianty wdrożenia | Daclify](https://daclify.com/pl/platforma/): Sprawdź, jak Daclify V2 łączy konta wewnętrzne, portfele natywne, własne kontrakty DAO i Hub odkrywania w modułowej platformie zarządzania. Markdown: https://daclify.com/pl/platforma/index.md
-- [Moduły DAO Decide, Works i wypłat | Daclify](https://daclify.com/pl/moduly/): Poznaj moduły Daclify: głosowania Decide, finansowanie etapów Works, wypłaty, wspólne dokumenty i planowane hostowane usługi Operations. Markdown: https://daclify.com/pl/moduly/index.md
-- [Szyfrowane dokumenty DAO i kontrola nad kluczami | Daclify](https://daclify.com/pl/prywatnosc/): Poznaj prywatność Daclify: szyfrowane dokumenty DAO, dostęp przez klucze, własne lub zarządzane odzyskiwanie i ograniczenia publicznego blockchaina. Markdown: https://daclify.com/pl/prywatnosc/index.md
-- [Plan rozwoju i status Daclify V2](https://daclify.com/pl/plan-rozwoju/): Sprawdź, co działa w Daclify V2 i co pozostało: weryfikacja kontraktów, konta, niezależne wdrożenia, Pinata, EVM i hostowane Operations. Markdown: https://daclify.com/pl/plan-rozwoju/index.md
+- [Daclify — Narzędzia DAO dla społeczności, które decydują razem](https://daclify.com/pl/): Zarządzaj członkami DAO, głosuj nad propozycjami, finansuj projekty i porządkuj dokumenty z Daclify. Poznaj aplikację i dowiedz się więcej w podręczniku. Markdown: https://daclify.com/pl/index.md
+- [Członkowie, konta i wspólna przestrzeń DAO | Daclify](https://daclify.com/pl/platforma/): Połącz członków, role, głosowania i wspólne środki w Daclify. Poznaj konta DAO, Hub oraz możliwości wspólnego i niezależnego wdrożenia kontraktów. Markdown: https://daclify.com/pl/platforma/index.md
+- [Głosowania DAO, finansowanie projektów i płatności | Daclify](https://daclify.com/pl/moduly/): Poznaj moduły Daclify do głosowań DAO, finansowania etapów, płatności i wspólnych dokumentów. Wybierz narzędzia pasujące do pracy Twojej społeczności. Markdown: https://daclify.com/pl/moduly/index.md
+- [Prywatne dokumenty DAO i szyfrowane zapisy | Daclify](https://daclify.com/pl/prywatnosc/): Porządkuj dokumenty DAO i chroń prywatną treść szyfrowaniem. Poznaj zasady dostępu członków, odzyskiwania kluczy i ograniczenia publicznego blockchaina. Markdown: https://daclify.com/pl/prywatnosc/index.md
+- [Plan rozwoju Daclify — konta, wdrożenia DAO i integracje](https://daclify.com/pl/plan-rozwoju/): Poznaj plany Daclify: logowanie społecznościowe i Telegram, własne kontrakty DAO, usługi hostowane i przyszłe integracje blockchain. Otwórz aplikację i podręcznik. Markdown: https://daclify.com/pl/plan-rozwoju/index.md
 
 ## Optional
 

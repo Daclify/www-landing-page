@@ -1,6 +1,8 @@
 # Daclify public website
 
-An informative, static website for Daclify V2 in English, Spanish and Polish. The amber/espresso identity follows the V2 product foundations. Product copy distinguishes development implementations, planned capabilities and privacy limits; it does not promise a production launch, final pricing or unsupported AI features.
+An informative, static product website for Daclify in English, Spanish and Polish. The amber/espresso identity follows the V2 product foundations. Copy explains membership, voting, funded work and shared documents in plain language, with direct app and handbook actions. Planned capabilities remain on the roadmap; prices, delivery dates and unsupported AI features are not invented.
+
+The app destination is `https://app.daclify.com/`; the handbook is `https://app.daclify.com/docs`, matching the frontend's `/docs/:topic?` route. Both URLs are centralized in `src/routes.ts` and appear in every page's main actions, footer and Markdown export. The handbook is also in desktop/mobile navigation and `llms.txt`. These are the user's planned deployment destinations; this website change does not deploy or qualify the app. Confirm the app/handbook host, HTTPS and SPA route fallback before publishing the launch-facing website.
 
 ## Work locally
 
@@ -18,7 +20,7 @@ The preview is at `http://127.0.0.1:4179`. It serves the generated `dist/` direc
 
 - `src/content/en.ts`, `es.ts`, `pl.ts`: complete localized copy; do not edit generated HTML or Markdown.
 - `src/types.ts`: shared typed content contract.
-- `src/routes.ts`: canonical origin, language/topic paths and community links.
+- `src/routes.ts`: canonical origin, language/topic paths, app, handbook and community links.
 - `src/render.ts`: shared accessible HTML, metadata, JSON-LD and machine-readable text.
 - `assets/site.css`: visual system and responsive behavior.
 - `src/brand.ts` and `assets/brand.css`: established frontend `d.` tile, wordmark and brand tagline.

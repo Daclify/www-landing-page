@@ -10,407 +10,408 @@ export const es: SiteCopy = {
   skip: 'Saltar al contenido',
   menu: 'Menú',
   language: 'Elegir idioma',
-  status: {
-    development: 'En desarrollo',
-    planned: 'Previsto',
-    principle: 'Principio de diseño',
-  },
-  statusNote:
-    'Daclify V2 está en desarrollo. El lanzamiento público requiere verificar los contratos y revisar la versión.',
-  explore: 'Explorar la plataforma',
-  community: 'Unirse a la conversación',
-  more: 'Explorar',
-  back: 'Volver al inicio',
+  status: { planned: 'En la hoja de ruta' },
+  productNote: 'Tus reglas. Tus miembros. Un espacio compartido.',
+  app: 'Abrir la app',
+  docs: 'Leer la documentación',
+  docsNav: 'Documentación',
+  benefits: ['MIEMBROS', 'VOTACIONES', 'PROYECTOS', 'TESORERÍA', 'DOCUMENTOS'],
+  community: 'Únete a la comunidad',
+  more: 'Más información',
   footer: 'Herramientas para comunidades que deciden juntas.',
   footerNote:
-    'Una nueva etapa para Daclify. Personas, decisiones compartidas y trabajo con responsabilidades claras.',
-  ctaTitle: 'La próxima etapa empieza con una conversación.',
+    'Miembros, decisiones, proyectos financiados y conocimiento compartido. Todo en un mismo espacio.',
+  ctaTitle: 'Dale a tu comunidad un espacio para avanzar.',
   ctaText:
-    '¿Estás creando una comunidad, cooperativa o red de colaboradores? Ayúdanos a dar forma a Daclify. Consulta la hoja de ruta y habla con nosotros en Telegram.',
+    'Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.',
   questions: 'Buenas preguntas. Respuestas claras.',
   faq: [
     {
       question: '¿Qué es Daclify?',
       answer:
-        'Daclify es una plataforma modular para DAO que se está reconstruyendo para gestionar miembros, tomar decisiones, financiar trabajo y conservar documentos compartidos. Una DAO es una organización cuyas reglas y decisiones pueden registrarse y ejecutarse mediante contratos inteligentes.',
+        'Daclify es una plataforma para gestionar una DAO: una comunidad que organiza sus propios miembros, decisiones y fondos compartidos. Reúne votaciones, financiación de proyectos, pagos a colaboradores y documentos en un mismo espacio, con reglas acordadas que quedan registradas en contratos inteligentes.',
     },
     {
-      question: '¿Cada miembro necesita una cuenta blockchain?',
+      question: '¿Para quién está pensado?',
       answer:
-        'El diseño de V2 contempla identidades internas en el contrato, para participar sin crear una cuenta nativa propia. Vincular una cartera nativa, iniciar sesión con un proveedor social o entrar mediante Telegram son vías adicionales previstas; sus flujos de producción aún no están listos.',
+        'Para proyectos comunitarios, cooperativas, grupos de colaboradores y organizaciones que toman decisiones en conjunto. Daclify permite dar voz a los miembros, organizar un presupuesto común y seguir el trabajo que ese presupuesto financia.',
     },
     {
-      question: '¿Los créditos de gobernanza son dinero?',
+      question: '¿Cada miembro necesita una cuenta en blockchain?',
       answer:
-        'No. Los créditos internos representan el poder de voto definido por cada DAO. Son independientes de los activos de tesorería y no se pueden retirar como dinero. La gobernanza con tokens nativos requiere una política explícita y compatible de depósito o ponderación.',
+        'No. Las cuentas de Daclify permiten participar sin crear una cuenta propia en la blockchain nativa. La DAO sigue utilizando contratos inteligentes para registrar sus reglas y acciones. Las opciones adicionales de acceso con monedero, redes sociales y Telegram están en la hoja de ruta.',
     },
     {
-      question: '¿Puede una DAO mantener privada su información?',
+      question: '¿Qué son los créditos de gobernanza?',
       answer:
-        'Los documentos protegidos pueden cifrarse antes de publicarlos y las claves entregarse a los miembros autorizados. El cifrado protege el contenido, no los metadatos públicos de la cadena. Un miembro puede conservar información ya recibida; la recuperación gestionada permite al servicio correspondiente acceder a las claves.',
+        'Son unidades de voto definidas por tu DAO. Sirven para determinar cuánto peso tiene el voto de cada miembro. Son independientes de los activos de tesorería y no se pueden retirar como dinero.',
     },
     {
-      question: '¿Daclify será gratuito?',
+      question: '¿Podemos mantener documentos privados?',
       answer:
-        'El objetivo es mantener una gobernanza básica útil y gratuita, con límites de recursos definidos. La automatización alojada, las notificaciones y otros servicios pueden ser de pago. Los precios y límites no están cerrados. El fin de una suscripción no debe dar al proveedor el control de los fondos ni de las obligaciones aceptadas.',
+        'Los documentos protegidos se cifran antes de almacenarse. Los miembros autorizados necesitan las claves adecuadas para leerlos. La actividad en blockchain puede seguir siendo pública y un miembro puede conservar información que ya haya leído. La guía de privacidad explica estos límites.',
     },
     {
-      question: '¿Podemos usar V2 con fondos reales?',
+      question: '¿Cuánto cuesta Daclify?',
       answer:
-        'V2 es una implementación en desarrollo, no una versión validada para producción. Faltan verificaciones de contratos, integraciones de cuentas, despliegues independientes y procedimientos operativos. La hoja de ruta distingue los flujos implementados en desarrollo de las capacidades listas para lanzar.',
+        'El objetivo es ofrecer una base útil de gobernanza gratuita, con módulos y servicios alojados de pago opcionales. Los precios y límites de recursos se publicarán antes de ofrecer esos servicios. La hoja de ruta describe las opciones previstas.',
+    },
+    {
+      question: '¿Por dónde empezamos?',
+      answer:
+        'Abre la app para explorar el Hub de DAOs. Consulta el manual para aprender sobre cuentas, creación de DAOs, votaciones, proyectos financiados y documentos. La documentación de la app indica las funciones disponibles y las instrucciones de cada despliegue.',
     },
   ],
   preview: {
-    label: 'Espacio de trabajo ilustrativo',
-    name: 'La comunidad del barrio',
-    caption: 'Un propósito compartido. Un lugar para organizarse.',
+    label: 'Comunidad de ejemplo',
+    name: 'La Comunidad del Barrio',
+    caption: 'Un propósito común. Un espacio para organizarse.',
     tabs: ['Decisiones', 'Trabajo', 'Documentos'],
-    rows: [
-      'Propuesta de huerto comunitario',
-      'Hito del taller',
-      'Manual compartido del proyecto',
-    ],
+    rows: ['Propuesta de huerto comunitario', 'Entrega del taller', 'Manual del proyecto'],
     tags: ['Votación', 'En revisión', 'Miembros'],
-    flow: ['Proponer', 'Decidir', 'Cumplir'],
+    flow: ['Proponer', 'Decidir', 'Entregar'],
     note: 'Una comunidad. Herramientas conectadas. Responsabilidades claras.',
   },
   pages: {
     home: {
-      title: 'Daclify — Gobernanza DAO modular para comunidades reales',
+      title: 'Daclify — Herramientas DAO para comunidades que deciden juntas',
       description:
-        'Descubre Daclify V2: una plataforma DAO modular para decisiones comunitarias, trabajo financiado y documentos cifrados. Explora la visión y la hoja de ruta.',
-      eyebrow: 'La próxima etapa de la gobernanza comunitaria',
+        'Gestiona miembros de tu DAO, vota propuestas, financia proyectos y organiza documentos con Daclify. Explora la app y aprende a usarla con su manual.',
+      eyebrow: 'Un espacio compartido para tu DAO',
       heading: 'Tu comunidad.\nTus decisiones.\nTu futuro.',
-      lead: 'Conecta personas, decisiones y trabajo que importa. Daclify está creando una plataforma DAO modular donde cada comunidad elige sus reglas, sus herramientas y su camino.',
+      lead: 'Organiza tu comunidad en un solo lugar. Gestiona miembros, vota propuestas, financia proyectos y ordena documentos, con reglas que todos puedan consultar y entender.',
       sections: [
         {
-          title: 'Más que votar. Una forma de trabajar juntos.',
-          text: 'Una comunidad necesita algo más que un chat y una dirección de tesorería. Necesita pasar de una idea a una decisión compartida, una contribución financiada y un registro duradero.',
+          title: 'De una buena idea a algo que podéis construir.',
+          text: 'Dale a tu comunidad un proceso claro para decidir y actuar. Conecta la propuesta, el presupuesto y el trabajo para que todos puedan seguir el siguiente paso.',
           cards: [
             {
-              title: 'Un lugar para cada persona',
-              text: 'Los miembros y roles definen quién puede participar. Las identidades internas buscan facilitar la incorporación sin exigir una cuenta blockchain nativa.',
+              title: 'Reúne a las personas',
+              text: 'Asigna una cuenta a los miembros, define sus roles y facilita la participación. Pueden unirse sin crear una cuenta propia en la blockchain nativa.',
               link: 'platform',
             },
             {
-              title: 'Decisiones que importan',
-              text: 'Elige una política de voto, registra el resultado y conecta las decisiones aprobadas con acciones delimitadas. La gobernanza debe ser comprensible para quienes la usan.',
+              title: 'Decidid juntos',
+              text: 'Somete las ideas a votación. Define las reglas, consulta los resultados y conserva un registro compartido de las decisiones.',
               link: 'modules',
             },
             {
-              title: 'Del acuerdo al trabajo',
-              text: 'Financia hitos, revisa entregables y sigue los pagos aprobados. Conserva la responsabilidad y el progreso en lugar de perderlos en una conversación.',
+              title: 'Financia trabajo con propósito',
+              text: 'Vincula el presupuesto a proyectos e hitos. Revisa las entregas de los colaboradores y sigue los pagos aprobados por la DAO.',
               link: 'modules',
             },
           ],
         },
         {
-          title: 'Empieza por tu propósito. Elige tus herramientas.',
-          text: 'La implementación de V2 conecta un núcleo compartido con módulos propios y especializados. El objetivo es ofrecer configuraciones útiles, opciones claras y espacio para crecer.',
+          title: 'Elige las herramientas que necesita tu comunidad.',
+          text: 'Empieza con módulos específicos para decisiones, financiación de proyectos y pagos periódicos a colaboradores. Cada uno tiene una función clara para acompañar el crecimiento de tu comunidad.',
           cards: [
             {
               title: 'Decide',
-              text: 'Propuestas, votaciones y resultados duraderos. Los flujos de desarrollo incluyen crear votaciones, emitir votos y finalizar resultados.',
-              status: 'development',
+              text: 'Crea votaciones, permite votar a los miembros autorizados y registra el resultado final. Haz que las decisiones sean fáciles de seguir.',
               link: 'modules',
             },
             {
               title: 'Works',
-              text: 'Financiación por hitos con entrega, revisión, cambios y aceptación. La aprobación crea una obligación registrada, no una promesa sin seguimiento.',
-              status: 'development',
+              text: 'Propón un proyecto, acuerda sus hitos y revisa las entregas antes de aprobar el pago. Un proceso común para colaboradores y revisores.',
               link: 'modules',
             },
             {
               title: 'Payroll',
-              text: 'Calendarios financiados y obligaciones de pago aprobadas. Los flujos actuales conservan pagos aceptados aunque se retire el módulo.',
-              status: 'development',
+              text: 'Organiza pagos a colaboradores con financiación y duración definidas. Mantén el calendario y los compromisos aprobados junto a la tesorería.',
               link: 'modules',
             },
           ],
         },
         {
-          title: 'Una visión. Dos formas de hacerla tuya.',
-          text: 'Usa un despliegue compartido u opera tus propios contratos. Ambos modos forman parte del diseño de V2; el flujo completo de despliegue independiente sigue en construcción.',
+          title: 'Un hogar para tu DAO. Un Hub para tu comunidad.',
+          text: 'Descubre DAOs a través del Hub y abre el espacio de la comunidad en la que quieras participar. Cada DAO tiene sus propios miembros, reglas y registros.',
           cards: [
             {
-              title: 'Un espacio compartido',
-              text: 'Varias DAO pueden usar los mismos contratos centrales y mantener separados sus miembros, configuración y registros de tesorería.',
-              status: 'development',
+              title: 'Empieza con contratos compartidos',
+              text: 'Usa una infraestructura común manteniendo separados los miembros, la configuración y los registros de tesorería de tu DAO. Dedica tu tiempo a organizar la comunidad.',
               link: 'platform',
             },
             {
-              title: 'Tus propios cimientos',
-              text: 'Una DAO independiente controla su despliegue y se conecta al Hub para aparecer en el directorio. También debe funcionar directamente sin el Hub.',
-              status: 'planned',
-              link: 'platform',
-            },
-          ],
-        },
-        {
-          title: 'Conocimiento compartido. Privacidad consciente.',
-          text: 'Conserva pequeños registros descriptivos como JSON acotado y documentos mayores mediante referencias IPFS. Cifra el contenido protegido antes de publicarlo y decide expresamente quién conserva las claves.',
-          bullets: [
-            'Las cuentas con claves propias y la recuperación gestionada son modos distintos y claramente identificados.',
-            'El contenido privado no oculta miembros, votos ni transferencias en una cadena pública.',
-            'Retirar a un miembro puede limitar su acceso futuro; no borra la información que ya recibió.',
-          ],
-        },
-      ],
-    },
-    platform: {
-      title: 'Plataforma DAO, cuentas y opciones de despliegue | Daclify',
-      description:
-        'Conoce cómo Daclify V2 conecta cuentas internas, carteras nativas, contratos propios de cada DAO y un Hub de descubrimiento en una plataforma modular.',
-      eyebrow: 'La plataforma',
-      heading: 'Una organización a tu medida.',
-      lead: 'Cada comunidad necesita sus propias reglas. V2 se diseña alrededor de un núcleo estable de identidad, autoridad y tesorería, con módulos especializados al servicio de cada organización.',
-      sections: [
-        {
-          title: 'Primero las personas. Cuentas que encajan.',
-          text: 'Una identidad interna vive en el contrato inteligente y no exige al miembro tener una cuenta nativa. Los miembros y roles pertenecen a la DAO; vincular otra credencial no debe crear otro voto.',
-          cards: [
-            {
-              title: 'Claves bajo tu control',
-              text: 'Las claves de firma y cifrado son distintas y las controla el usuario. Los flujos de desarrollo incluyen una bóveda local cifrada y credenciales de recuperación. El inicio de sesión social por sí solo no reconstruye esas claves.',
-              status: 'development',
-            },
-            {
-              title: 'Recuperación gestionada',
-              text: 'El modo previsto permite asistencia del servicio y explica la autoridad del operador. Se está evaluando un servicio de claves de código abierto; la recuperación de producción aún no está validada.',
-              status: 'planned',
-            },
-            {
-              title: 'Más formas de participar',
-              text: 'Se prevén vinculación de cuentas Telos nativas, acceso social y Telegram, e identidades Telos EVM según capacidades verificadas. Todas deben conservar los mismos miembros y permisos.',
-              status: 'planned',
-            },
-          ],
-        },
-        {
-          title: 'Contratos compartidos o despliegue propio.',
-          text: 'El entorno compartido mantiene el estado específico de cada DAO en contratos comunes. Un despliegue independiente usa las mismas interfaces públicas y las políticas de actualización y tesorería de la DAO.',
-          cards: [
-            {
-              title: 'Despliegue compartido',
-              text: 'La implementación permite crear DAO, roles, créditos y registros de tesorería en un entorno compartido. El aislamiento completo y la verificación de los contratos nativos siguen siendo requisitos de lanzamiento.',
-              status: 'development',
-            },
-            {
-              title: 'Despliegue independiente',
-              text: 'Se prevén contratos propios, conexiones directas y acceso a varios entornos. La DAO debe seguir funcionando cuando el Hub o los servicios alojados no estén disponibles.',
-              status: 'planned',
-            },
-          ],
-        },
-        {
-          title: 'El Hub conecta. No gobierna.',
-          text: 'El Hub de descubrimiento busca listar DAO, identificar sus despliegues y describir sus capacidades. Aparecer en el directorio no debe dar a la plataforma control sobre votos, tesorería o actualizaciones.',
-          bullets: [
-            'La autoridad procede de los roles y políticas explícitos de cada DAO.',
-            'Los permisos de los módulos son delimitados y revisables.',
-            'Interfaces públicas, versiones y documentación avanzan juntas.',
-          ],
-        },
-        {
-          title: 'Una base para la gobernanza responsable.',
-          text: 'El núcleo usa contratos Antelope C++. La aplicación y los servicios usan TypeScript estricto, con una interfaz Vue. Las decisiones y registros financieros autoritativos pertenecen a los contratos; una pantalla no puede autorizar un pago.',
-          bullets: [
-            'Los créditos de gobernanza de cada DAO son independientes del dinero.',
-            'La gobernanza con tokens nativos necesita una política compatible de depósito o ponderación.',
-            'El soporte de otras cadenas se añade mediante adaptadores delimitados y verificados.',
-          ],
-        },
-      ],
-    },
-    modules: {
-      title: 'Módulos DAO de Decide, Works y nóminas | Daclify',
-      description:
-        'Explora la gobernanza modular de Daclify: votaciones Decide, financiación por hitos Works, nóminas, documentos y servicios Operations previstos.',
-      eyebrow: 'Los módulos',
-      heading: 'Menos carga. Más progreso compartido.',
-      lead: 'Elige las capacidades que necesita tu organización. Cada módulo tiene un cometido concreto, configuración clara y autoridad explícita. Los módulos actuales son implementaciones de desarrollo, no servicios listos para producción.',
-      sections: [
-        {
-          title: 'Decide — un camino claro hacia el acuerdo.',
-          text: 'Decide adapta patrones útiles de la gobernanza de Telos al modelo de identidad interna de Daclify. Sus flujos incluyen votaciones, emisión de votos y finalización; faltan elecciones más completas, comités y ejecución de propuestas.',
-          bullets: [
-            'Define quién participa y cómo se calcula el poder de voto.',
-            'Haz comprensibles el quórum, la aprobación y los plazos.',
-            'Conserva un resultado duradero; finalizar y ejecutar son responsabilidades distintas.',
-          ],
-        },
-        {
-          title: 'Works — financia resultados, no promesas vagas.',
-          text: 'Works conecta la financiación con informes de hitos y revisión autorizada. Los flujos actuales cubren propuestas, reservas, entregas, cambios solicitados, aceptación y cancelación. Faltan políticas personalizadas persistentes y reglas completas de disputas y plazos.',
-          bullets: [
-            'Fija los importes aprobados y compromisos documentales.',
-            'Un informe por sí solo no autoriza el pago.',
-            'Las obligaciones aceptadas y pendientes sobreviven a la retirada del módulo.',
-          ],
-        },
-        {
-          title: 'Payroll — compromisos previsibles.',
-          text: 'El módulo de nóminas soporta calendarios financiados de plazo fijo y obligaciones registradas. Los pagos deben ser idempotentes, con políticas explícitas ante retrasos, recuperación de periodos, cancelación y fondos insuficientes.',
-          bullets: [
-            'Separa calendarios futuros de obligaciones aprobadas.',
-            'Reintentar nunca debe duplicar un pago.',
-            'Conserva la ejecución manual cuando no haya automatización.',
-          ],
-        },
-        {
-          title: 'Conocimiento y Operations.',
-          text: 'Los registros JSON versionados y archivos públicos o privados conectan documentos, decisiones y trabajo. Operations prevé programación delimitada, notificaciones e integraciones seleccionadas sin otorgar autoridad de gobernanza.',
-          cards: [
-            {
-              title: 'Documentos',
-              text: 'Los flujos incluyen registros versionados, cifrado en el cliente y verificación de cargas y descargas. La disponibilidad real de Pinata y las operaciones de retención aún deben validarse.',
-              status: 'development',
-              link: 'privacy',
-            },
-            {
-              title: 'Operations alojado',
-              text: 'La ejecución programada, las notificaciones de Telegram, los webhooks y los recursos se prevén como paquete opcional de pago. El precio final aún no se ha elegido.',
+              title: 'Gestiona tu propio despliegue',
+              text: 'Los contratos propios y las conexiones directas están en la hoja de ruta para las comunidades que quieran gestionar su infraestructura y conectarse al mismo Hub.',
               status: 'planned',
               link: 'roadmap',
             },
           ],
         },
         {
-          title: 'Gobernanza básica útil. Servicios opcionales.',
-          text: 'La dirección comercial es una base gratuita viable con límites medidos y servicios de pago para comodidad y capacidad operativa. Comprar no debe otorgar votos; el vencimiento no debe retener claves, bloquear retiradas seguras ni borrar trabajo aceptado.',
+          title: 'Mantén el conocimiento cerca del trabajo.',
+          text: 'Guarda decisiones, notas y documentos junto a la actividad que respaldan. Usa registros públicos cuando importe la transparencia y documentos cifrados cuando el contenido necesite una audiencia más reducida.',
           bullets: [
-            'Elige módulos con configuraciones comprensibles.',
-            'Revisa la autoridad solicitada antes de activar un módulo.',
-            'Mantén opciones compatibles de despliegue independiente y alojamiento propio.',
+            'Conserva un historial de versiones para seguir los cambios.',
+            'Usa registros compactos para la información cotidiana y referencias IPFS para archivos grandes.',
+            'Comprende quién puede leer el contenido protegido y quién conserva las claves de recuperación.',
           ],
         },
       ],
     },
-    privacy: {
-      title: 'Documentos DAO cifrados y custodia de cuentas | Daclify',
+    platform: {
+      title: 'Miembros, cuentas y espacios de trabajo DAO | Daclify',
       description:
-        'Entiende la privacidad de Daclify: documentos DAO cifrados, acceso mediante claves, recuperación propia o gestionada y límites de las cadenas públicas.',
-      eyebrow: 'Privacidad con decisiones informadas',
-      heading: 'El conocimiento compartido, en las manos adecuadas.',
-      lead: 'Una DAO puede necesitar una tesorería pública y documentos de trabajo privados. Daclify busca cifrar el contenido protegido antes de publicarlo y convertir la propiedad de las claves en una decisión explícita.',
+        'Reúne miembros, roles, votaciones y fondos compartidos en Daclify. Conoce las cuentas DAO, el Hub y las opciones de despliegue compartido o independiente.',
+      eyebrow: 'La plataforma',
+      heading: 'Un espacio claro para organizarse juntos.',
+      lead: 'Daclify reúne personas, decisiones, fondos y conocimiento en un espacio compartido para tu DAO. La comunidad define las reglas y cada miembro puede entender su papel y sus responsabilidades.',
       sections: [
         {
-          title: 'Cifra antes de publicar.',
-          text: 'Los pequeños registros descriptivos pueden usar JSON acotado; los contenidos grandes usan CID de IPFS. Títulos, nombres de archivo y contenido protegido deben cifrarse en el cliente antes de llegar al proveedor o a la cadena pública. Los enlaces restringidos del proveedor no sustituyen al cifrado de miembros.',
-          bullets: [
-            'Las claves de firma y de cifrado cumplen funciones separadas.',
-            'Los formatos versionados y compromisos de contenido permiten verificar integridad.',
-            'Las concesiones a miembros y las épocas de claves definen el acceso.',
-          ],
-        },
-        {
-          title: 'Elige quién puede recuperar las claves.',
-          text: 'Recuperar una cuenta y proteger la confidencialidad son cuestiones relacionadas, pero distintas. La política de admisión debe corresponder al tipo de custodia permitido. La recuperación gestionada completa y el ciclo de membresía siguen previstos.',
+          title: 'Facilita la participación.',
+          text: 'Las cuentas de Daclify identifican a los miembros dentro del contrato inteligente. No necesitan una cuenta independiente en la blockchain nativa. Los roles definen quién puede votar, revisar trabajo o gestionar la configuración.',
           cards: [
             {
-              title: 'Claves de contenido propias',
-              text: 'El usuario conserva las claves de descifrado y la credencial de recuperación. Un acceso social no restaura por sí solo una bóveda perdida. Una DAO puede exigir este modo para evitar la custodia habitual del servicio.',
-              status: 'principle',
+              title: 'Una cuenta para cada miembro',
+              text: 'Usa una identidad en todas las herramientas de tu DAO. La pertenencia y los permisos siguen a la persona, sin recrearlos para votaciones, proyectos y documentos.',
             },
             {
-              title: 'Recuperación gestionada permitida',
-              text: 'La recuperación asistida permite al operador acceder a claves recuperables. Esa confianza debe explicarse y acompañarse de políticas comprobadas de recuperación y salida, no de una promesa de exclusión del operador.',
+              title: 'Claves bajo tu control',
+              text: 'Las cuentas controladas por el usuario utilizan una bóveda local cifrada y credenciales de recuperación. Guarda la copia de seguridad: iniciar sesión en otro dispositivo no sustituye una credencial perdida.',
+            },
+            {
+              title: 'Más formas de acceder',
+              text: 'La vinculación de monederos nativos, el acceso social, Telegram y la recuperación gestionada están en la hoja de ruta. Cada opción tendrá permisos y responsabilidades de recuperación explícitos.',
               status: 'planned',
             },
           ],
         },
         {
-          title: 'Los cambios de miembros necesitan una política.',
-          text: 'La DAO elige si los nuevos miembros reciben acceso histórico o solo futuro. Retirar a un miembro exige rotar el acceso futuro y gestionar las claves ya concedidas. Faltan flujos completos de admisión, rotación y cambio de custodia.',
-          bullets: [
-            'Un titular autorizado debe conceder acceso al contenido protegido.',
-            'Un servidor sin acceso a las claves no puede crear claves de descifrado que no posee.',
-            'Los antiguos miembros pueden conservar claves históricas y contenido ya recibido.',
+          title: 'Tu DAO conserva su propia identidad.',
+          text: 'Los contratos compartidos dan a cada DAO sus propios miembros, configuración y registros de tesorería. El Hub permite descubrir y abrir esos espacios.',
+          cards: [
+            {
+              title: 'Infraestructura compartida',
+              text: 'Crea una DAO dentro de un despliegue compartido y configura las herramientas que necesita tu comunidad. Conserva los registros de la organización en un mismo espacio.',
+            },
+            {
+              title: 'Infraestructura independiente',
+              text: 'La hoja de ruta incluye contratos propios conectados al Hub. Las comunidades que elijan esta opción asumirán también el despliegue, las actualizaciones y la operación continua.',
+              status: 'planned',
+            },
           ],
         },
         {
-          title: 'Lo que el cifrado no oculta.',
-          text: 'Las referencias de miembros, actividad de transacciones, registros de voto e importes pueden seguir siendo públicos. Cifrar un documento no hace anónima a una DAO ni convierte la ejecución pública en una votación secreta.',
+          title: 'El poder de voto y el dinero cumplen funciones distintas.',
+          text: 'Los créditos de gobernanza ayudan a determinar quién tiene voz en la DAO. Los activos de tesorería pagan el trabajo que apoya la comunidad. Separarlos permite explicar las reglas con claridad.',
           bullets: [
-            'Un miembro puede copiar o compartir el contenido que está autorizado a leer.',
-            'Un dispositivo comprometido o una actualización maliciosa puede exponer claves desbloqueadas.',
-            'Eliminar un pin no borra la historia de la cadena ni todas las copias ajenas.',
+            'Define el poder de voto mediante la política de gobernanza de tu DAO.',
+            'Usa activos blockchain compatibles para financiar la tesorería y realizar pagos.',
+            'Consulta las guías de la app para conocer los tokens y las políticas de voto compatibles.',
           ],
         },
         {
-          title: 'Registros duraderos y disponibilidad clara.',
-          text: 'Los flujos actuales prueban cargas cifradas, integridad, recuperación tras respuestas perdidas e historial con un proveedor local identificado. Faltan verificación real de Pinata, exportación, reanclaje, retención y recuperación completa antes del lanzamiento.',
+          title: 'Aprende donde trabajas.',
+          text: 'La app incluye un manual con buscador para cuentas, configuración de DAOs, votaciones, proyectos, pagos y documentos. Las guías muestran su versión para comprobar que las instrucciones corresponden al despliegue conectado.',
           bullets: [
-            'La integridad y la disponibilidad son requisitos distintos.',
-            'Las búsquedas y notificaciones privadas deben respetar la misma política.',
-            'La exportación y la salida de custodia forman parte del producto previsto.',
+            'Consulta el manual antes de usar una función.',
+            'Revisa los permisos de un módulo antes de activarlo.',
+            'Conserva de forma segura las credenciales de firma y recuperación de documentos.',
+          ],
+        },
+      ],
+    },
+    modules: {
+      title: 'Votaciones DAO, proyectos y pagos a colaboradores | Daclify',
+      description:
+        'Descubre los módulos de Daclify para votaciones, financiación por hitos, pagos y documentos compartidos. Elige las herramientas que necesita tu comunidad.',
+      eyebrow: 'Los módulos',
+      heading: 'Herramientas para convertir decisiones en avances.',
+      lead: 'Cada comunidad trabaja de una forma distinta. Elige herramientas específicas para votar, financiar proyectos y pagar a colaboradores, con cuentas y registros compartidos en toda la DAO.',
+      sections: [
+        {
+          title: 'Decide — da una voz clara a los miembros.',
+          text: 'Recoge votos y registra un resultado. Define quién puede participar, cómo se calcula el peso del voto y cuándo termina la votación, para que los miembros conozcan las reglas desde el principio.',
+          bullets: [
+            'Crea una votación con una pregunta y opciones claras.',
+            'Permite votar a los miembros autorizados desde el espacio de la DAO.',
+            'Finaliza la votación y conserva el resultado como registro compartido.',
+          ],
+        },
+        {
+          title: 'Works — conecta financiación y entregas.',
+          text: 'Convierte una propuesta en hitos acordados. Los colaboradores presentan su trabajo y los revisores autorizados pueden solicitar cambios o aceptarlo. Sigue la financiación y el pago aprobado junto al proyecto.',
+          bullets: [
+            'Acuerda el alcance, el importe y los hitos.',
+            'Mantén entregas, comentarios y aprobaciones en un mismo proceso.',
+            'Consulta qué compromisos se han aceptado y cuáles siguen pendientes.',
+          ],
+        },
+        {
+          title: 'Payroll — organiza colaboraciones periódicas.',
+          text: 'Crea calendarios financiados y de duración definida para quienes colaboran con tu DAO durante un periodo. Haz que los compromisos de pago sean comprensibles para la organización y los colaboradores.',
+          bullets: [
+            'Define el destinatario, el importe y el calendario de pagos.',
+            'Sigue los pagos vencidos y las obligaciones aprobadas.',
+            'Conecta los registros de tesorería con los compromisos de los colaboradores.',
+          ],
+        },
+        {
+          title: 'Documentos — recuerda el motivo de una decisión.',
+          text: 'Mantén propuestas, notas, acuerdos y archivos cerca de las decisiones que respaldan. El historial de versiones ayuda a seguir los cambios y los archivos cifrados protegen el contenido de acceso limitado.',
+          cards: [
+            {
+              title: 'Registros compartidos',
+              text: 'Usa registros JSON compactos para la información cotidiana y referencias IPFS para archivos grandes. Conserva versiones anteriores para consultar el contexto.',
+            },
+            {
+              title: 'Documentos protegidos',
+              text: 'Cifra el contenido privado antes de almacenarlo y proporciona las claves a los miembros autorizados. Aprende qué protege el cifrado y qué sigue siendo público.',
+              link: 'privacy',
+            },
+          ],
+        },
+        {
+          title: 'Empieza con lo esencial. Añade lo que ayude.',
+          text: 'El objetivo es mantener gratuita una base útil de gobernanza. Se prevén módulos y servicios alojados de pago opcionales para comunidades que necesiten más capacidad o comodidad. Los precios y límites se publicarán antes de ofrecerlos.',
+          cards: [
+            {
+              title: 'Elige tu forma de trabajar',
+              text: 'Activa las herramientas adecuadas para tu comunidad, revisa sus permisos y consulta el manual para entender su configuración.',
+            },
+            {
+              title: 'Operaciones alojadas',
+              text: 'La automatización, las notificaciones y algunas integraciones están en la hoja de ruta como servicios opcionales. Apoyan el trabajo de la DAO respetando sus reglas de gobernanza.',
+              status: 'planned',
+              link: 'roadmap',
+            },
+          ],
+        },
+      ],
+    },
+    privacy: {
+      title: 'Documentos DAO privados y registros cifrados | Daclify',
+      description:
+        'Organiza documentos de tu DAO y protege el contenido privado mediante cifrado. Comprende el acceso de miembros, la recuperación y los límites de la blockchain pública.',
+      eyebrow: 'Privacidad con decisiones claras',
+      heading: 'Comparte conocimiento con las personas adecuadas.',
+      lead: 'Hay información que debe ser pública y otra que pertenece a quienes realizan el trabajo. Daclify conecta registros compartidos y documentos cifrados con tu DAO, con decisiones claras sobre acceso y recuperación.',
+      sections: [
+        {
+          title: 'Protege el contenido antes de almacenarlo.',
+          text: 'Los archivos privados se cifran en el dispositivo del usuario antes de subirse. El archivo almacenado contiene datos cifrados y el miembro autorizado necesita la clave correcta para leerlos. El enlace público no desbloquea el documento.',
+          bullets: [
+            'Mantén separadas las claves de firma y de cifrado de documentos.',
+            'Usa el historial de versiones para seguir las actualizaciones.',
+            'Comprueba la integridad del archivo al recuperar el contenido.',
+          ],
+        },
+        {
+          title: 'Conoce quién conserva las claves.',
+          text: 'En las cuentas controladas por el usuario, el miembro conserva sus credenciales de recuperación. La recuperación gestionada es una alternativa prevista con una relación de confianza distinta: un servicio capaz de recuperar claves de descifrado también puede acceder a ellas.',
+          cards: [
+            {
+              title: 'Recuperación bajo tu control',
+              text: 'Haz una copia de seguridad de la credencial y guárdala de forma segura. Sin ella ni otro titular autorizado de la clave, perder una clave de descifrado puede suponer perder el acceso al contenido.',
+            },
+            {
+              title: 'Recuperación gestionada',
+              text: 'La recuperación asistida prevista explicará qué puede recuperar y consultar el operador. Cada DAO necesitará una política explícita sobre si permite este modo.',
+              status: 'planned',
+            },
+          ],
+        },
+        {
+          title: 'Un documento privado no hace privada toda la actividad.',
+          text: 'El cifrado protege el contenido de los documentos. Las referencias de miembros, los votos, las transferencias y otras acciones en una blockchain pública pueden seguir siendo visibles. Daclify no promete miembros anónimos ni votaciones secretas.',
+          bullets: [
+            'Un miembro autorizado puede copiar o compartir la información que lee.',
+            'Eliminar a un miembro no borra la información que ya recibió.',
+            'No se puede retirar el historial público ni las copias de archivos de terceros.',
+          ],
+        },
+        {
+          title: 'Prepara los cambios de miembros.',
+          text: 'La DAO necesita reglas para acceder a documentos históricos y cambiar el acceso futuro cuando alguien entra o sale. La hoja de ruta incluye procesos más completos de acceso y rotación de claves. El manual describe el comportamiento compatible con cada despliegue.',
+          bullets: [
+            'Decide quién debe acceder a los registros anteriores.',
+            'Trata la rotación de claves y la salida de miembros como pasos relacionados.',
+            'Aclara las responsabilidades de recuperación antes de compartir contenido sensible.',
+          ],
+        },
+        {
+          title: 'Conserva registros útiles a largo plazo.',
+          text: 'La información compacta se guarda en registros del contrato y los documentos grandes usan referencias IPFS. Una referencia identifica el archivo, pero su almacenamiento y acceso continuados dependen del proveedor configurado y de las claves conservadas.',
+          bullets: [
+            'Guarda copias de las credenciales esenciales de recuperación.',
+            'Comprende la configuración de almacenamiento de tu despliegue.',
+            'Consulta el manual para los procedimientos actuales de documentos y acceso.',
           ],
         },
       ],
     },
     roadmap: {
-      title: 'Hoja de ruta y estado de desarrollo de Daclify V2',
+      title: 'Hoja de ruta de Daclify — cuentas, DAOs e integraciones',
       description:
-        'Consulta qué implementa Daclify V2 y qué falta: verificación de contratos, cuentas, despliegues independientes, Pinata, EVM y Operations alojado.',
+        'Conoce la hoja de ruta de Daclify: acceso social y Telegram, contratos DAO propios, servicios alojados y futuras conexiones blockchain. Explora la app y su manual.',
       eyebrow: 'La hoja de ruta',
-      heading: 'Construir con cuidado. Mostrar el progreso.',
-      lead: 'V2 es una implementación activa en desarrollo. Los flujos locales aportan evidencia útil, pero no constituyen una versión de producción. Esta hoja de ruta separa lo implementado del trabajo necesario para lanzar.',
+      heading: 'Más formas de hacer tuyo Daclify.',
+      lead: 'La hoja de ruta amplía el espacio compartido para miembros, votaciones, proyectos financiados y documentos. Estas son las próximas capacidades que queremos acercar a las comunidades; el manual de la app indica su disponibilidad.',
       sections: [
         {
-          title: '01 / Los cimientos toman forma.',
-          text: 'La versión de desarrollo incluye contratos Antelope C++ del núcleo y Hub, cuentas internas con claves propias, API TypeScript, creación de DAO compartidas, créditos, tesorería y documentación generada.',
+          title: 'Más formas de unirse.',
+          text: 'Las opciones previstas incluyen acceso social, Telegram, vinculación de monederos nativos y recuperación gestionada. Tanto las cuentas controladas por el usuario como las gestionadas deben explicar quién controla las claves y cómo se recuperan.',
           cards: [
             {
-              title: 'Gobernanza conectada',
-              text: 'Votaciones y finalización de Decide, entregas y revisiones de Works y nóminas financiadas se prueban en flujos locales.',
-              status: 'development',
+              title: 'Acceso social y Telegram',
+              text: 'Facilitar la entrada al espacio conservando una identidad por miembro y los permisos de la DAO.',
+              status: 'planned',
             },
             {
-              title: 'Registros y privacidad',
-              text: 'JSON versionado y archivos públicos o privados incluyen comprobaciones de integridad y conciliación de cargas.',
-              status: 'development',
+              title: 'Recuperación gestionada',
+              text: 'Ofrecer un modo asistido claramente identificado junto a las claves controladas por el usuario, con responsabilidades documentadas de recuperación y salida.',
+              status: 'planned',
+            },
+          ],
+        },
+        {
+          title: 'Tus propios contratos, conectados al Hub.',
+          text: 'Los despliegues independientes permitirán gestionar contratos y actualizaciones propios usando el Hub para descubrir comunidades. Esta opción también necesita conexiones directas, guías compatibles y responsabilidades operativas claras.',
+          bullets: [
+            'Control del despliegue y las actualizaciones por parte de la DAO.',
+            'Descubrimiento junto a comunidades con contratos compartidos.',
+            'Acceso directo para las comunidades que gestionen su infraestructura.',
+          ],
+        },
+        {
+          title: 'Más apoyo para las operaciones cotidianas.',
+          text: 'Se prevén servicios alojados opcionales para acciones programadas, notificaciones e integraciones. El objetivo es reducir la administración rutinaria con precios transparentes y sin cambiar los derechos de voto.',
+          cards: [
+            {
+              title: 'Operaciones alojadas',
+              text: 'Programación, notificaciones de Telegram y webhooks seleccionados, con límites y permisos claros.',
+              status: 'planned',
             },
             {
-              title: 'Una interfaz útil',
-              text: 'La aplicación Vue/TypeScript tiene recuperación, gobernanza, documentos, tesorería y ayuda contextual.',
-              status: 'development',
+              title: 'Más opciones de gobernanza',
+              text: 'Opciones adicionales para elecciones, comités y ejecución de propuestas, junto a políticas más amplias para proyectos y pagos.',
+              status: 'planned',
+            },
+            {
+              title: 'Herramientas de acceso a documentos',
+              text: 'Procesos más completos para el ciclo de vida de claves, la exportación, la conservación y la recuperación.',
+              status: 'planned',
             },
           ],
         },
         {
-          title: '02 / Validar el núcleo antes del lanzamiento.',
-          text: 'Un defecto confirmado de autorización nativa y el control incompleto del código de módulos bloquean el lanzamiento. Faltan verificaciones nativas completas, comprobaciones de despliegue, límites de recursos, herramientas de versiones y revisión independiente. V2 aún no debe tratarse como producto validado para fondos reales.',
+          title: 'Conexiones más allá de una blockchain.',
+          text: 'Las identidades Telos EVM y futuras conexiones de pago forman parte de la dirección a largo plazo. Los pagos entre cadenas requieren pruebas verificadas de las transacciones y reglas claras de liquidación antes de respaldar obligaciones de una DAO.',
           bullets: [
-            'Corregir y verificar la autoridad de los contratos en el entorno nativo real.',
-            'Vincular código revisado, interfaces y documentación a versiones comprobadas.',
-            'Completar la conformidad de los despliegues compartidos e independientes.',
+            'Tratar la vinculación de identidades y la liquidación de pagos como capacidades distintas.',
+            'Añadir integraciones para necesidades concretas de las comunidades.',
+            'Publicar en el manual las cadenas compatibles y los requisitos de verificación.',
           ],
         },
         {
-          title: '03 / Completar cuentas y documentos.',
-          text: 'Faltan admisión de producción, vinculación nativa, recuperación gestionada, acceso social y Telegram y ciclo de claves. También siguen pendientes Pinata real, retención, exportación y pruebas en los clientes compatibles.',
+          title: 'Mantener lo esencial accesible.',
+          text: 'Queremos una base útil de gobernanza gratuita, con capacidades de pago opcionales para quien necesite más. No hay precios ni fechas anunciadas para los elementos de la hoja de ruta. La documentación versionada de la app es la referencia para las funciones compatibles.',
           bullets: [
-            'Ambos modos de custodia necesitan recuperación y salida completas.',
-            'La política privada debe mantenerse cuando cambian los miembros.',
-            'Las pruebas con proveedores reales se distinguen de las simulaciones locales.',
-          ],
-        },
-        {
-          title: '04 / Ampliar lo que pueden hacer las comunidades.',
-          text: 'Se prevén comités, ejecución de propuestas, políticas más completas de Works y nóminas, soporte Telos EVM según capacidades, Operations y recursos medidos. Los adaptadores de otras cadenas responden a casos concretos con modelos explícitos de prueba y finalidad.',
-          bullets: [
-            'La identidad EVM y los pagos son capacidades distintas.',
-            'Un hash de transacción por sí solo no prueba un pago.',
-            'El vencimiento de servicios debe preservar derechos básicos y obligaciones aprobadas.',
-          ],
-        },
-        {
-          title: 'Lanzar es un compromiso, no una cuenta atrás.',
-          text: 'El código necesita herramientas de despliegue y migración, copias, procedimientos y revisión de seguridad. Documentos y pasivos antiguos requieren un inventario real; no se pueden inventar datos perdidos. Este sitio no anuncia una fecha pública ni precios definitivos.',
-          bullets: [
-            'Sigue el desarrollo y comparte comentarios en la comunidad.',
-            'La gobernanza básica busca seguir siendo gratuita dentro de límites definidos.',
-            'La publicación en testnet y producción requiere una revisión expresa.',
+            'Elige herramientas que ayuden a tu comunidad.',
+            'Consulta en la app las funciones disponibles y los requisitos del despliegue.',
+            'Comparte ideas y necesidades con la comunidad de Daclify.',
           ],
         },
       ],

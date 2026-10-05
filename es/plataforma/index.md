@@ -1,61 +1,61 @@
-# Plataforma DAO, cuentas y opciones de despliegue | Daclify
+# Miembros, cuentas y espacios de trabajo DAO | Daclify
 
-> Conoce cómo Daclify V2 conecta cuentas internas, carteras nativas, contratos propios de cada DAO y un Hub de descubrimiento en una plataforma modular.
+> Reúne miembros, roles, votaciones y fondos compartidos en Daclify. Conoce las cuentas DAO, el Hub y las opciones de despliegue compartido o independiente.
 
 https://daclify.com/es/plataforma/
 
-Daclify V2 está en desarrollo. El lanzamiento público requiere verificar los contratos y revisar la versión.
+Daclify reúne personas, decisiones, fondos y conocimiento en un espacio compartido para tu DAO. La comunidad define las reglas y cada miembro puede entender su papel y sus responsabilidades.
 
-Cada comunidad necesita sus propias reglas. V2 se diseña alrededor de un núcleo estable de identidad, autoridad y tesorería, con módulos especializados al servicio de cada organización.
+## Facilita la participación.
 
-## Primero las personas. Cuentas que encajan.
+Las cuentas de Daclify identifican a los miembros dentro del contrato inteligente. No necesitan una cuenta independiente en la blockchain nativa. Los roles definen quién puede votar, revisar trabajo o gestionar la configuración.
 
-Una identidad interna vive en el contrato inteligente y no exige al miembro tener una cuenta nativa. Los miembros y roles pertenecen a la DAO; vincular otra credencial no debe crear otro voto.
+### Una cuenta para cada miembro
 
-### Claves bajo tu control — En desarrollo
+Usa una identidad en todas las herramientas de tu DAO. La pertenencia y los permisos siguen a la persona, sin recrearlos para votaciones, proyectos y documentos.
 
-Las claves de firma y cifrado son distintas y las controla el usuario. Los flujos de desarrollo incluyen una bóveda local cifrada y credenciales de recuperación. El inicio de sesión social por sí solo no reconstruye esas claves.
+### Claves bajo tu control
 
-### Recuperación gestionada — Previsto
+Las cuentas controladas por el usuario utilizan una bóveda local cifrada y credenciales de recuperación. Guarda la copia de seguridad: iniciar sesión en otro dispositivo no sustituye una credencial perdida.
 
-El modo previsto permite asistencia del servicio y explica la autoridad del operador. Se está evaluando un servicio de claves de código abierto; la recuperación de producción aún no está validada.
+### Más formas de acceder — En la hoja de ruta
 
-### Más formas de participar — Previsto
-
-Se prevén vinculación de cuentas Telos nativas, acceso social y Telegram, e identidades Telos EVM según capacidades verificadas. Todas deben conservar los mismos miembros y permisos.
+La vinculación de monederos nativos, el acceso social, Telegram y la recuperación gestionada están en la hoja de ruta. Cada opción tendrá permisos y responsabilidades de recuperación explícitos.
 
 
-## Contratos compartidos o despliegue propio.
+## Tu DAO conserva su propia identidad.
 
-El entorno compartido mantiene el estado específico de cada DAO en contratos comunes. Un despliegue independiente usa las mismas interfaces públicas y las políticas de actualización y tesorería de la DAO.
+Los contratos compartidos dan a cada DAO sus propios miembros, configuración y registros de tesorería. El Hub permite descubrir y abrir esos espacios.
 
-### Despliegue compartido — En desarrollo
+### Infraestructura compartida
 
-La implementación permite crear DAO, roles, créditos y registros de tesorería en un entorno compartido. El aislamiento completo y la verificación de los contratos nativos siguen siendo requisitos de lanzamiento.
+Crea una DAO dentro de un despliegue compartido y configura las herramientas que necesita tu comunidad. Conserva los registros de la organización en un mismo espacio.
 
-### Despliegue independiente — Previsto
+### Infraestructura independiente — En la hoja de ruta
 
-Se prevén contratos propios, conexiones directas y acceso a varios entornos. La DAO debe seguir funcionando cuando el Hub o los servicios alojados no estén disponibles.
+La hoja de ruta incluye contratos propios conectados al Hub. Las comunidades que elijan esta opción asumirán también el despliegue, las actualizaciones y la operación continua.
 
 
-## El Hub conecta. No gobierna.
+## El poder de voto y el dinero cumplen funciones distintas.
 
-El Hub de descubrimiento busca listar DAO, identificar sus despliegues y describir sus capacidades. Aparecer en el directorio no debe dar a la plataforma control sobre votos, tesorería o actualizaciones.
+Los créditos de gobernanza ayudan a determinar quién tiene voz en la DAO. Los activos de tesorería pagan el trabajo que apoya la comunidad. Separarlos permite explicar las reglas con claridad.
 
-- La autoridad procede de los roles y políticas explícitos de cada DAO.
-- Los permisos de los módulos son delimitados y revisables.
-- Interfaces públicas, versiones y documentación avanzan juntas.
+- Define el poder de voto mediante la política de gobernanza de tu DAO.
+- Usa activos blockchain compatibles para financiar la tesorería y realizar pagos.
+- Consulta las guías de la app para conocer los tokens y las políticas de voto compatibles.
 
-## Una base para la gobernanza responsable.
+## Aprende donde trabajas.
 
-El núcleo usa contratos Antelope C++. La aplicación y los servicios usan TypeScript estricto, con una interfaz Vue. Las decisiones y registros financieros autoritativos pertenecen a los contratos; una pantalla no puede autorizar un pago.
+La app incluye un manual con buscador para cuentas, configuración de DAOs, votaciones, proyectos, pagos y documentos. Las guías muestran su versión para comprobar que las instrucciones corresponden al despliegue conectado.
 
-- Los créditos de gobernanza de cada DAO son independientes del dinero.
-- La gobernanza con tokens nativos necesita una política compatible de depósito o ponderación.
-- El soporte de otras cadenas se añade mediante adaptadores delimitados y verificados.
+- Consulta el manual antes de usar una función.
+- Revisa los permisos de un módulo antes de activarlo.
+- Conserva de forma segura las credenciales de firma y recuperación de documentos.
 
-## Telegram
+## Dale a tu comunidad un espacio para avanzar.
 
-¿Estás creando una comunidad, cooperativa o red de colaboradores? Ayúdanos a dar forma a Daclify. Consulta la hoja de ruta y habla con nosotros en Telegram.
+Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.
 
-https://t.me/daclify
+- [Abrir la app](https://app.daclify.com/)
+- [Leer la documentación](https://app.daclify.com/docs)
+- [Únete a la comunidad](https://t.me/daclify)

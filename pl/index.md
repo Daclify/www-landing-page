@@ -1,96 +1,100 @@
-# Daclify — Modułowa platforma DAO dla społeczności
+# Daclify — Narzędzia DAO dla społeczności, które decydują razem
 
-> Poznaj Daclify V2: modułową platformę DAO do wspólnych decyzji, finansowania pracy i szyfrowanych dokumentów. Sprawdź wizję i plan rozwoju.
+> Zarządzaj członkami DAO, głosuj nad propozycjami, finansuj projekty i porządkuj dokumenty z Daclify. Poznaj aplikację i dowiedz się więcej w podręczniku.
 
 https://daclify.com/pl/
 
-Daclify V2 jest w rozwoju. Publiczne uruchomienie wymaga weryfikacji kontraktów i przeglądu wydania.
+Prowadź swoją społeczność w jednym miejscu. Zarządzaj członkami, głosuj nad propozycjami, finansuj projekty i porządkuj dokumenty — według zasad, które każdy może poznać i zrozumieć.
 
-Połącz ludzi, decyzje i pracę, która ma znaczenie. Daclify tworzy modułową platformę DAO, na której społeczności wybierają własne zasady, narzędzia i kierunek.
+## Od dobrego pomysłu do wspólnego działania.
 
-## Więcej niż głosowanie. Sposób na wspólną pracę.
+Daj społeczności jasny sposób podejmowania i realizowania decyzji. Połącz propozycję, budżet i pracę, aby każdy wiedział, jaki jest następny krok.
 
-Społeczność potrzebuje czegoś więcej niż czatu i adresu skarbca. Potrzebuje drogi od pomysłu do wspólnej decyzji, sfinansowanego wkładu i trwałego zapisu.
+### Połącz ludzi
 
-### Miejsce dla ludzi
+Zapewnij członkom konta, określ ich role i ułatw udział. Mogą dołączyć bez zakładania własnego konta na natywnym blockchainie.
 
-Członkostwo i role określają zasady udziału. Wewnętrzne tożsamości mają ułatwić dołączenie bez własnego natywnego konta blockchain.
+### Decydujcie razem
 
-### Decyzje z realnym znaczeniem
+Poddawajcie pomysły pod głosowanie. Ustalcie zasady, sprawdźcie wyniki i zachowajcie wspólny zapis decyzji społeczności.
 
-Wybierz politykę głosowania, zapisz wynik i połącz zatwierdzone decyzje z ograniczonymi uprawnieniami do działania. Zarządzanie powinno być zrozumiałe dla uczestników.
+### Finansuj potrzebną pracę
 
-### Od zgody do działania
-
-Finansuj etapy, oceniaj rezultaty i śledź zatwierdzone płatności. Zachowaj widoczną odpowiedzialność i postęp zamiast gubić je w rozmowach.
+Powiąż budżet z projektami i etapami realizacji. Oceniaj rezultaty pracy współpracowników i śledź płatności zatwierdzone przez DAO.
 
 
-## Zacznij od celu. Wybierz narzędzia.
+## Wybierz narzędzia potrzebne społeczności.
 
-Implementacja V2 łączy wspólny rdzeń z wyspecjalizowanymi modułami. Celem są użyteczne ustawienia, jasna konfiguracja i miejsce na rozwój społeczności.
+Zacznij od modułów do podejmowania decyzji, finansowania projektów i regularnych płatności. Każdy ma określone zadanie, aby wspólne miejsce do pracy służyło społeczności także wtedy, gdy rośnie.
 
-### Decide — W rozwoju
+### Decide
 
-Wnioski, głosowania i trwałe wyniki. Przepływy rozwojowe obejmują tworzenie głosowań, oddawanie głosów i finalizację rezultatów.
+Twórz głosowania, pozwalaj uprawnionym członkom oddawać głosy i zapisuj końcowe wyniki. Ułatw śledzenie decyzji społeczności.
 
-### Works — W rozwoju
+### Works
 
-Finansowanie etapów z przekazaniem pracy, oceną, poprawkami i akceptacją. Zatwierdzenie tworzy zapisane zobowiązanie, a nie obietnicę bez rozliczenia.
+Zaproponuj projekt, uzgodnij etapy i oceń rezultaty przed zatwierdzeniem płatności. Wspólny proces dla wykonawców i osób oceniających.
 
-### Payroll — W rozwoju
+### Payroll
 
-Sfinansowane harmonogramy i zatwierdzone zobowiązania płatnicze. Obecne przepływy zachowują zaakceptowane płatności po usunięciu modułu.
-
-
-## Jedna wizja. Dwie drogi do własnego DAO.
-
-Korzystaj ze wspólnego wdrożenia lub uruchom własne kontrakty. Oba warianty należą do projektu V2; kompletna obsługa niezależnego wdrożenia nadal powstaje.
-
-### Wspólna przestrzeń — W rozwoju
-
-Wiele DAO może korzystać z tych samych kontraktów rdzenia, zachowując oddzielne członkostwo, konfigurację i zapisy skarbca.
-
-### Własny fundament — Planowane
-
-Niezależne DAO kontroluje wdrożenie i łączy się z Hubem dla widoczności. Musi też móc działać bezpośrednio bez Huba.
+Organizuj finansowane płatności dla współpracowników na ustalony okres. Trzymaj harmonogram i zatwierdzone zobowiązania obok zapisów skarbca.
 
 
-## Wspólna wiedza. Przemyślana prywatność.
+## Miejsce dla Twojego DAO. Hub dla społeczności.
 
-Małe zapisy opisowe przechowuj jako ograniczony JSON, większe dokumenty przez odwołania IPFS. Szyfruj chronioną treść przed publikacją i jawnie określ, kto posiada klucze.
+Znajdź DAO w Hubie i otwórz przestrzeń społeczności, w której chcesz działać. Każde DAO ma własnych członków, zasady i dokumentację działań.
 
-- Klucze pod kontrolą użytkownika i zarządzane odzyskiwanie to oddzielne, jasno opisane tryby.
-- Prywatna treść nie ukrywa członkostwa, głosów ani przelewów na publicznej sieci.
-- Usunięcie członka może ograniczyć przyszły dostęp, ale nie wymazuje już otrzymanych informacji.
+### Zacznij od wspólnych kontraktów
 
-## Dobre pytania. Konkretne odpowiedzi.
+Korzystaj ze wspólnej infrastruktury, zachowując oddzielnych członków, ustawienia i zapisy skarbca swojego DAO. Poświęć czas na organizowanie społeczności.
+
+### Zarządzaj własnym wdrożeniem — W planie rozwoju
+
+Własne kontrakty DAO i bezpośrednie połączenia są w planie rozwoju dla społeczności, które chcą utrzymywać swoją infrastrukturę i korzystać z tego samego Hubu.
+
+
+## Trzymaj wiedzę blisko pracy.
+
+Przechowuj decyzje, notatki i dokumenty obok działań, których dotyczą. Wybieraj publiczne zapisy, gdy liczy się przejrzystość, i szyfrowane dokumenty, gdy treść powinna trafić do węższego grona.
+
+- Zachowuj historię wersji, aby członkowie mogli śledzić zmiany.
+- Używaj krótkich zapisów do codziennych informacji i odwołań IPFS do większych plików.
+- Wiedz, kto może czytać chronioną treść i kto przechowuje klucze odzyskiwania.
+
+## Dobre pytania. Jasne odpowiedzi.
 
 ### Czym jest Daclify?
 
-Daclify to przebudowywana modułowa platforma DAO do zarządzania członkostwem, podejmowania decyzji, finansowania pracy i przechowywania wspólnych dokumentów. DAO to organizacja, której ustalone zasady i decyzje mogą być zapisywane i wykonywane przez smart kontrakty.
+Daclify to platforma do prowadzenia DAO: społeczności, która zarządza swoimi członkami, decyzjami i wspólnymi funduszami. Łączy głosowania, finansowanie projektów, płatności dla współpracowników i dokumenty w jednym miejscu. Uzgodnione zasady są zapisane w smart kontraktach.
 
-### Czy każdy członek potrzebuje konta blockchain?
+### Dla kogo jest Daclify?
 
-Projekt V2 zakłada wewnętrzne tożsamości w kontrakcie, więc udział nie wymaga własnego konta natywnego. Łączenie portfela, logowanie społecznościowe i Telegram to dodatkowe planowane ścieżki; ich kompletne wersje produkcyjne nie są jeszcze gotowe.
+Dla projektów społecznych, kooperatyw, grup współpracowników i organizacji, które podejmują decyzje razem. Daclify pozwala dać członkom głos, uporządkować wspólny budżet i śledzić pracę, którą ten budżet finansuje.
 
-### Czy kredyty zarządzania są pieniędzmi?
+### Czy każdy członek potrzebuje konta na blockchainie?
 
-Nie. Wewnętrzne kredyty określają siłę głosu zgodnie z polityką DAO. Są oddzielone od aktywów skarbca i nie można wypłacić ich jako pieniędzy. Głosowanie tokenami natywnymi wymaga jawnej, obsługiwanej polityki depozytu lub wyznaczania wagi.
+Nie. Konta Daclify pozwalają uczestniczyć bez zakładania własnego konta na natywnym blockchainie. DAO nadal używa smart kontraktów do zapisywania zasad i działań. Dodatkowe opcje logowania przez portfel, serwisy społecznościowe i Telegram są w planie rozwoju.
 
-### Czy DAO może zachować prywatność informacji?
+### Czym są punkty głosowania?
 
-Chronione dokumenty można szyfrować przed publikacją, a klucze udostępniać uprawnionym członkom. Szyfrowanie chroni treść, nie publiczne metadane blockchaina. Członek może zachować wcześniej otrzymane informacje, a zarządzane odzyskiwanie daje odpowiedniej usłudze dostęp do kluczy.
+To jednostki głosu ustalane przez DAO. Pomagają określić siłę głosu danego członka. Są oddzielone od środków w skarbcu i nie można wypłacić ich jako pieniędzy.
 
-### Czy Daclify będzie bezpłatne?
+### Czy dokumenty mogą być prywatne?
 
-Plan zakłada użyteczne, bezpłatne podstawy zarządzania z określonymi limitami zasobów. Hostowana automatyzacja, powiadomienia i dodatkowe usługi mogą być płatne. Ceny i limity nie są ustalone. Wygaśnięcie subskrypcji nie może przejmować kontroli nad środkami DAO ani zaakceptowanymi zobowiązaniami.
+Chronione dokumenty są szyfrowane przed zapisaniem. Uprawnieni członkowie potrzebują odpowiednich kluczy, aby je przeczytać. Aktywność na blockchainie może pozostać publiczna, a członek może zachować informacje, które już odczytał. Przewodnik po prywatności wyjaśnia te ograniczenia.
 
-### Czy można już używać V2 z prawdziwymi środkami?
+### Ile kosztuje Daclify?
 
-V2 to implementacja rozwojowa, a nie zweryfikowane wydanie produkcyjne. Potrzebne są dalsze kontrole kontraktów, integracje kont, niezależne wdrożenia i procedury operacyjne. Plan rozwoju odróżnia zaimplementowane lokalne przepływy od funkcji gotowych do uruchomienia.
+Celem jest użyteczna, bezpłatna podstawa zarządzania DAO oraz opcjonalne płatne moduły i usługi hostowane. Ceny i limity zasobów zostaną opublikowane przed udostępnieniem tych usług. Plan rozwoju opisuje przewidywane opcje.
 
-## Telegram
+### Od czego zacząć?
 
-Tworzysz społeczność, spółdzielnię lub sieć współpracowników? Pomóż nadać kierunek Daclify. Zobacz plan rozwoju i porozmawiaj z nami na Telegramie.
+Otwórz aplikację i poznaj Hub DAO. W podręczniku znajdziesz informacje o kontach, tworzeniu DAO, głosowaniach, finansowaniu pracy i dokumentach. Dokumentacja w aplikacji opisuje dostępne funkcje i instrukcje właściwe dla danego wdrożenia.
 
-https://t.me/daclify
+## Daj swojej społeczności miejsce do działania.
+
+Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
+
+- [Otwórz aplikację](https://app.daclify.com/)
+- [Czytaj dokumentację](https://app.daclify.com/docs)
+- [Dołącz do społeczności](https://t.me/daclify)

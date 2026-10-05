@@ -1,6 +1,6 @@
 export type Locale = 'en' | 'es' | 'pl';
 export type PageId = 'home' | 'platform' | 'modules' | 'privacy' | 'roadmap';
-export type Status = 'development' | 'planned' | 'principle';
+export type Status = 'planned';
 export interface Card {
   title: string;
   text: string;
@@ -27,11 +27,13 @@ export interface SiteCopy {
   menu: string;
   language: string;
   status: Record<Status, string>;
-  statusNote: string;
-  explore: string;
+  productNote: string;
+  app: string;
+  docs: string;
+  docsNav: string;
+  benefits: readonly [string, string, string, string, string];
   community: string;
   more: string;
-  back: string;
   footer: string;
   footerNote: string;
   ctaTitle: string;

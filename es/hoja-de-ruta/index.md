@@ -1,64 +1,69 @@
-# Hoja de ruta y estado de desarrollo de Daclify V2
+# Hoja de ruta de Daclify — cuentas, DAOs e integraciones
 
-> Consulta qué implementa Daclify V2 y qué falta: verificación de contratos, cuentas, despliegues independientes, Pinata, EVM y Operations alojado.
+> Conoce la hoja de ruta de Daclify: acceso social y Telegram, contratos DAO propios, servicios alojados y futuras conexiones blockchain. Explora la app y su manual.
 
 https://daclify.com/es/hoja-de-ruta/
 
-Daclify V2 está en desarrollo. El lanzamiento público requiere verificar los contratos y revisar la versión.
+La hoja de ruta amplía el espacio compartido para miembros, votaciones, proyectos financiados y documentos. Estas son las próximas capacidades que queremos acercar a las comunidades; el manual de la app indica su disponibilidad.
 
-V2 es una implementación activa en desarrollo. Los flujos locales aportan evidencia útil, pero no constituyen una versión de producción. Esta hoja de ruta separa lo implementado del trabajo necesario para lanzar.
+## Más formas de unirse.
 
-## 01 / Los cimientos toman forma.
+Las opciones previstas incluyen acceso social, Telegram, vinculación de monederos nativos y recuperación gestionada. Tanto las cuentas controladas por el usuario como las gestionadas deben explicar quién controla las claves y cómo se recuperan.
 
-La versión de desarrollo incluye contratos Antelope C++ del núcleo y Hub, cuentas internas con claves propias, API TypeScript, creación de DAO compartidas, créditos, tesorería y documentación generada.
+### Acceso social y Telegram — En la hoja de ruta
 
-### Gobernanza conectada — En desarrollo
+Facilitar la entrada al espacio conservando una identidad por miembro y los permisos de la DAO.
 
-Votaciones y finalización de Decide, entregas y revisiones de Works y nóminas financiadas se prueban en flujos locales.
+### Recuperación gestionada — En la hoja de ruta
 
-### Registros y privacidad — En desarrollo
-
-JSON versionado y archivos públicos o privados incluyen comprobaciones de integridad y conciliación de cargas.
-
-### Una interfaz útil — En desarrollo
-
-La aplicación Vue/TypeScript tiene recuperación, gobernanza, documentos, tesorería y ayuda contextual.
+Ofrecer un modo asistido claramente identificado junto a las claves controladas por el usuario, con responsabilidades documentadas de recuperación y salida.
 
 
-## 02 / Validar el núcleo antes del lanzamiento.
+## Tus propios contratos, conectados al Hub.
 
-Un defecto confirmado de autorización nativa y el control incompleto del código de módulos bloquean el lanzamiento. Faltan verificaciones nativas completas, comprobaciones de despliegue, límites de recursos, herramientas de versiones y revisión independiente. V2 aún no debe tratarse como producto validado para fondos reales.
+Los despliegues independientes permitirán gestionar contratos y actualizaciones propios usando el Hub para descubrir comunidades. Esta opción también necesita conexiones directas, guías compatibles y responsabilidades operativas claras.
 
-- Corregir y verificar la autoridad de los contratos en el entorno nativo real.
-- Vincular código revisado, interfaces y documentación a versiones comprobadas.
-- Completar la conformidad de los despliegues compartidos e independientes.
+- Control del despliegue y las actualizaciones por parte de la DAO.
+- Descubrimiento junto a comunidades con contratos compartidos.
+- Acceso directo para las comunidades que gestionen su infraestructura.
 
-## 03 / Completar cuentas y documentos.
+## Más apoyo para las operaciones cotidianas.
 
-Faltan admisión de producción, vinculación nativa, recuperación gestionada, acceso social y Telegram y ciclo de claves. También siguen pendientes Pinata real, retención, exportación y pruebas en los clientes compatibles.
+Se prevén servicios alojados opcionales para acciones programadas, notificaciones e integraciones. El objetivo es reducir la administración rutinaria con precios transparentes y sin cambiar los derechos de voto.
 
-- Ambos modos de custodia necesitan recuperación y salida completas.
-- La política privada debe mantenerse cuando cambian los miembros.
-- Las pruebas con proveedores reales se distinguen de las simulaciones locales.
+### Operaciones alojadas — En la hoja de ruta
 
-## 04 / Ampliar lo que pueden hacer las comunidades.
+Programación, notificaciones de Telegram y webhooks seleccionados, con límites y permisos claros.
 
-Se prevén comités, ejecución de propuestas, políticas más completas de Works y nóminas, soporte Telos EVM según capacidades, Operations y recursos medidos. Los adaptadores de otras cadenas responden a casos concretos con modelos explícitos de prueba y finalidad.
+### Más opciones de gobernanza — En la hoja de ruta
 
-- La identidad EVM y los pagos son capacidades distintas.
-- Un hash de transacción por sí solo no prueba un pago.
-- El vencimiento de servicios debe preservar derechos básicos y obligaciones aprobadas.
+Opciones adicionales para elecciones, comités y ejecución de propuestas, junto a políticas más amplias para proyectos y pagos.
 
-## Lanzar es un compromiso, no una cuenta atrás.
+### Herramientas de acceso a documentos — En la hoja de ruta
 
-El código necesita herramientas de despliegue y migración, copias, procedimientos y revisión de seguridad. Documentos y pasivos antiguos requieren un inventario real; no se pueden inventar datos perdidos. Este sitio no anuncia una fecha pública ni precios definitivos.
+Procesos más completos para el ciclo de vida de claves, la exportación, la conservación y la recuperación.
 
-- Sigue el desarrollo y comparte comentarios en la comunidad.
-- La gobernanza básica busca seguir siendo gratuita dentro de límites definidos.
-- La publicación en testnet y producción requiere una revisión expresa.
 
-## Telegram
+## Conexiones más allá de una blockchain.
 
-¿Estás creando una comunidad, cooperativa o red de colaboradores? Ayúdanos a dar forma a Daclify. Consulta la hoja de ruta y habla con nosotros en Telegram.
+Las identidades Telos EVM y futuras conexiones de pago forman parte de la dirección a largo plazo. Los pagos entre cadenas requieren pruebas verificadas de las transacciones y reglas claras de liquidación antes de respaldar obligaciones de una DAO.
 
-https://t.me/daclify
+- Tratar la vinculación de identidades y la liquidación de pagos como capacidades distintas.
+- Añadir integraciones para necesidades concretas de las comunidades.
+- Publicar en el manual las cadenas compatibles y los requisitos de verificación.
+
+## Mantener lo esencial accesible.
+
+Queremos una base útil de gobernanza gratuita, con capacidades de pago opcionales para quien necesite más. No hay precios ni fechas anunciadas para los elementos de la hoja de ruta. La documentación versionada de la app es la referencia para las funciones compatibles.
+
+- Elige herramientas que ayuden a tu comunidad.
+- Consulta en la app las funciones disponibles y los requisitos del despliegue.
+- Comparte ideas y necesidades con la comunidad de Daclify.
+
+## Dale a tu comunidad un espacio para avanzar.
+
+Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.
+
+- [Abrir la app](https://app.daclify.com/)
+- [Leer la documentación](https://app.daclify.com/docs)
+- [Únete a la comunidad](https://t.me/daclify)

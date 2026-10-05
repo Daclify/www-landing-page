@@ -1,64 +1,69 @@
-# Daclify V2 development roadmap and release status
+# Daclify roadmap — accounts, DAO deployments and integrations
 
-> See what Daclify V2 implements today and what remains: contract verification, accounts, independent deployments, Pinata, EVM and hosted Operations.
+> Follow Daclify’s roadmap for social and Telegram login, independent DAO contracts, hosted services and future blockchain integrations. Explore the app and handbook.
 
 https://daclify.com/roadmap/
 
-Daclify V2 is in development. Public launch follows contract verification and release review.
+The roadmap builds on a shared workspace for membership, voting, funded work and documents. Here are the next capabilities we want to bring to communities, with availability described in the app’s handbook.
 
-V2 is an active development implementation. Working local journeys are useful evidence, but they are not a production release. This roadmap separates implemented slices from the work required to launch responsibly.
+## More ways to join.
 
-## 01 / The foundation is taking shape.
+Planned account options include social login, Telegram, native wallet linking and managed recovery. Both user-controlled and managed modes need clear explanations of who controls the keys and how recovery works.
 
-The development checkpoint includes Antelope C++ core/Hub contracts, internal user-controlled accounts, a TypeScript API, shared DAO creation, governance credits, treasury flows and generated documentation.
+### Social and Telegram access — On the roadmap
 
-### Connected governance — In development
+Make it easier to enter the workspace while preserving one member identity and the DAO’s existing permissions.
 
-Decide voting/finalization, Works submission/review/revision and funded payroll are exercised in local flows.
+### Managed recovery — On the roadmap
 
-### Records and privacy — In development
-
-Versioned JSON and public/private file flows include integrity checks and upload reconciliation.
-
-### A usable interface — In development
-
-The Vue/TypeScript application has recovery, governance, documents, treasury and contextual help screens.
+Offer a clearly labelled service-assisted mode alongside user-controlled keys, with documented recovery and exit responsibilities.
 
 
-## 02 / Qualify the core before launch.
+## Your own contracts, connected to the Hub.
 
-A confirmed native contract authorization defect and incomplete on-chain module code enforcement are release blockers. Full native verification, deployment hash checks, resource bounds, compatibility/release tooling and independent review remain required. V2 must not be used with real funds as a qualified product yet.
+Independent deployments will let a DAO manage its own contracts and upgrades while using the Hub for discovery. This path also needs direct connections, compatible guides and clear operator responsibilities.
 
-- Fix and verify contract authority on the actual native runtime.
-- Bind reviewed code, interfaces and documentation to tested releases.
-- Complete shared and independent deployment conformance.
+- DAO-owned deployment and upgrade control.
+- Discovery alongside communities using shared contracts.
+- Direct access for communities operating their own infrastructure.
 
-## 03 / Complete the account and document journeys.
+## More support for everyday operations.
 
-Production admission, native-wallet linking, managed recovery, social/Telegram login and member key lifecycle still need implementation and verification. Live Pinata, retention/export and supported client testing are also unfinished.
+Optional hosted services are planned for scheduled actions, notifications and integrations. The goal is less routine administration, with transparent pricing and no change to a DAO’s voting rights.
 
-- Both custody modes need complete loss/recovery and exit flows.
-- Private-content policies must hold across member changes.
-- Real provider evidence remains separate from local fixtures.
+### Hosted Operations — On the roadmap
 
-## 04 / Extend what communities can do.
+Scheduling, Telegram notifications and selected webhooks, with clear limits and permissions.
 
-Planned extensions include committees and proposal execution, richer Works/payroll policies, capability-gated Telos EVM support, hosted Operations and measured service allowances. Other-chain adapters follow selected use cases with explicit proof and finality models.
+### Richer governance workflows — On the roadmap
 
-- EVM identity and payments are distinct capabilities.
-- A transaction hash alone is not verified settlement.
-- Paid service expiry must preserve core rights and approved liabilities.
+Additional election, committee and proposal-execution options, plus broader project and payroll policies.
 
-## A release is a commitment, not a countdown.
+### Document access tools — On the roadmap
 
-Deployment/migration tooling, backups, operator procedures and security review must accompany the code. Legacy documents and liabilities need a real inventory; missing data cannot be invented. There is no announced public launch date or finalized pricing on this website.
+More complete member key lifecycle, export, retention and recovery workflows.
 
-- Follow development and contribute feedback through the community.
-- Useful basic governance is intended to remain free within defined limits.
-- Testnet and production publication follow explicit release review.
 
-## Telegram
+## Connections beyond one chain.
 
-Building a community, cooperative or contributor network? Help shape what Daclify becomes. Follow the roadmap and talk with us on Telegram.
+Telos EVM identities and future payment connections are part of the longer-term direction. Cross-chain payments need verified transaction evidence and clear settlement rules before they can support DAO obligations.
 
-https://t.me/daclify
+- Treat identity linking and payment settlement as separate capabilities.
+- Add integrations for specific community needs.
+- Publish supported chains and verification requirements in the handbook.
+
+## Keep the essentials accessible.
+
+Our aim is a useful free governance foundation, with optional paid capabilities for communities that need more. There are no announced prices or delivery dates for roadmap items. The app’s versioned documentation is the reference for supported features.
+
+- Choose tools because they help your community.
+- Review feature availability and deployment requirements in the app.
+- Share feedback and use cases through the Daclify community.
+
+## Give your community a place to move forward.
+
+Explore DAOs in the app, find the tools your community needs and use the handbook to learn how they work.
+
+- [Open app](https://app.daclify.com/)
+- [Read the docs](https://app.daclify.com/docs)
+- [Join the community](https://t.me/daclify)

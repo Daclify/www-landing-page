@@ -130,6 +130,74 @@ test('brand matches the frontend d. tile and wordmark instead of a new symbol', 
   assert.equal(existsSync(resolve(root, 'assets/brand-mark.svg')), false);
 });
 
+test('every page offers localized app and handbook actions in the main user journey', () => {
+  const labels = [
+    { app: 'Open app', docs: 'Read the docs', navigation: 'Docs' },
+    { app: 'Abrir la app', docs: 'Leer la documentación', navigation: 'Documentación' },
+    { app: 'Otwórz aplikację', docs: 'Czytaj dokumentację', navigation: 'Dokumentacja' },
+  ];
+  for (const group of paths) {
+    for (const [index, path] of group.entries()) {
+      const label = labels[index];
+      assert.ok(label);
+      const nodes = elements(parse(load(path)));
+      for (const className of ['hero-actions', 'footer-links']) {
+        const regions = nodes.filter((node) => attr(node, 'class') === className);
+        assert.ok(regions.length >= 1, `${path}: missing ${className}`);
+        for (const region of regions) {
+          const links = elements(region).filter((node) => node.tagName === 'a');
+          assert.ok(
+            links.some(
+              (link) =>
+                attr(link, 'href') === 'https://app.daclify.com/' && text(link) === label.app,
+            ),
+            `${path}: missing app action`,
+          );
+          assert.ok(
+            links.some(
+              (link) =>
+                attr(link, 'href') === 'https://app.daclify.com/docs' &&
+                text(link) === label.docs,
+            ),
+            `${path}: missing handbook action`,
+          );
+        }
+      }
+      const navigation = nodes.filter((node) =>
+        ['desktop-nav', 'mobile-menu'].includes(attr(node, 'class') ?? ''),
+      );
+      for (const region of navigation) {
+        assert.ok(
+          elements(region).some(
+            (node) =>
+              node.tagName === 'a' &&
+              attr(node, 'href') === 'https://app.daclify.com/docs' &&
+              text(node) === label.navigation,
+          ),
+        );
+      }
+      const hero = nodes.find((node) => attr(node, 'class')?.split(' ').includes('hero'));
+      assert.ok(hero);
+      assert.doesNotMatch(
+        text(hero),
+        /in development|en desarrollo|w trakcie rozwoju|verification|release review|implementa[ct]ion/i,
+      );
+    }
+  }
+});
+
+test('readable exports identify the product and link to the app and its public handbook', () => {
+  for (const path of paths.flat()) {
+    const markdown = readFileSync(resolve(root, `.${path}index.md`), 'utf8');
+    assert.ok(markdown.includes('https://app.daclify.com/'));
+    assert.ok(markdown.includes('https://app.daclify.com/docs'));
+  }
+  const llms = readFileSync(resolve(root, 'llms.txt'), 'utf8');
+  assert.ok(llms.includes('[Daclify app](https://app.daclify.com/)'));
+  assert.ok(llms.includes('[Daclify handbook](https://app.daclify.com/docs)'));
+  assert.doesNotMatch(llms, /platform in development|not a qualified production release/);
+});
+
 for (const group of paths) {
   for (const [index, path] of group.entries()) {
     test(`${path} is complete, localized and crawlable without JavaScript`, () => {
@@ -221,7 +289,7 @@ test('sitemap, crawler instructions and machine-readable content cover all langu
   const llms = readFileSync(resolve(root, 'llms.txt'), 'utf8');
   assert.ok(llms.startsWith('# Daclify\n'));
   for (const path of paths.flat()) assert.ok(llms.includes(`${origin}${path}`));
-  assert.match(llms, /development/i);
+  assert.match(llms, /membership.*governance.*funded work/i);
   const full = readFileSync(resolve(root, 'llms-full.txt'), 'utf8');
   assert.ok(full.length > llms.length * 3);
 });

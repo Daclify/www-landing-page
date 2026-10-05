@@ -1,60 +1,60 @@
-# Documentos DAO cifrados y custodia de cuentas | Daclify
+# Documentos DAO privados y registros cifrados | Daclify
 
-> Entiende la privacidad de Daclify: documentos DAO cifrados, acceso mediante claves, recuperación propia o gestionada y límites de las cadenas públicas.
+> Organiza documentos de tu DAO y protege el contenido privado mediante cifrado. Comprende el acceso de miembros, la recuperación y los límites de la blockchain pública.
 
 https://daclify.com/es/privacidad/
 
-Daclify V2 está en desarrollo. El lanzamiento público requiere verificar los contratos y revisar la versión.
+Hay información que debe ser pública y otra que pertenece a quienes realizan el trabajo. Daclify conecta registros compartidos y documentos cifrados con tu DAO, con decisiones claras sobre acceso y recuperación.
 
-Una DAO puede necesitar una tesorería pública y documentos de trabajo privados. Daclify busca cifrar el contenido protegido antes de publicarlo y convertir la propiedad de las claves en una decisión explícita.
+## Protege el contenido antes de almacenarlo.
 
-## Cifra antes de publicar.
+Los archivos privados se cifran en el dispositivo del usuario antes de subirse. El archivo almacenado contiene datos cifrados y el miembro autorizado necesita la clave correcta para leerlos. El enlace público no desbloquea el documento.
 
-Los pequeños registros descriptivos pueden usar JSON acotado; los contenidos grandes usan CID de IPFS. Títulos, nombres de archivo y contenido protegido deben cifrarse en el cliente antes de llegar al proveedor o a la cadena pública. Los enlaces restringidos del proveedor no sustituyen al cifrado de miembros.
+- Mantén separadas las claves de firma y de cifrado de documentos.
+- Usa el historial de versiones para seguir las actualizaciones.
+- Comprueba la integridad del archivo al recuperar el contenido.
 
-- Las claves de firma y de cifrado cumplen funciones separadas.
-- Los formatos versionados y compromisos de contenido permiten verificar integridad.
-- Las concesiones a miembros y las épocas de claves definen el acceso.
+## Conoce quién conserva las claves.
 
-## Elige quién puede recuperar las claves.
+En las cuentas controladas por el usuario, el miembro conserva sus credenciales de recuperación. La recuperación gestionada es una alternativa prevista con una relación de confianza distinta: un servicio capaz de recuperar claves de descifrado también puede acceder a ellas.
 
-Recuperar una cuenta y proteger la confidencialidad son cuestiones relacionadas, pero distintas. La política de admisión debe corresponder al tipo de custodia permitido. La recuperación gestionada completa y el ciclo de membresía siguen previstos.
+### Recuperación bajo tu control
 
-### Claves de contenido propias — Principio de diseño
+Haz una copia de seguridad de la credencial y guárdala de forma segura. Sin ella ni otro titular autorizado de la clave, perder una clave de descifrado puede suponer perder el acceso al contenido.
 
-El usuario conserva las claves de descifrado y la credencial de recuperación. Un acceso social no restaura por sí solo una bóveda perdida. Una DAO puede exigir este modo para evitar la custodia habitual del servicio.
+### Recuperación gestionada — En la hoja de ruta
 
-### Recuperación gestionada permitida — Previsto
-
-La recuperación asistida permite al operador acceder a claves recuperables. Esa confianza debe explicarse y acompañarse de políticas comprobadas de recuperación y salida, no de una promesa de exclusión del operador.
+La recuperación asistida prevista explicará qué puede recuperar y consultar el operador. Cada DAO necesitará una política explícita sobre si permite este modo.
 
 
-## Los cambios de miembros necesitan una política.
+## Un documento privado no hace privada toda la actividad.
 
-La DAO elige si los nuevos miembros reciben acceso histórico o solo futuro. Retirar a un miembro exige rotar el acceso futuro y gestionar las claves ya concedidas. Faltan flujos completos de admisión, rotación y cambio de custodia.
+El cifrado protege el contenido de los documentos. Las referencias de miembros, los votos, las transferencias y otras acciones en una blockchain pública pueden seguir siendo visibles. Daclify no promete miembros anónimos ni votaciones secretas.
 
-- Un titular autorizado debe conceder acceso al contenido protegido.
-- Un servidor sin acceso a las claves no puede crear claves de descifrado que no posee.
-- Los antiguos miembros pueden conservar claves históricas y contenido ya recibido.
+- Un miembro autorizado puede copiar o compartir la información que lee.
+- Eliminar a un miembro no borra la información que ya recibió.
+- No se puede retirar el historial público ni las copias de archivos de terceros.
 
-## Lo que el cifrado no oculta.
+## Prepara los cambios de miembros.
 
-Las referencias de miembros, actividad de transacciones, registros de voto e importes pueden seguir siendo públicos. Cifrar un documento no hace anónima a una DAO ni convierte la ejecución pública en una votación secreta.
+La DAO necesita reglas para acceder a documentos históricos y cambiar el acceso futuro cuando alguien entra o sale. La hoja de ruta incluye procesos más completos de acceso y rotación de claves. El manual describe el comportamiento compatible con cada despliegue.
 
-- Un miembro puede copiar o compartir el contenido que está autorizado a leer.
-- Un dispositivo comprometido o una actualización maliciosa puede exponer claves desbloqueadas.
-- Eliminar un pin no borra la historia de la cadena ni todas las copias ajenas.
+- Decide quién debe acceder a los registros anteriores.
+- Trata la rotación de claves y la salida de miembros como pasos relacionados.
+- Aclara las responsabilidades de recuperación antes de compartir contenido sensible.
 
-## Registros duraderos y disponibilidad clara.
+## Conserva registros útiles a largo plazo.
 
-Los flujos actuales prueban cargas cifradas, integridad, recuperación tras respuestas perdidas e historial con un proveedor local identificado. Faltan verificación real de Pinata, exportación, reanclaje, retención y recuperación completa antes del lanzamiento.
+La información compacta se guarda en registros del contrato y los documentos grandes usan referencias IPFS. Una referencia identifica el archivo, pero su almacenamiento y acceso continuados dependen del proveedor configurado y de las claves conservadas.
 
-- La integridad y la disponibilidad son requisitos distintos.
-- Las búsquedas y notificaciones privadas deben respetar la misma política.
-- La exportación y la salida de custodia forman parte del producto previsto.
+- Guarda copias de las credenciales esenciales de recuperación.
+- Comprende la configuración de almacenamiento de tu despliegue.
+- Consulta el manual para los procedimientos actuales de documentos y acceso.
 
-## Telegram
+## Dale a tu comunidad un espacio para avanzar.
 
-¿Estás creando una comunidad, cooperativa o red de colaboradores? Ayúdanos a dar forma a Daclify. Consulta la hoja de ruta y habla con nosotros en Telegram.
+Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.
 
-https://t.me/daclify
+- [Abrir la app](https://app.daclify.com/)
+- [Leer la documentación](https://app.daclify.com/docs)
+- [Únete a la comunidad](https://t.me/daclify)

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.0-alpha.3
+
+- Rewrite all 15 pages in English, Spanish and Polish around clear product benefits: membership, voting, funded work, contributor payments and shared records.
+- Link localized app and handbook actions to `app.daclify.com` and its frontend `/docs` route in main actions, navigation, footers and machine-readable content.
+- Replace engineering progress notices and stack labels with customer-facing descriptions; retain honest planned-feature, pricing and privacy boundaries.
+- Refresh metadata and social cards; add all-page destination checks and desktop/mobile, no-JavaScript navigation regressions.
+
 ## 2.0.0-alpha.2
 
 - Match the frontend's rounded `d.` tile, `daclify` wordmark and `GOVERN TOGETHER` tagline across every page and illustration.

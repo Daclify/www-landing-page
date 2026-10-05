@@ -1,60 +1,60 @@
-# Szyfrowane dokumenty DAO i kontrola nad kluczami | Daclify
+# Prywatne dokumenty DAO i szyfrowane zapisy | Daclify
 
-> Poznaj prywatność Daclify: szyfrowane dokumenty DAO, dostęp przez klucze, własne lub zarządzane odzyskiwanie i ograniczenia publicznego blockchaina.
+> Porządkuj dokumenty DAO i chroń prywatną treść szyfrowaniem. Poznaj zasady dostępu członków, odzyskiwania kluczy i ograniczenia publicznego blockchaina.
 
 https://daclify.com/pl/prywatnosc/
 
-Daclify V2 jest w rozwoju. Publiczne uruchomienie wymaga weryfikacji kontraktów i przeglądu wydania.
+Niektóre informacje powinny być publiczne. Inne należą do osób wykonujących pracę. Daclify łączy wspólne zapisy i szyfrowane dokumenty z DAO, z jasnymi wyborami dotyczącymi dostępu i odzyskiwania.
 
-DAO może potrzebować publicznego skarbca i prywatnych dokumentów roboczych. Daclify zakłada szyfrowanie chronionej treści przed publikacją i jawną decyzję o własności kluczy.
+## Chroń treść przed jej zapisaniem.
 
-## Szyfruj przed publikacją.
+Prywatne pliki są szyfrowane na urządzeniu użytkownika przed wysłaniem. Zapisany plik zawiera zaszyfrowaną treść, a uprawniony członek potrzebuje odpowiedniego klucza do odczytu. Sam publiczny link nie odblokowuje dokumentu.
 
-Małe zapisy opisowe mogą używać ograniczonego JSON, większe treści identyfikatorów CID w IPFS. Chronione tytuły, nazwy plików i treść muszą być szyfrowane na urządzeniu przed wysłaniem do dostawcy lub publicznej sieci. Ograniczone linki dostawcy nie zastępują szyfrowania dla członków.
+- Oddziel klucze podpisywania od kluczy szyfrowania dokumentów.
+- Śledź aktualizacje dzięki historii wersji.
+- Sprawdzaj integralność pobieranego pliku.
 
-- Klucze podpisu i szyfrowania mają różne funkcje.
-- Wersjonowane formaty i zobowiązania do treści umożliwiają kontrolę integralności.
-- Przydziały dla członków i epoki kluczy określają dostęp.
+## Wiedz, kto przechowuje klucze.
 
-## Wybierz, kto odzyskuje klucze.
+W kontach kontrolowanych przez użytkownika dane odzyskiwania pozostają u członka. Odzyskiwanie zarządzane jest planowaną alternatywą i wymaga innego zaufania: usługa, która potrafi odzyskać klucze odszyfrowania, może też uzyskać do nich dostęp.
 
-Odzyskiwanie konta i poufność dokumentów to powiązane, lecz różne sprawy. Zasady przyjmowania członków muszą odpowiadać dozwolonej kontroli nad kluczami. Pełne odzyskiwanie zarządzane i integracja cyklu członkostwa są jeszcze planowane.
+### Odzyskiwanie pod Twoją kontrolą
 
-### Klucze treści użytkownika — Założenie projektu
+Zrób kopię danych odzyskiwania i przechowuj ją bezpiecznie. Bez niej lub innego uprawnionego posiadacza klucza utrata klucza może oznaczać utratę dostępu do chronionej treści.
 
-Użytkownik przechowuje klucze deszyfrowania i poświadczenie odzyskiwania. Samo logowanie społecznościowe nie odtwarza sejfu. DAO może wymagać tego trybu, by usługa nie przechowywała jego kluczy.
+### Odzyskiwanie zarządzane — W planie rozwoju
 
-### Dozwolone zarządzane odzyskiwanie — Planowane
-
-Pomoc usługi oznacza, że operator może mieć dostęp do odzyskiwalnych kluczy. To zaufanie wymaga jawnego opisu oraz sprawdzonej polityki odzyskiwania i wyjścia, a nie obietnicy wykluczenia operatora.
+Planowany tryb wspomagany przez usługę określi, co operator może odzyskać i odczytać. DAO będzie potrzebować jasnej polityki dopuszczającej ten tryb.
 
 
-## Zmiana członków wymaga zasad dostępu.
+## Prywatne dokumenty nie ukrywają wszystkich działań.
 
-DAO wybiera, czy nowi członkowie widzą historię, czy tylko przyszłe dokumenty. Usunięcie członka wymaga rotacji przyszłego dostępu i obsługi już przydzielonych kluczy. Kompletne ścieżki przyjęcia, rotacji i zmiany trybu kluczy są niedokończone.
+Szyfrowanie chroni treść dokumentów. Odwołania do członków, zapisy głosów, transfery i inne działania na publicznym blockchainie mogą pozostać widoczne. Daclify nie obiecuje anonimowego członkostwa ani tajnych głosowań.
 
-- Uprawniony posiadacz klucza musi nadać chroniony dostęp.
-- Serwer bez kluczy nie może tworzyć kluczy deszyfrowania, których nie ma.
-- Byli członkowie mogą zachować historyczne klucze i otrzymaną treść.
+- Uprawniony członek może skopiować lub udostępnić przeczytane informacje.
+- Usunięcie członka nie usuwa informacji, które już otrzymał.
+- Nie można cofnąć publicznej historii ani kopii plików u innych osób.
 
-## Czego szyfrowanie nie ukrywa.
+## Przygotuj się na zmiany członkostwa.
 
-Odwołania do członkostwa, transakcje, zapisy głosów i kwoty mogą pozostać publiczne. Zaszyfrowany dokument nie czyni DAO anonimowym i nie zmienia publicznego wykonania kontraktu w tajne głosowanie.
+DAO potrzebuje zasad dostępu do starszych dokumentów i zmian przyszłego dostępu przy dołączaniu lub odchodzeniu członków. Plan rozwoju obejmuje pełniejsze procesy dostępu i rotacji kluczy. Podręcznik opisuje obsługiwane zachowanie dla danego wdrożenia.
 
-- Członek może kopiować lub udostępniać informacje, które wolno mu czytać.
-- Przejęte urządzenie lub złośliwa aktualizacja klienta może ujawnić odblokowane klucze.
-- Usunięcie przypięcia nie kasuje historii blockchaina ani wszystkich cudzych kopii.
+- Ustal, kto powinien mieć dostęp do wcześniejszych zapisów.
+- Traktuj rotację kluczy i odejście członka jako powiązane kroki.
+- Wyjaśnij odpowiedzialność za odzyskiwanie przed udostępnieniem wrażliwej treści.
 
-## Trwałe zapisy i jasno określona dostępność.
+## Zachowaj użyteczne zapisy na dłużej.
 
-Obecne przepływy sprawdzają szyfrowane wysyłanie, integralność, odzyskiwanie po utraconej odpowiedzi i historię wersji z oznaczonym lokalnym dostawcą. Rzeczywiste Pinata, eksport, ponowne przypinanie, retencja i pełne odzyskiwanie wymagają weryfikacji przed uruchomieniem.
+Krótkie informacje mieszczą się w zapisach kontraktu, a większe dokumenty korzystają z odwołań IPFS. Odwołanie pozwala zidentyfikować plik, ale jego dalsze przechowywanie i dostęp zależą od skonfigurowanego dostawcy oraz zachowanych kluczy.
 
-- Integralność i dostępność są oddzielnymi wymaganiami.
-- Prywatne wyszukiwanie i powiadomienia muszą respektować tę samą politykę.
-- Eksport i wyjście z zarządzanej kontroli kluczy należą do wizji produktu.
+- Zachowuj kopie ważnych danych odzyskiwania.
+- Poznaj konfigurację przechowywania plików w swoim wdrożeniu.
+- Sprawdzaj bieżące procedury dokumentów i dostępu w podręczniku.
 
-## Telegram
+## Daj swojej społeczności miejsce do działania.
 
-Tworzysz społeczność, spółdzielnię lub sieć współpracowników? Pomóż nadać kierunek Daclify. Zobacz plan rozwoju i porozmawiaj z nami na Telegramie.
+Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
 
-https://t.me/daclify
+- [Otwórz aplikację](https://app.daclify.com/)
+- [Czytaj dokumentację](https://app.daclify.com/docs)
+- [Dołącz do społeczności](https://t.me/daclify)

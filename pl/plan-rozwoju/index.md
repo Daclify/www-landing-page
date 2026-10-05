@@ -1,64 +1,69 @@
-# Plan rozwoju i status Daclify V2
+# Plan rozwoju Daclify — konta, wdrożenia DAO i integracje
 
-> Sprawdź, co działa w Daclify V2 i co pozostało: weryfikacja kontraktów, konta, niezależne wdrożenia, Pinata, EVM i hostowane Operations.
+> Poznaj plany Daclify: logowanie społecznościowe i Telegram, własne kontrakty DAO, usługi hostowane i przyszłe integracje blockchain. Otwórz aplikację i podręcznik.
 
 https://daclify.com/pl/plan-rozwoju/
 
-Daclify V2 jest w rozwoju. Publiczne uruchomienie wymaga weryfikacji kontraktów i przeglądu wydania.
+Plan rozwoju rozszerza wspólne miejsce dla członków, głosowań, finansowania pracy i dokumentów. To kolejne możliwości, które chcemy oddać społecznościom. Ich dostępność opisuje podręcznik w aplikacji.
 
-V2 to aktywna implementacja rozwojowa. Działające lokalne przepływy są ważnym dowodem, ale nie wydaniem produkcyjnym. Plan oddziela gotowe fragmenty od pracy potrzebnej do odpowiedzialnego uruchomienia.
+## Więcej sposobów dołączenia.
 
-## 01 / Fundament nabiera kształtu.
+Planowane opcje kont obejmują logowanie społecznościowe, Telegram, łączenie portfeli natywnych i odzyskiwanie zarządzane. Oba tryby kont muszą jasno wyjaśniać, kto kontroluje klucze i jak działa odzyskiwanie.
 
-Wersja rozwojowa obejmuje kontrakty rdzenia i Huba w Antelope C++, konta wewnętrzne z własnymi kluczami, API TypeScript, tworzenie współdzielonych DAO, kredyty, skarbiec i generowaną dokumentację.
+### Logowanie społecznościowe i Telegram — W planie rozwoju
 
-### Połączone zarządzanie — W rozwoju
+Łatwiejszy dostęp do przestrzeni przy zachowaniu jednej tożsamości członka i istniejących uprawnień DAO.
 
-Głosowanie i finalizacja Decide, przekazanie pracy i ocena Works oraz sfinansowane wypłaty są sprawdzane lokalnie.
+### Odzyskiwanie zarządzane — W planie rozwoju
 
-### Zapisy i prywatność — W rozwoju
-
-Wersjonowany JSON i pliki publiczne lub prywatne mają kontrole integralności oraz uzgadnianie wysyłek.
-
-### Użyteczny interfejs — W rozwoju
-
-Aplikacja Vue/TypeScript zawiera odzyskiwanie, zarządzanie, dokumenty, skarbiec i pomoc kontekstową.
+Wyraźnie oznaczony tryb wspomagany przez usługę obok kluczy kontrolowanych przez użytkownika, z opisanymi obowiązkami odzyskiwania i wyjścia.
 
 
-## 02 / Zweryfikować rdzeń przed uruchomieniem.
+## Własne kontrakty połączone z Hubem.
 
-Potwierdzony błąd autoryzacji natywnej i niepełna kontrola kodu modułów blokują wydanie. Nadal potrzebne są pełne testy natywne, weryfikacja wdrożeń, limity zasobów, narzędzia wydań i niezależny przegląd. V2 nie należy jeszcze traktować jako zweryfikowanego produktu dla prawdziwych środków.
+Niezależne wdrożenia pozwolą DAO zarządzać własnymi kontraktami i aktualizacjami, korzystając z Hubu do odkrywania społeczności. Wymagają też bezpośrednich połączeń, zgodnych przewodników i jasnych obowiązków operatora.
 
-- Naprawić i sprawdzić uprawnienia na rzeczywistym środowisku natywnym.
-- Powiązać sprawdzony kod, interfejsy i dokumentację ze zweryfikowanymi wydaniami.
-- Dokończyć zgodność wdrożeń wspólnych i niezależnych.
+- Kontrola wdrożenia i aktualizacji po stronie DAO.
+- Odkrywanie obok społeczności używających wspólnych kontraktów.
+- Bezpośredni dostęp dla społeczności utrzymujących własną infrastrukturę.
 
-## 03 / Dokończyć konta i dokumenty.
+## Więcej wsparcia w codziennych działaniach.
 
-Przyjmowanie członków, łączenie kont natywnych, zarządzane odzyskiwanie, logowanie społecznościowe i Telegram oraz cykl kluczy wymagają dalszej pracy. Nieskończone są też Pinata, retencja, eksport i testy rzeczywistych klientów.
+Planowane opcjonalne usługi hostowane obejmują zaplanowane działania, powiadomienia i integracje. Celem jest mniej rutynowej administracji, przejrzyste ceny i zachowanie praw głosu DAO.
 
-- Oba tryby kluczy wymagają kompletnych ścieżek utraty, odzyskania i wyjścia.
-- Polityka prywatności musi obowiązywać przy zmianie członkostwa.
-- Dowody z rzeczywistych dostawców są oddzielone od lokalnych symulacji.
+### Usługi operacyjne — W planie rozwoju
 
-## 04 / Rozszerzyć możliwości społeczności.
+Harmonogramy, powiadomienia Telegram i wybrane webhooki, z jasnymi limitami i uprawnieniami.
 
-Planowane są komitety, wykonanie wniosków, pełniejsze polityki Works i wypłat, zweryfikowane możliwości Telos EVM, Operations i mierzone limity usług. Adaptery innych sieci odpowiadają na konkretne potrzeby, z jawną weryfikacją i finalnością.
+### Rozbudowane procesy zarządzania — W planie rozwoju
 
-- Tożsamość EVM i płatności to różne możliwości.
-- Sam hash transakcji nie potwierdza rozliczenia.
-- Wygaśnięcie usług musi zachować podstawowe prawa i zatwierdzone zobowiązania.
+Dodatkowe opcje wyborów, komisji i wykonywania propozycji oraz szersze zasady projektów i płatności.
 
-## Wydanie to zobowiązanie, nie odliczanie.
+### Narzędzia dostępu do dokumentów — W planie rozwoju
 
-Kod wymaga narzędzi wdrożenia i migracji, kopii zapasowych, procedur oraz przeglądu bezpieczeństwa. Stare dokumenty i zobowiązania potrzebują rzeczywistej inwentaryzacji; brakujących danych nie wolno wymyślać. Strona nie ogłasza daty uruchomienia ani ostatecznych cen.
+Pełniejsze procesy zarządzania kluczami członków, eksportu, przechowywania i odzyskiwania.
 
-- Obserwuj rozwój i dziel się opinią w społeczności.
-- Użyteczne podstawy mają pozostać bezpłatne w określonych limitach.
-- Uruchomienie na testnecie i produkcji wymaga osobnego przeglądu.
 
-## Telegram
+## Połączenia poza jednym blockchainem.
 
-Tworzysz społeczność, spółdzielnię lub sieć współpracowników? Pomóż nadać kierunek Daclify. Zobacz plan rozwoju i porozmawiaj z nami na Telegramie.
+Tożsamości Telos EVM i przyszłe połączenia płatnicze są częścią długofalowego kierunku. Płatności między sieciami potrzebują zweryfikowanych dowodów transakcji i jasnych zasad rozliczania, zanim zaczną obsługiwać zobowiązania DAO.
 
-https://t.me/daclify
+- Łączenie tożsamości i rozliczanie płatności to osobne możliwości.
+- Integracje powinny odpowiadać konkretnym potrzebom społeczności.
+- Obsługiwane sieci i wymagania weryfikacji będą opisane w podręczniku.
+
+## Podstawy dostępne dla społeczności.
+
+Dążymy do użytecznej, bezpłatnej podstawy zarządzania oraz opcjonalnych płatnych możliwości. Nie ogłoszono cen ani terminów pozycji z planu rozwoju. Wersjonowana dokumentacja aplikacji jest punktem odniesienia dla obsługiwanych funkcji.
+
+- Wybieraj narzędzia, które pomagają społeczności.
+- Sprawdzaj dostępne funkcje i wymagania wdrożenia w aplikacji.
+- Dziel się uwagami i potrzebami ze społecznością Daclify.
+
+## Daj swojej społeczności miejsce do działania.
+
+Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
+
+- [Otwórz aplikację](https://app.daclify.com/)
+- [Czytaj dokumentację](https://app.daclify.com/docs)
+- [Dołącz do społeczności](https://t.me/daclify)

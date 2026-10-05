@@ -42,7 +42,7 @@ try {
         )
         .join(
           '',
-        )}</h1><div class="footer"><span>daclify.com</span><span>${escapeHtml(copy.status.development)} / V2</span></div></body></html>`);
+        )}</h1><div class="footer"><span>daclify.com</span><span>${escapeHtml(copy.footer)}</span></div></body></html>`);
     await page.evaluate(() => document.fonts.ready);
     await page.screenshot({ path: resolve(root, `assets/social-${locale}.png`) });
   }

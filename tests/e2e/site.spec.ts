@@ -47,6 +47,55 @@ test('language links preserve the topic and expose complete translated pages', a
   await expect(page).toHaveURL(/\/modules\/$/);
 });
 
+test('localized primary actions navigate to the app and its handbook', async ({ page }) => {
+  // A deterministic destination tests navigation without assuming the future host is live.
+  await page.route('https://app.daclify.com/**', async (route) => {
+    await route.fulfill({
+      contentType: 'text/html',
+      body: '<!doctype html><html lang="en"><title>Destination fixture</title><main>Destination fixture</main></html>',
+    });
+  });
+  for (const path of ['/', '/es/', '/pl/']) {
+    await page.goto(path);
+    const app = page.locator('.hero .hero-actions .primary');
+    await expect(app).toHaveAttribute('href', 'https://app.daclify.com/');
+    await app.click();
+    await expect(page).toHaveURL('https://app.daclify.com/');
+    await page.goto(path);
+    const docs = page.locator('.hero .hero-actions .secondary');
+    await expect(docs).toHaveAttribute('href', 'https://app.daclify.com/docs');
+    await docs.click();
+    await expect(page).toHaveURL('https://app.daclify.com/docs');
+  }
+});
+
+test('the handbook is reachable through desktop and mobile navigation without JavaScript', async ({
+  browser,
+  baseURL,
+}) => {
+  if (!baseURL) throw new Error('Preview base URL is required');
+  for (const width of [1440, 390]) {
+    const context = await browser.newContext({
+      javaScriptEnabled: false,
+      baseURL,
+      viewport: { width, height: 900 },
+    });
+    await context.route('https://app.daclify.com/**', async (route) => {
+      await route.fulfill({
+        contentType: 'text/html',
+        body: '<!doctype html><html lang="en"><title>Handbook fixture</title><main>Handbook fixture</main></html>',
+      });
+    });
+    const page = await context.newPage();
+    await page.goto('/');
+    const region = width === 390 ? '.mobile-menu' : '.desktop-nav';
+    if (width === 390) await page.locator('.mobile-menu summary').click();
+    await page.locator(region).getByRole('link', { name: 'Docs', exact: true }).click();
+    await expect(page).toHaveURL('https://app.daclify.com/docs');
+    await context.close();
+  }
+});
+
 test('navigation and FAQ remain usable without JavaScript', async ({ browser, baseURL }) => {
   if (!baseURL) throw new Error('Preview base URL is required');
   const context = await browser.newContext({

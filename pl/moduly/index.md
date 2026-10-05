@@ -1,60 +1,65 @@
-# Moduły DAO Decide, Works i wypłat | Daclify
+# Głosowania DAO, finansowanie projektów i płatności | Daclify
 
-> Poznaj moduły Daclify: głosowania Decide, finansowanie etapów Works, wypłaty, wspólne dokumenty i planowane hostowane usługi Operations.
+> Poznaj moduły Daclify do głosowań DAO, finansowania etapów, płatności i wspólnych dokumentów. Wybierz narzędzia pasujące do pracy Twojej społeczności.
 
 https://daclify.com/pl/moduly/
 
-Daclify V2 jest w rozwoju. Publiczne uruchomienie wymaga weryfikacji kontraktów i przeglądu wydania.
+Każda społeczność działa inaczej. Wybierz narzędzia do głosowań, finansowania projektów i płatności dla współpracowników — ze wspólnymi kontami i zapisami w całym DAO.
 
-Wybierz możliwości dopasowane do organizacji. Każdy moduł ma określone zadanie, czytelną konfigurację i jawne uprawnienia. Obecne moduły są implementacjami rozwojowymi, nie gotowymi usługami produkcyjnymi.
+## Decide — daj członkom jasny głos.
 
-## Decide — jasna droga do wspólnej decyzji.
+Zbieraj głosy i zapisuj wynik. Określ, kto jest uprawniony, jak liczy się siłę głosu i kiedy kończy się głosowanie. Członkowie poznają zasady przed udziałem.
 
-Decide adaptuje użyteczne wzorce zarządzania Telos do wewnętrznych tożsamości Daclify. Przepływy obejmują głosowania i finalizację; rozbudowane wybory, komitety i wykonanie wniosków nadal wymagają pracy.
+- Utwórz głosowanie z jasnym pytaniem i odpowiedziami.
+- Pozwól uprawnionym członkom głosować w przestrzeni DAO.
+- Zakończ głosowanie i zachowaj wynik jako wspólny zapis.
 
-- Określ uczestników i sposób wyliczania siły głosu.
-- Czytelnie zdefiniuj kworum, próg akceptacji i terminy.
-- Zachowaj trwały wynik; finalizacja i wykonanie to różne zadania.
+## Works — połącz finansowanie z rezultatami.
 
-## Works — finansuj rezultaty, nie ogólne obietnice.
+Zamień propozycję projektu w uzgodnione etapy. Wykonawcy przedstawiają pracę, a uprawnione osoby mogą poprosić o zmiany lub ją przyjąć. Śledź finansowanie i zatwierdzone płatności razem z projektem.
 
-Works łączy finansowanie z raportami etapów i uprawnioną oceną. Obecne przepływy obejmują propozycje, rezerwacje, przekazanie pracy, poprawki, akceptację i anulowanie. Trwałe własne polityki oraz kompletne zasady sporów i terminów są niedokończone.
+- Uzgodnij zakres, kwotę i etapy realizacji.
+- Trzymaj zgłoszenia, uwagi i zatwierdzenia w jednym procesie.
+- Sprawdzaj, które zobowiązania przyjęto, a które są nadal otwarte.
 
-- Utrwal zaakceptowane kwoty i zobowiązania do treści dokumentów.
-- Sam raport nie uprawnia do wypłaty.
-- Zaakceptowane niezapłacone zobowiązania pozostają po usunięciu modułu.
+## Payroll — uporządkuj regularną współpracę.
 
-## Payroll — przewidywalne zobowiązania.
+Twórz finansowane harmonogramy na ustalony okres dla osób współpracujących z DAO. Zadbaj, aby zobowiązania płatnicze były zrozumiałe dla organizacji i wykonawców.
 
-Moduł wypłat obsługuje sfinansowane harmonogramy o ustalonym okresie i zapisane zobowiązania. Wypłaty muszą być idempotentne, z jawnymi zasadami opóźnień, nadrabiania okresów, anulowania i braku środków.
+- Określ odbiorcę, kwotę i harmonogram płatności.
+- Śledź należne płatności i zatwierdzone zobowiązania.
+- Połącz zapisy skarbca z zobowiązaniami wobec współpracowników.
 
-- Oddziel przyszły harmonogram od zaakceptowanych zobowiązań.
-- Ponowienie nie może powodować podwójnej wypłaty.
-- Zachowaj ręczne wykonanie przy niedostępnej automatyzacji.
+## Dokumenty — pamiętaj, skąd wzięła się decyzja.
 
-## Wiedza i Operations.
+Trzymaj propozycje, notatki, ustalenia i pliki blisko decyzji, których dotyczą. Historia wersji pomaga śledzić zmiany, a szyfrowane pliki chronią treść przeznaczoną dla ograniczonego grona.
 
-Wersjonowany JSON i pliki publiczne lub prywatne łączą zapisy z decyzjami i pracą. Planowane Operations dodaje ograniczoną automatyzację, powiadomienia i wybrane integracje bez nadawania władzy nad DAO.
+### Wspólne zapisy
 
-### Dokumenty — W rozwoju
+Używaj krótkich zapisów JSON do codziennych informacji i odwołań IPFS do większych plików. Zachowuj poprzednie wersje dla pełnego kontekstu.
 
-Przepływy obejmują wersje, szyfrowanie po stronie klienta oraz weryfikację wysyłania i pobierania. Dostępność Pinata i zasady przechowywania wymagają rzeczywistej walidacji.
+### Chronione dokumenty
 
-### Hostowane Operations — Planowane
-
-Planowane są harmonogramy wykonania, powiadomienia Telegram, webhooki i limity zasobów w opcjonalnym płatnym pakiecie. Ostateczna cena nie została wybrana.
+Szyfruj prywatną treść przed zapisaniem i zapewniaj klucze uprawnionym członkom. Poznaj zakres ochrony i informacje, które pozostają publiczne.
 
 
-## Użyteczne bezpłatne podstawy. Opcjonalne usługi.
+## Zacznij od podstaw. Dodaj to, co pomaga.
 
-Kierunek biznesowy to bezpłatny fundament z ustalonymi limitami oraz płatna wygoda i zasoby operacyjne. Zakup nie daje głosów; wygaśnięcie nie może zatrzymywać kluczy, blokować bezpiecznych wypłat ani usuwać zaakceptowanej pracy.
+Celem jest bezpłatna, użyteczna podstawa zarządzania DAO. Opcjonalne płatne moduły i usługi hostowane są planowane dla społeczności potrzebujących większej wydajności lub wygody. Ceny i limity zostaną opublikowane przed ich udostępnieniem.
 
-- Wybieraj moduły z czytelnymi ustawieniami.
-- Sprawdź żądane uprawnienia przed włączeniem modułu.
-- Zachowaj zgodne opcje niezależnego wdrożenia i własnego hostingu.
+### Wybierz sposób pracy
 
-## Telegram
+Włącz narzędzia pasujące do społeczności, sprawdź ich uprawnienia i poznaj konfigurację w podręczniku.
 
-Tworzysz społeczność, spółdzielnię lub sieć współpracowników? Pomóż nadać kierunek Daclify. Zobacz plan rozwoju i porozmawiaj z nami na Telegramie.
+### Usługi operacyjne — W planie rozwoju
 
-https://t.me/daclify
+Automatyzacja, powiadomienia i wybrane integracje są w planie rozwoju jako usługi opcjonalne. Wspierają działania DAO, zachowując jego zasady zarządzania.
+
+
+## Daj swojej społeczności miejsce do działania.
+
+Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
+
+- [Otwórz aplikację](https://app.daclify.com/)
+- [Czytaj dokumentację](https://app.daclify.com/docs)
+- [Dołącz do społeczności](https://t.me/daclify)

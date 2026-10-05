@@ -1,96 +1,100 @@
-# Daclify — Modular DAO governance for real communities
+# Daclify — DAO tools for communities that govern together
 
-> Discover Daclify V2: a modular DAO platform for community decisions, funded work and encrypted documents. Explore the vision and development roadmap.
+> Manage DAO members, vote on proposals, fund projects and organize shared documents with Daclify. Explore the app and learn how it works in the handbook.
 
 https://daclify.com/
 
-Daclify V2 is in development. Public launch follows contract verification and release review.
+Run your community in one place. Manage members, vote on proposals, fund projects and keep documents organized—with rules your members can see and understand.
 
-Bring people, decisions and meaningful work together. Daclify is building a modular DAO platform where communities choose their rules, their tools and their way forward.
+## From a good idea to something you can build.
 
-## More than a vote. A way to work together.
+Give your community a clear way to make decisions and act on them. Keep the proposal, the budget and the work connected, so everyone can follow what happens next.
 
-A community needs more than a chat group and a treasury address. It needs a clear path from an idea to a shared decision, a funded contribution and a lasting record.
+### Bring people together
 
-### Give people a place
+Give members an account, define their roles and make participation clear. People can join without setting up a native blockchain account of their own.
 
-Membership and roles define who can participate. Internal identities are designed to make joining possible without a native blockchain account.
+### Decide together
 
-### Make decisions count
+Put ideas to a vote. Set the rules, see the results and keep a shared record of the decisions your community makes.
 
-Choose a voting policy, record the outcome and connect approved decisions to bounded actions. Governance should be understandable to the people using it.
+### Fund meaningful work
 
-### Turn agreement into work
-
-Fund milestones, review deliverables and track approved payments. Keep responsibility and progress visible instead of losing them in a conversation.
+Connect your budget to projects and milestones. Review what contributors deliver and track the payments your DAO approves.
 
 
-## Start with your purpose. Choose your tools.
+## Choose the tools your community needs.
 
-The V2 development implementation connects a shared core to focused first-party modules. The goal is useful defaults, clear configuration and room for a community to grow.
+Start with focused modules for decisions, project funding and regular contributor payments. Each one has a clear purpose, so your workspace stays useful as your community grows.
 
-### Decide — In development
+### Decide
 
-Proposals, voting and durable outcomes. Development flows include creating ballots, casting votes and finalizing results.
+Create ballots, let eligible members vote and record the final result. Make community decisions easy to follow.
 
-### Works — In development
+### Works
 
-Milestone funding with submission, review, revision and acceptance. Approval creates a tracked obligation rather than an unaccountable promise.
+Propose a project, agree on milestones and review the work before approving payment. Give contributors and reviewers a shared process.
 
-### Payroll — In development
+### Payroll
 
-Funded schedules and approved payment obligations. Existing development flows preserve accepted payments after module removal.
-
-
-## One vision. Two ways to make it yours.
-
-Start in a shared deployment or operate your own contracts. Both modes are part of the V2 design; the complete independent deployment journey is still being built.
-
-### A shared home — In development
-
-Many DAOs can use the same core contracts while keeping their own membership, configuration and treasury records isolated.
-
-### Your own foundation — Planned
-
-An independent DAO controls its deployment and connects to the Hub for discovery. It must also be able to operate directly without the Hub.
+Organize funded, fixed-term contributor payments. Keep the schedule and approved commitments visible alongside your treasury.
 
 
-## Shared knowledge. Thoughtful privacy.
+## A home for your DAO. A Hub for your community.
 
-Keep small descriptive records as bounded JSON and larger documents through IPFS references. Encrypt protected content before publication, with explicit choices about who holds the keys.
+Find DAOs through the Hub and open a workspace for the community you want to take part in. Each DAO has its own members, rules and records.
 
-- User-controlled and managed recovery are different, clearly labelled account modes.
-- Private content does not make membership, voting or transfers invisible on a public blockchain.
-- Removing a member can restrict future access; it cannot erase information already received.
+### Start with shared contracts
+
+Use shared infrastructure while keeping your DAO’s membership, settings and treasury records separate. Spend your time organizing the community.
+
+### Operate your own deployment — On the roadmap
+
+DAO-owned contracts and direct connections are on the roadmap for communities that want to manage their own infrastructure and connect to the same Hub.
+
+
+## Keep knowledge close to the work.
+
+Store decisions, project notes and documents alongside the activity they support. Use public records when openness matters and encrypted documents when the content needs a smaller audience.
+
+- Keep a version history so members can follow changes.
+- Use compact records for everyday information and IPFS references for larger files.
+- Understand who can read protected content and who holds the recovery keys.
 
 ## Good questions. Straight answers.
 
 ### What is Daclify?
 
-Daclify is a modular DAO platform being rebuilt to help communities manage membership, make decisions, fund work and keep shared records. A DAO is an organization whose agreed rules and decisions can be recorded and executed through smart contracts.
+Daclify is a platform for running a DAO: a community that manages its own members, decisions and shared funds. It brings voting, project funding, contributor payments and documents into one workspace, with agreed rules recorded in smart contracts.
+
+### Who is it for?
+
+Community projects, cooperatives, contributor groups and organizations that make decisions together. Use Daclify to give members a voice, organize a shared budget and keep track of the work it supports.
 
 ### Does every member need a blockchain account?
 
-The V2 design supports internal identities in the smart contract, so members can participate without creating their own native blockchain account. Native wallet linking, social login and Telegram entry are additional planned paths; their production journeys are not ready yet.
+No. Daclify accounts let members participate without creating their own native blockchain account. Your DAO still uses smart contracts to record its rules and actions. Additional wallet, social and Telegram sign-in options are on the roadmap.
 
-### Are governance credits real money?
+### What are governance credits?
 
-No. Internal governance credits represent a DAO’s configured voting power. They are separate from treasury assets and cannot be withdrawn as money. Native-token governance follows an explicit supported staking or weight policy.
+Governance credits are voting units defined by your DAO. They help decide how much voting power a member has. They are separate from treasury assets and cannot be withdrawn as money.
 
-### Can a DAO keep its information private?
+### Can we keep documents private?
 
-Protected documents can be encrypted before publication, with keys granted to eligible members. Encryption protects content, not public blockchain metadata. A member can retain information already received, and managed decryption recovery gives the relevant service access to keys.
+Protected documents are encrypted before they are stored, and eligible members need the right keys to read them. Blockchain activity can still be public, and members can retain information they have already read. The privacy guide explains these limits.
 
-### Will Daclify be free?
+### How much does Daclify cost?
 
-The plan is to keep basic governance useful for free, with defined resource allowances. Hosted automation, notifications and additional services may be paid. Prices and limits have not been finalized. Subscription expiry must not take control of DAO funds or accepted obligations.
+The goal is useful core governance for free, with optional paid modules and hosted services. Prices and resource limits will be published before those services are offered. The roadmap describes the planned options.
 
-### Can we use V2 with real funds now?
+### Where do we start?
 
-V2 is a development implementation, not a qualified production release. Contract verification, account integrations, independent deployment support and operating procedures still need work. Follow the roadmap for the distinction between implemented development flows and release-ready capabilities.
+Open the app to explore the DAO Hub. Read the handbook for accounts, DAO setup, voting, funded work and documents. For feature availability and deployment-specific guidance, use the documentation in the app.
 
-## Telegram
+## Give your community a place to move forward.
 
-Building a community, cooperative or contributor network? Help shape what Daclify becomes. Follow the roadmap and talk with us on Telegram.
+Explore DAOs in the app, find the tools your community needs and use the handbook to learn how they work.
 
-https://t.me/daclify
+- [Open app](https://app.daclify.com/)
+- [Read the docs](https://app.daclify.com/docs)
+- [Join the community](https://t.me/daclify)

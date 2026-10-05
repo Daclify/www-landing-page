@@ -1,61 +1,61 @@
-# Platforma DAO, konta i warianty wdrożenia | Daclify
+# Członkowie, konta i wspólna przestrzeń DAO | Daclify
 
-> Sprawdź, jak Daclify V2 łączy konta wewnętrzne, portfele natywne, własne kontrakty DAO i Hub odkrywania w modułowej platformie zarządzania.
+> Połącz członków, role, głosowania i wspólne środki w Daclify. Poznaj konta DAO, Hub oraz możliwości wspólnego i niezależnego wdrożenia kontraktów.
 
 https://daclify.com/pl/platforma/
 
-Daclify V2 jest w rozwoju. Publiczne uruchomienie wymaga weryfikacji kontraktów i przeglądu wydania.
+Daclify daje Twojemu DAO wspólną przestrzeń dla ludzi, decyzji, pieniędzy i wiedzy. Społeczność ustala zasady, a członkowie rozumieją swoją rolę i dostępne działania.
 
-Różne społeczności potrzebują różnych zasad. V2 powstaje wokół stabilnego rdzenia tożsamości, uprawnień i skarbca oraz modułów wspierających sposób pracy danej organizacji.
+## Ułatw udział w społeczności.
 
-## Najpierw ludzie. Konta dopasowane do potrzeb.
+Konta Daclify identyfikują członków wewnątrz smart kontraktu. Uczestnik nie potrzebuje oddzielnego konta na natywnym blockchainie. Role określają, kto może głosować, oceniać pracę i zarządzać ustawieniami DAO.
 
-Tożsamość wewnętrzna znajduje się w kontrakcie i nie wymaga własnego konta natywnego. Członkostwo i role należą do DAO; połączenie kolejnego poświadczenia nie może tworzyć dodatkowego głosu.
+### Konto dla każdego członka
 
-### Konta pod kontrolą użytkownika — W rozwoju
+Używaj jednej tożsamości w narzędziach DAO. Członkostwo i uprawnienia są przypisane do osoby, bez odtwarzania ich osobno dla głosowań, pracy i dokumentów.
 
-Użytkownik kontroluje oddzielne klucze podpisu i szyfrowania. Przepływy obejmują zaszyfrowany lokalny sejf i poświadczenia odzyskiwania. Samo logowanie społecznościowe nie odtwarza kluczy.
+### Klucze pod Twoją kontrolą
 
-### Zarządzane odzyskiwanie — Planowane
+Konta kontrolowane przez użytkownika korzystają z lokalnego szyfrowanego sejfu i danych odzyskiwania. Zachowaj kopię: logowanie na nowym urządzeniu nie zastąpi utraconych danych odzyskiwania.
 
-Planowany tryb umożliwia odzyskanie z pomocą usługi i ujawnia uprawnienia operatora. Oceniane jest otwarte oprogramowanie do zarządzania kluczami; produkcyjne odzyskiwanie nie jest jeszcze zweryfikowane.
+### Więcej sposobów logowania — W planie rozwoju
 
-### Więcej sposobów udziału — Planowane
-
-Planowane są konta natywne Telos, logowanie społecznościowe, Telegram i tożsamości Telos EVM zgodnie ze zweryfikowanymi możliwościami. Muszą zachować to samo członkostwo i uprawnienia.
+Łączenie portfeli natywnych, logowanie społecznościowe, Telegram i wyraźnie oznaczone odzyskiwanie zarządzane są w planie rozwoju. Każda opcja będzie miała określone uprawnienia i obowiązki.
 
 
-## Wspólne kontrakty albo własne wdrożenie.
+## Twoje DAO zachowuje własną tożsamość.
 
-Wspólne środowisko przechowuje stan poszczególnych DAO w tych samych kontraktach. Niezależne wdrożenie używa tych samych interfejsów publicznych z własną polityką aktualizacji i skarbca.
+Wspólne kontrakty zapewniają każdemu DAO własnych członków, ustawienia i zapisy skarbca. Hub pozwala odkrywać i otwierać te przestrzenie.
 
-### Wdrożenie współdzielone — W rozwoju
+### Wspólna infrastruktura
 
-Implementacja obsługuje tworzenie DAO, role, kredyty i zapisy skarbca we wspólnym środowisku. Pełna izolacja i weryfikacja natywnych kontraktów pozostają warunkami wydania.
+Utwórz DAO we wspólnym wdrożeniu i skonfiguruj potrzebne narzędzia. Zachowaj dokumentację działań organizacji w jednym miejscu.
 
-### Wdrożenie niezależne — Planowane
+### Niezależna infrastruktura — W planie rozwoju
 
-Własne kontrakty, połączenia bezpośrednie i obsługa wielu środowisk są planowane. DAO musi działać także wtedy, gdy Hub lub usługi hostowane są niedostępne.
+Plan rozwoju obejmuje własne kontrakty DAO połączone z Hubem. Społeczność wybierająca ten tryb odpowiada także za wdrożenie, aktualizacje i bieżące utrzymanie.
 
 
-## Hub łączy. Nie zarządza.
+## Siła głosu i pieniądze mają różne zadania.
 
-Hub ma prezentować DAO, wskazywać ich wdrożenia i obsługiwane możliwości. Wpis w katalogu nie może dawać platformie kontroli nad głosami, skarbcem ani aktualizacjami kontraktów.
+Punkty głosowania pomagają DAO ustalić, kto ma wpływ na decyzje. Środki w skarbcu finansują pracę wspieraną przez społeczność. Ich rozdzielenie ułatwia wyjaśnienie zasad.
 
-- Uprawnienia wynikają z jawnych ról i polityk DAO.
-- Uprawnienia modułów są ograniczone i możliwe do sprawdzenia.
-- Interfejsy publiczne, wersje i dokumentacja tworzą spójną całość.
+- Określ siłę głosu zgodnie z zasadami zarządzania DAO.
+- Używaj obsługiwanych aktywów blockchain do zasilania skarbca i płatności.
+- Sprawdź w przewodnikach aplikacji obsługiwane tokeny i zasady głosowania.
 
-## Fundament odpowiedzialnego zarządzania.
+## Ucz się tam, gdzie działasz.
 
-Rdzeń używa kontraktów Antelope C++. Aplikacja i usługi korzystają ze ścisłego TypeScriptu oraz interfejsu Vue. Wiążące decyzje i zapisy finansowe należą do kontraktów; sam widok w przeglądarce nie autoryzuje płatności.
+Aplikacja zawiera podręcznik z wyszukiwarką: konta, konfiguracja DAO, głosowania, projekty, płatności i dokumenty. Przewodniki pokazują wersję, aby można było sprawdzić zgodność instrukcji z połączonym wdrożeniem.
 
-- Kredyty zarządzania DAO są oddzielone od pieniędzy.
-- Głosowanie tokenami natywnymi wymaga obsługiwanej polityki depozytu lub wagi.
-- Kolejne sieci wymagają ograniczonych i osobno zweryfikowanych adapterów.
+- Poznaj funkcję w podręczniku przed wykonaniem działania.
+- Sprawdź uprawnienia modułu przed jego włączeniem.
+- Przechowuj bezpiecznie dane podpisywania i odzyskiwania dokumentów.
 
-## Telegram
+## Daj swojej społeczności miejsce do działania.
 
-Tworzysz społeczność, spółdzielnię lub sieć współpracowników? Pomóż nadać kierunek Daclify. Zobacz plan rozwoju i porozmawiaj z nami na Telegramie.
+Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
 
-https://t.me/daclify
+- [Otwórz aplikację](https://app.daclify.com/)
+- [Czytaj dokumentację](https://app.daclify.com/docs)
+- [Dołącz do społeczności](https://t.me/daclify)

@@ -268,7 +268,7 @@ h1 > span {
   background: var(--panel);
   border-color: var(--amber);
 }
-.development-note {
+.product-note {
   color: var(--muted);
   display: flex;
   gap: 9px;
@@ -999,7 +999,7 @@ summary::-webkit-details-marker {
     padding-inline: 16px;
     font-size: 12px;
   }
-  .development-note {
+  .product-note {
     font-size: 11px;
   }
   .hero-art {

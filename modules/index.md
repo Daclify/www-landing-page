@@ -1,60 +1,65 @@
-# Decide, Works and payroll DAO modules | Daclify
+# DAO voting, project funding and contributor payments | Daclify
 
-> Explore Daclify’s modular governance vision: Decide voting, Works milestone funding, payroll, shared documents and planned hosted Operations.
+> Discover Daclify modules for DAO voting, milestone funding, payroll and shared documents. Choose the tools that fit how your community works.
 
 https://daclify.com/modules/
 
-Daclify V2 is in development. Public launch follows contract verification and release review.
+Every community works differently. Choose focused tools for voting, funding projects and paying contributors, with shared accounts and records across your DAO.
 
-Choose the capabilities that match your organization. Each module has a focused job, a clear configuration and explicit authority. The current modules are development implementations, not production-ready services.
+## Decide — give members a clear voice.
 
-## Decide — a clear path to a shared decision.
+Use ballots to collect votes and record an outcome. Define who is eligible, how voting power is counted and when the decision closes, so members know the rules before they participate.
 
-Decide draws useful patterns from Telos governance and adapts them to Daclify’s internal identity model. Development flows include ballots, voting and finalization; richer elections, committees and proposal execution still need work.
+- Create a ballot with a clear question and options.
+- Let eligible members vote through the DAO workspace.
+- Finalize the ballot and keep the result as a shared record.
 
-- Define who is eligible and how voting power is evaluated.
-- Make quorum, approval and timing rules understandable.
-- Keep a durable result; finalization and execution are separate responsibilities.
+## Works — connect funding to delivery.
 
-## Works — fund outcomes, not vague promises.
+Turn a project proposal into agreed milestones. Contributors submit their work; authorized reviewers can request changes or accept it. Track the funding and approved payment alongside the project.
 
-Works connects funding to milestone reports and authorized review. Current development flows cover proposals, reservation, submission, requested changes, acceptance and cancellation. Persistent custom policy and complete dispute/deadline behavior remain unfinished.
+- Agree on the scope, amount and milestones.
+- Keep submissions, feedback and approvals in one process.
+- See which commitments have been accepted and which are still open.
 
-- Freeze approved amounts and document commitments.
-- A report alone does not authorize payment.
-- Accepted unpaid obligations survive module removal.
+## Payroll — organize recurring contributions.
 
-## Payroll — predictable commitments.
+Set up funded, fixed-term schedules for contributors who work with your DAO over time. Keep payment commitments understandable for both the organization and the people doing the work.
 
-The development payroll module supports funded fixed-term schedules and tracked obligations. Due-payment workflows must remain idempotent, with explicit policies for delays, catch-up, cancellation and insufficient funds.
+- Define the recipient, amount and payment schedule.
+- Track due payments and approved obligations.
+- Keep treasury records connected to contributor commitments.
 
-- Separate future schedules from approved liabilities.
-- Retries must not duplicate a payment.
-- Keep a manual execution path when automation is unavailable.
+## Documents — remember why a decision was made.
 
-## Knowledge and Operations.
+Keep proposals, project notes, agreements and files close to the decisions they support. Versioned records help members follow changes; encrypted files protect content that should have a limited audience.
 
-Versioned JSON and hosted public/private files connect records to decisions and work. Planned hosted Operations adds bounded scheduling, notifications and selected integrations without granting governance authority.
+### Shared records
 
-### Documents — In development
+Use compact JSON records for everyday information and IPFS references for larger files. Keep earlier versions available for context.
 
-Development flows cover versioned records, client-encrypted files, verified uploads and downloads. Live Pinata availability and retention operations remain to be qualified.
+### Protected documents
 
-### Hosted Operations — Planned
-
-Scheduled execution, Telegram notifications, webhooks and resource allowances are planned as an optional paid service package. Final pricing has not been chosen.
+Encrypt private content before storage and give eligible members the keys they need to read it. Learn what this protects and what stays public.
 
 
-## Useful free governance. Optional services.
+## Start with the essentials. Add what helps.
 
-The business direction is a usable free foundation with measured limits, plus paid convenience and operating capacity. Buying a service must not grant extra votes; expiry must not seize keys, block safe withdrawals or erase accepted work.
+Useful core governance is intended to remain free. Optional paid modules and hosted services are planned for communities that need more operating capacity or convenience. Prices and limits will be published before those services are offered.
 
-- Choose modules with understandable presets.
-- Review requested authority before enabling a module.
-- Keep compatible independent and self-hosted options.
+### Choose your workflow
 
-## Telegram
+Enable the tools that suit your community, review their permissions and use the handbook to understand the configuration.
 
-Building a community, cooperative or contributor network? Help shape what Daclify becomes. Follow the roadmap and talk with us on Telegram.
+### Hosted Operations — On the roadmap
 
-https://t.me/daclify
+Automation, notifications and selected integrations are on the roadmap as optional services. They support your DAO’s workflow without replacing its governance rules.
+
+
+## Give your community a place to move forward.
+
+Explore DAOs in the app, find the tools your community needs and use the handbook to learn how they work.
+
+- [Open app](https://app.daclify.com/)
+- [Read the docs](https://app.daclify.com/docs)
+- [Join the community](https://t.me/daclify)
