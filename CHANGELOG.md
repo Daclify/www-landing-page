@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0-alpha.5
+
+- Remove ten obsolete root images/icons: previous partner logos, Daclify branding/assistant artwork, favicon and language flags, after verifying no current callers.
+- Replace the temporary asset-retention policy with explicit cleanup guidance; keep active generated HTML/Markdown/discovery exports for static hosting.
+- Ignore macOS Finder metadata to prevent accidental tracking.
+
 ## 2.0.0-alpha.4
 
 - Fix homepage overflow at intermediate desktop widths without changing the approved desktop/mobile design.

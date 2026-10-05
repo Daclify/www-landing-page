@@ -27,7 +27,7 @@ Implementation order: export regressions and fix; independent browser startup pl
 
 ## Boundaries and deferred work
 
-Legacy standalone image files have no current runtime callers, but documentation deliberately retains them and older public URLs may still be used externally. Leave them intact; they are outside the preferred `dist/` payload. Static-site source review does not establish live app availability, contracts/custody correctness, actual host headers, indexing, rankings or native-speaker translation quality. Production app and direct handbook routing remain publication checks from the existing SEO guide.
+The initial audit retained legacy standalone images as a precaution about older public URLs. The user subsequently requested cleanup; all ten unreferenced root images/icons are now removed, as recorded below. They were already outside the preferred `dist/` payload. Static-site source review does not establish live app availability, contracts/custody correctness, actual host headers, indexing, rankings or native-speaker translation quality. Production app and direct handbook routing remain publication checks from the existing SEO guide.
 
 ## Implemented and verified
 
@@ -46,3 +46,11 @@ Actual verification:
 - Current generated output: 45 files, 714,044 bytes, no client JavaScript files. Homepage: 20,529 bytes (4,708-byte gzip estimate); CSS: 21,532 bytes (4,939-byte gzip estimate). These are file-size measurements, not deployed transfer sizes or Core Web Vitals. There is no evidence that caching, bundler replacement or additional infrastructure would improve this small static site.
 
 No critical/high finding was identified in this scope. No unresolved code failure or mandatory product decision remains. Local preflight is not an atomic multi-file publication mechanism or a sandbox against concurrent malicious filesystem changes; the README states those limits. Safari/Firefox, production headers/caching, real app/handbook availability, search indexing and native-speaker editorial review were not exercised. Those deployment/editorial checks are follow-up work, not reasons to replace the approved product design or add application services here.
+
+## Asset cleanup following user feedback
+
+The user questioned the retained files. Retention was a conservative implementation choice about possible old public URLs, rather than a requirement for the current site. Rechecked exact filenames across source, tools, tests, CI, assets, generated pages and configuration: no current references were found.
+
+Removed `Time2PlanetLogo.png`, `TonomyLogo.svg`, `boid_logo.png`, `daclify-assistant.png`, `daclifyLogo.png`, `favicon.ico`, `fiddlLogo.svg`, `pintastic-logo.png`, `spain-48.png` and `uk-48.png`: 925,342 bytes from the working tree. Git history retains the prior content. Added a Finder metadata ignore rule; preserved the existing untracked local metadata. Current branding/font assets, generated HTML/Markdown/discovery exports, source, tests and tooling remain active.
+
+Version `2.0.0-alpha.5`: 42 Node and 44 desktop/mobile browser tests passed after removal, along with type checking, formatting, exact export checks and diff checks. The cleanup changes no runtime source or product copy. Updated the README/spec and implementation evidence to replace the temporary legacy-retention policy.
