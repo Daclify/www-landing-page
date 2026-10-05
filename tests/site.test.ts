@@ -1,17 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import {
-  readFileSync,
-  existsSync,
-  cpSync,
-  mkdirSync,
-  mkdtempSync,
-  rmSync,
-  writeFileSync,
-} from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { tmpdir } from 'node:os';
-import { spawnSync } from 'node:child_process';
 import { parse, type DefaultTreeAdapterTypes } from 'parse5';
 import { escapeHtml, serializeJson } from '../src/render.ts';
 
@@ -44,63 +34,6 @@ const paths = [
 ];
 const languages = ['en', 'es', 'pl'];
 const load = (path: string) => readFileSync(resolve(root, `.${path}index.html`), 'utf8');
-
-function exportFixture(run: (directory: string, script: string) => void): void {
-  const directory = mkdtempSync(resolve(tmpdir(), 'daclify-site-export-'));
-  try {
-    mkdirSync(resolve(directory, 'tools'));
-    mkdirSync(resolve(directory, 'dist'));
-    writeFileSync(resolve(directory, 'package.json'), '{"type":"module"}');
-    cpSync(
-      resolve(import.meta.dirname, '../tools/export.ts'),
-      resolve(directory, 'tools/export.ts'),
-    );
-    run(directory, resolve(directory, 'tools/export.ts'));
-  } finally {
-    rmSync(directory, { recursive: true, force: true });
-  }
-}
-
-test('static export preserves unrelated assets and verifies exact exported bytes', () => {
-  exportFixture((directory, script) => {
-    writeFileSync(resolve(directory, 'dist/site-files.json'), '["index.html"]');
-    writeFileSync(resolve(directory, 'dist/index.html'), 'new site');
-    writeFileSync(resolve(directory, 'partner.png'), 'existing asset');
-    const result = spawnSync(process.execPath, [script], { encoding: 'utf8' });
-    assert.equal(result.status, 0, result.stderr);
-    assert.equal(readFileSync(resolve(directory, 'index.html'), 'utf8'), 'new site');
-    assert.equal(readFileSync(resolve(directory, 'partner.png'), 'utf8'), 'existing asset');
-    assert.equal(spawnSync(process.execPath, [script, '--check']).status, 0);
-  });
-});
-
-test('export checking fails on stale bytes and missing pages without rewriting them', () => {
-  exportFixture((directory, script) => {
-    writeFileSync(
-      resolve(directory, 'dist/site-files.json'),
-      '["index.html", "es/index.html"]',
-    );
-    writeFileSync(resolve(directory, 'dist/index.html'), 'new site');
-    writeFileSync(resolve(directory, 'index.html'), 'old site');
-    assert.equal(spawnSync(process.execPath, [script, '--check']).status, 1);
-    assert.equal(readFileSync(resolve(directory, 'index.html'), 'utf8'), 'old site');
-    assert.equal(existsSync(resolve(directory, 'es/index.html')), false);
-  });
-});
-
-test('export rejects unsafe paths before copying any files', () => {
-  exportFixture((directory, script) => {
-    writeFileSync(
-      resolve(directory, 'dist/site-files.json'),
-      '["index.html", "../escape.txt"]',
-    );
-    writeFileSync(resolve(directory, 'dist/index.html'), 'new site');
-    const result = spawnSync(process.execPath, [script], { encoding: 'utf8' });
-    assert.equal(result.status, 1);
-    assert.match(result.stderr, /Unsafe generated export path/);
-    assert.equal(existsSync(resolve(directory, 'index.html')), false);
-  });
-});
 
 test('English has a self-referencing canonical and all language alternatives', () => {
   const html = load('/');

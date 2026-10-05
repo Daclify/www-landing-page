@@ -1,8 +1,8 @@
 import { createServer } from 'node:http';
-import { readFile } from 'node:fs/promises';
+import { readFile, realpath } from 'node:fs/promises';
 import { extname, resolve, sep } from 'node:path';
 
-const root = resolve(import.meta.dirname, '../dist');
+const root = await realpath(resolve(import.meta.dirname, '../dist'));
 const port = Number(process.env.PORT ?? 4179);
 if (!Number.isInteger(port) || port < 1024 || port > 65535)
   throw new Error('Invalid preview port');
@@ -39,14 +39,32 @@ const server = createServer(async (request, response) => {
     return;
   }
   try {
-    const bytes = await readFile(file);
+    const physicalFile = await realpath(file);
+    if (!physicalFile.startsWith(`${root}${sep}`)) {
+      response.writeHead(404).end('Not found');
+      return;
+    }
+    const bytes = await readFile(physicalFile);
     response.writeHead(200, {
       'Content-Type': types[extname(file)] ?? 'application/octet-stream',
       'X-Content-Type-Options': 'nosniff',
     });
     response.end(request.method === 'HEAD' ? undefined : bytes);
-  } catch {
-    response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' }).end('Not found');
+  } catch (error: unknown) {
+    const absent =
+      error instanceof Error &&
+      'code' in error &&
+      ['ENOENT', 'ENOTDIR', 'EISDIR'].includes(String(error.code));
+    if (absent) {
+      response
+        .writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' })
+        .end('Not found');
+    } else {
+      console.error('Preview file read failed.');
+      response
+        .writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' })
+        .end('Unable to read preview content.');
+    }
   }
 });
 server.listen(port, '127.0.0.1', () =>

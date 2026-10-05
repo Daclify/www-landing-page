@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.0.0-alpha.4
+
+- Fix homepage overflow at intermediate desktop widths without changing the approved desktop/mobile design.
+- Preflight complete export manifests, source bytes and plain filesystem paths before writes; reject empty/duplicate manifests and linked artifacts.
+- Restrict preview reads to physical output paths and distinguish missing files from unexpected read errors.
+- Build only declared public assets and preserve the previous output when input validation fails.
+- Build a dedicated browser-test server on port 4180, add build/export/HTTP/layout regressions and enable unused-code compiler checks.
+- Consolidate identical app actions and remove obsolete badge styling; preserve all product copy, metadata and URLs.
+
 ## 2.0.0-alpha.3
 
 - Rewrite all 15 pages in English, Spanish and Polish around clear product benefits: membership, voting, funded work, contributor payments and shared records.

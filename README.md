@@ -31,9 +31,11 @@ English stays at `/`; Spanish uses `/es/`, Polish `/pl/`. Each language has home
 
 ## Build and export
 
-`npm run build` replaces the disposable `dist/` output and emits 15 HTML pages, page Markdown, local assets/fonts/licenses, `robots.txt`, `sitemap.xml`, `llms.txt` and `llms-full.txt`. `site-files.json` records the generated files. No contract/application/backend dependency is required.
+`npm run build` reads and renders all inputs before replacing the disposable `dist/` output, preserving the last successful preview when an input is missing or invalid. It emits 15 HTML pages, page Markdown, declared public assets/fonts/licenses, `robots.txt`, `sitemap.xml`, `llms.txt` and `llms-full.txt`. `site-files.json` records the generated files. `tools/build.ts` owns the public asset list: authoring notes such as `assets/README.md` and unrelated asset additions are excluded. Register new runtime assets there. No contract/application/backend dependency is required.
 
-`npm run export` also copies the generated static files to the repository root for compatibility with the previous plain-HTML hosting workflow. It updates only validated generated paths and retains old project/logo assets. `npm run check:export` detects missing or stale exported files. If removing a route, explicitly review and remove obsolete root exports; the exporter never deletes unrelated files.
+`npm run export` also copies the generated static files to the repository root for compatibility with the previous plain-HTML hosting workflow. It requires a non-empty, unique manifest, validates all source/destination paths, rejects linked or non-file artifacts and reads all source bytes before the first write. Preflight failures leave current exports unchanged. It retains old project/logo assets. `npm run check:export` detects missing or stale exported files without rewriting them. If removing a route, explicitly review and remove obsolete root exports; the exporter never deletes unrelated files.
+
+Build/export operate on a trusted local checkout. Preflight is not an atomic multi-file deployment or protection against a hostile process changing paths concurrently. Disk/write failures can still interrupt output replacement. Use the static host's deployment/promotion facilities to publish a complete `dist/` artifact.
 
 Prefer publishing **only `dist/`** on a static host. The site expects domain-root hosting, directory index support and real 404 responses. It does not use a catch-all SPA rewrite. No host, GitHub Pages site, DNS configuration or production deployment was created or changed by this rebuild. Verification CI does not deploy.
 
@@ -50,6 +52,8 @@ npm run format:check
 npm run check:export
 ```
 
-Node tests cover complete language/topic routes, metadata consistency, JSON-LD, internal links, social-image dimensions, crawler files, Markdown and escaping. Playwright covers all 15 pages in desktop/mobile Chromium with axe scans, topic-preserving language changes, no-JavaScript navigation/FAQ, 320px layout, touch targets, reduced motion, MIME types and 404 behavior. CI checks exported output and does not publish.
+Node tests cover complete language/topic routes, metadata consistency, JSON-LD, internal links, social-image dimensions, crawler files, Markdown and escaping, plus isolated build/export/HTTP failure fixtures. Playwright covers all 15 pages in desktop/mobile Chromium with axe scans, topic-preserving language changes, no-JavaScript navigation/FAQ, 320px and intermediate desktop layouts, touch targets and reduced motion.
 
-The recorded baseline/final evidence and review limitations are in [the implementation record](docs/evidence/landing-rebuild.md). Automated language completeness does not substitute for editorial review by native speakers. Local browser and structural checks do not establish search indexing, ranking or live-host behavior.
+`npm run test:e2e` builds its own checkout and starts a dedicated server at `http://127.0.0.1:4180`; it never reuses an existing server. Keep that port free for the suite. The interactive preview stays on 4179, or use `PORT=4186 npm run dev`. Preview file reads are confined to the resolved output directory; links to outside files are rejected, missing files return 404 and unexpected read errors return a generic 500 with an operator diagnostic. CI checks exported output and does not publish.
+
+The recorded baseline/final evidence and review limitations are in [the implementation record](docs/evidence/landing-rebuild.md) and [the repository audit](docs/evidence/2026-10-05-landing-audit.md). Automated language completeness does not substitute for editorial review by native speakers. Local browser and structural checks do not establish search indexing, ranking or live-host behavior.

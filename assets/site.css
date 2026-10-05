@@ -579,10 +579,6 @@ h1 > span {
   color: #d6c4df;
   border-color: #66526e;
 }
-.badge.principle {
-  color: var(--green);
-  border-color: #526644;
-}
 .feature-card h3 {
   font-size: 24px;
   letter-spacing: -0.035em;
@@ -834,6 +830,13 @@ summary::-webkit-details-marker {
 @media (min-width: 1500px) {
   .hero {
     padding-block: 105px;
+  }
+}
+@media (max-width: 1240px) {
+  .orbit-two {
+    width: min(650px, calc(100% + 88px));
+    height: auto;
+    aspect-ratio: 1;
   }
 }
 @media (max-width: 1150px) {

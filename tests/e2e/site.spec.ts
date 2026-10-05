@@ -146,6 +146,22 @@ test('all language pages fit at 320px and respect reduced motion', async ({ page
   }
 });
 
+test('homepages fit intermediate desktop widths around the orbit breakpoint', async ({
+  page,
+}) => {
+  for (const path of ['/', '/es/', '/pl/']) {
+    for (const width of [900, 901, 1150, 1151, 1200, 1240, 1440]) {
+      await page.setViewportSize({ width, height: 900 });
+      await page.goto(path);
+      await page.evaluate(() => document.fonts.ready);
+      expect(
+        await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+        `${path} at ${width}px`,
+      ).toBe(true);
+    }
+  }
+});
+
 test('missing content is a real 404 and crawler files have the correct MIME types', async ({
   request,
   page,

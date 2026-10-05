@@ -40,6 +40,10 @@ function nav(locale: Locale, pageId: PageId): string {
       .join('') + `<a href="${docsUrl}">${escapeHtml(content[locale].docsNav)}</a>`
   );
 }
+function appActions(locale: Locale): string {
+  const copy = content[locale];
+  return `<div class="hero-actions"><a class="button primary" href="${appUrl}">${escapeHtml(copy.app)}${arrow}</a><a class="button secondary" href="${docsUrl}">${escapeHtml(copy.docs)}${arrow}</a></div>`;
+}
 function card(locale: Locale, item: Card, index: number): string {
   const copy = content[locale];
   return `<article class="feature-card"><div class="card-top"><span class="card-number" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span>${item.status ? `<span class="badge ${item.status}">${escapeHtml(copy.status[item.status])}</span>` : '<span class="card-dot" aria-hidden="true"></span>'}</div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.text)}</p>${item.link ? `<a class="text-link" href="${routes[locale][item.link]}">${escapeHtml(copy.more)} <span class="sr-only">${escapeHtml(copy.nav[item.link])}</span>${arrow}</a>` : ''}</article>`;
@@ -167,11 +171,11 @@ ${!home ? `<div class="container breadcrumbs"><a href="${routes[locale].home}">$
     )
     .join(
       '',
-    )}</h1><p class="hero-lead">${escapeHtml(page.lead)}</p><div class="hero-actions"><a class="button primary" href="${appUrl}">${escapeHtml(copy.app)}${arrow}</a><a class="button secondary" href="${docsUrl}">${escapeHtml(copy.docs)}${arrow}</a></div><p class="product-note"><span class="status-dot" aria-hidden="true"></span><span>${escapeHtml(copy.productNote)}</span></p></div>${home ? preview(locale) : `<div class="detail-emblem" aria-hidden="true">${mark}<span>${escapeHtml(copy.nav[pageId])}</span></div>`}</section>
+    )}</h1><p class="hero-lead">${escapeHtml(page.lead)}</p>${appActions(locale)}<p class="product-note"><span class="status-dot" aria-hidden="true"></span><span>${escapeHtml(copy.productNote)}</span></p></div>${home ? preview(locale) : `<div class="detail-emblem" aria-hidden="true">${mark}<span>${escapeHtml(copy.nav[pageId])}</span></div>`}</section>
 ${home ? `<div class="brand-strip"><div class="container">${copy.benefits.map((benefit) => `<span>${escapeHtml(benefit)}</span>`).join('')}</div></div>` : ''}
 <div class="container content">${page.sections.map((item, index) => section(locale, item, index, home)).join('')}</div>
 ${home ? `<section class="container faq-section" aria-labelledby="faq-title"><div><p class="eyebrow">FAQ</p><h2 id="faq-title">${escapeHtml(copy.questions)}</h2></div><div class="faq-list">${copy.faq.map((item) => `<details><summary>${escapeHtml(item.question)}<span aria-hidden="true">＋</span></summary><p>${escapeHtml(item.answer)}</p></details>`).join('')}</div></section>` : ''}
-<section class="container closing-section" aria-labelledby="closing-title"><div class="closing-orbit" aria-hidden="true"></div><p class="eyebrow">DACLIFY</p><h2 id="closing-title">${escapeHtml(copy.ctaTitle)}</h2><p>${escapeHtml(copy.ctaText)}</p><div class="hero-actions"><a class="button primary" href="${appUrl}">${escapeHtml(copy.app)}${arrow}</a><a class="button secondary" href="${docsUrl}">${escapeHtml(copy.docs)}${arrow}</a></div></section>
+<section class="container closing-section" aria-labelledby="closing-title"><div class="closing-orbit" aria-hidden="true"></div><p class="eyebrow">DACLIFY</p><h2 id="closing-title">${escapeHtml(copy.ctaTitle)}</h2><p>${escapeHtml(copy.ctaText)}</p>${appActions(locale)}</section>
 </main>
 <footer class="site-footer"><div class="container footer-main"><div><a class="brand" href="${routes[locale].home}">${brandLockup}</a><p class="footer-tagline">${escapeHtml(copy.footer)}</p><p class="footer-note">${escapeHtml(copy.footerNote)}</p></div><nav aria-label="${escapeHtml(copy.menu)}">${nav(locale, pageId)}</nav><div class="footer-links"><a href="${appUrl}">${escapeHtml(copy.app)}${arrow}</a><a href="${docsUrl}">${escapeHtml(copy.docs)}${arrow}</a><a href="${communityUrl}">${escapeHtml(copy.community)}${arrow}</a><a href="https://github.com/Daclify">GitHub ${arrow}</a></div></div><div class="container footer-bottom"><span>© Daclify</span><span>EN / ES / PL</span><span>${escapeHtml(copy.productNote)}</span></div></footer>
 </body>

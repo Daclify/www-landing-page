@@ -1,6 +1,6 @@
 {
   "name": "@daclify/website",
-  "version": "2.0.0-alpha.3",
+  "version": "2.0.0-alpha.4",
   "private": true,
   "type": "module",
   "engines": {
@@ -13,7 +13,7 @@
     "export": "npm run build && node tools/export.ts",
     "dev": "npm run build && node tools/serve.ts",
     "typecheck": "tsc --noEmit",
-    "test": "npm run build && SITE_DIR=dist node --test tests/site.test.ts",
+    "test": "npm run build && SITE_DIR=dist node --test tests/*.test.ts",
     "test:e2e": "playwright test",
     "format": "prettier --write src tools tests *.json *.ts docs README.md CHANGELOG.md assets/*.css assets/README.md .github/workflows",
     "format:check": "prettier --check src tools tests *.json *.ts docs README.md CHANGELOG.md assets/*.css assets/README.md .github/workflows",
