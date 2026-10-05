@@ -56,11 +56,44 @@ try {
     throw new Error('Favicon logo is clipped by the 64px canvas');
   }
   await page.screenshot({ path: resolve(root, 'assets/brand-mark.png') });
+  await page.setViewportSize({ width: 512, height: 1024 });
+  await page.setContent(
+    `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>${fonts}${brandStyles}*{box-sizing:border-box}body{margin:0;width:512px;height:1024px;background:#100d0b;font-family:Inter,sans-serif;display:grid;place-items:center}.brand{font-size:29px;transform:scale(2.1)}.brand .brand-mark{width:42px;height:42px;font-size:29px}</style></head><body><div class="brand">${brandLockup}</div></body></html>`,
+  );
+  await page.evaluate(() => document.fonts.ready);
+  const lockupBounds = await page.locator('.brand').boundingBox();
+  if (
+    !lockupBounds ||
+    lockupBounds.x < 0 ||
+    lockupBounds.y < 0 ||
+    lockupBounds.x + lockupBounds.width > 512 ||
+    lockupBounds.y + lockupBounds.height > 1024
+  ) {
+    throw new Error('Portrait brand lockup is clipped by the 512×1024 canvas');
+  }
+  await page.screenshot({ path: resolve(root, 'assets/brand-lockup-512x1024.png') });
+  await page.setContent(
+    `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>${fonts}${brandStyles}*{box-sizing:border-box}body{margin:0;width:512px;height:1024px;background:#100d0b;font-family:Inter,sans-serif;display:grid;place-items:center}.brand-mark{transform:scale(10)}</style></head><body>${brandMark}</body></html>`,
+  );
+  await page.evaluate(() => document.fonts.ready);
+  const markBounds = await page.locator('.brand-mark').boundingBox();
+  if (
+    !markBounds ||
+    markBounds.x < 0 ||
+    markBounds.y < 0 ||
+    markBounds.x + markBounds.width > 512 ||
+    markBounds.y + markBounds.height > 1024
+  ) {
+    throw new Error('Portrait brand mark is clipped by the 512×1024 canvas');
+  }
+  await page.screenshot({ path: resolve(root, 'assets/brand-mark-512x1024.png') });
 } finally {
   await browser.close();
 }
 await writeFile(
   resolve(root, 'assets/README.md'),
-  '# Brand assets\n\nThe established identity comes from `daclify-frontend/src/App.vue` and `src/styles.css` at commit `13784ed`: a rounded amber `d.` tile, the `daclify` wordmark and the unchanged brand tagline `GOVERN TOGETHER`. `src/brand.ts` owns the shared markup and `assets/brand.css` its frontend-derived styling. The same source is used in website headers/footers, illustrative marks, social cards and the 64×64 PNG favicon/organization logo. No replacement symbol is introduced.\n\nRun `npm run assets:social` to regenerate the three localized 1200×630 cards and favicon with Chromium. The palette follows the Daclify V2 CIQ/MIQ foundations.\n\nInter is distributed by @fontsource-variable/inter 5.3.0 under the SIL Open Font License. Builds and exports include the package license. Latin and Latin Extended subsets cover English, Spanish and Polish. The website loads no third-party font or tracking service.\n',
+  '# Brand assets\n\nThe established identity comes from `daclify-frontend/src/App.vue` and `src/styles.css` at commit `13784ed`: a rounded amber `d.` tile, the `daclify` wordmark and the unchanged brand tagline `GOVERN TOGETHER`. `src/brand.ts` owns the shared markup and `assets/brand.css` its frontend-derived styling. The same source is used in website headers/footers, illustrative marks, social cards and the 64×64 PNG favicon/organization logo. No replacement symbol is introduced.\n\n`brand-lockup-512x1024.png` is an additional portrait export: 512 pixels wide by 1024 pixels high, with the intact full logo centred on the espresso background. It is rendered directly from the source markup and Inter font, preserving proportions rather than stretching or enlarging the favicon. `brand-mark-512x1024.png` is the standalone mark version on the same portrait canvas: the original tile is rendered at 420×420 pixels and centred, without the wordmark or tagline. The original favicon and page identity remain unchanged.\n\nRun `npm run assets:social` to regenerate the three localized 1200×630 cards, favicon and both portrait brand exports with Chromium. The palette follows the Daclify V2 CIQ/MIQ foundations.\n\nInter is distributed by @fontsource-variable/inter 5.3.0 under the SIL Open Font License. Builds and exports include the package license. Latin and Latin Extended subsets cover English, Spanish and Polish. The website loads no third-party font or tracking service.\n',
 );
-console.log('Generated three localized social cards and the frontend-identity favicon.');
+console.log(
+  'Generated three localized social cards, the favicon and two 512×1024 brand exports.',
+);

@@ -60,6 +60,12 @@ test('brand matches the frontend d. tile and wordmark instead of a new symbol', 
   assert.equal(favicon.subarray(1, 4).toString(), 'PNG');
   assert.equal(favicon.readUInt32BE(16), 64);
   assert.equal(favicon.readUInt32BE(20), 64);
+  for (const name of ['brand-lockup-512x1024.png', 'brand-mark-512x1024.png']) {
+    const portrait = readFileSync(resolve(root, 'assets', name));
+    assert.equal(portrait.subarray(1, 4).toString(), 'PNG');
+    assert.equal(portrait.readUInt32BE(16), 512);
+    assert.equal(portrait.readUInt32BE(20), 1024);
+  }
   assert.equal(existsSync(resolve(root, 'assets/brand-mark.svg')), false);
 });
 

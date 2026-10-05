@@ -25,7 +25,9 @@ The preview is at `http://127.0.0.1:4179`. It serves the generated `dist/` direc
 - `assets/site.css`: visual system and responsive behavior.
 - `src/brand.ts` and `assets/brand.css`: established frontend `d.` tile, wordmark and brand tagline.
 - `assets/brand-mark.png`: favicon/organization logo generated from that same markup, font and styling.
-- `tools/social.ts`: explicit localized 1200×630 social-card and favicon generation. Run `npm run assets:social` after relevant headline/design changes; this requires Playwright Chromium. Commit the reviewed PNGs. Ordinary builds do not require a browser.
+- `assets/brand-lockup-512x1024.png`: additional portrait logo export, centred on the espresso background with its original proportions.
+- `assets/brand-mark-512x1024.png`: standalone 420×420 brand mark centred on a 512×1024 espresso canvas.
+- `tools/social.ts`: explicit localized 1200×630 social-card, favicon and portrait logo generation. Run `npm run assets:social` after relevant headline/design changes; this requires Playwright Chromium. Commit the reviewed PNGs. Ordinary builds do not require a browser.
 
 English stays at `/`; Spanish uses `/es/`, Polish `/pl/`. Each language has home, platform, modules, privacy and roadmap pages with localized slugs. Language links preserve the topic. HTML contains self-canonical URLs and reciprocal en/es/pl/x-default alternates.
 

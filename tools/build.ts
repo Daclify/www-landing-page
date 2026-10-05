@@ -13,6 +13,8 @@ const publicAssets = [
   'brand.css',
   'site.css',
   'brand-mark.png',
+  'brand-lockup-512x1024.png',
+  'brand-mark-512x1024.png',
   ...locales.map((locale) => `social-${locale}.png`),
 ];
 for (const name of publicAssets) {

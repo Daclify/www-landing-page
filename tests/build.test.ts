@@ -50,6 +50,8 @@ test('build publishes declared runtime assets instead of the whole authoring fol
       'assets/brand.css',
       'assets/site.css',
       'assets/brand-mark.png',
+      'assets/brand-lockup-512x1024.png',
+      'assets/brand-mark-512x1024.png',
       'assets/inter-latin.woff2',
       'assets/INTER-LICENSE.txt',
       'pl/index.html',

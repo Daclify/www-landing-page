@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.0-alpha.6
+
+- Add two 512×1024 portrait PNGs on the espresso background: the full logo with wordmark and tagline, and a larger standalone 420×420 brand mark, both rendered directly from the source identity.
+- Include the additional export in reproducible asset generation and the static build, preserving the existing favicon and page branding.
+
 ## 2.0.0-alpha.5
 
 - Remove ten obsolete root images/icons: previous partner logos, Daclify branding/assistant artwork, favicon and language flags, after verifying no current callers.
