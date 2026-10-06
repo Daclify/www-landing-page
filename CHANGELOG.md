@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0-alpha.7
+
+- Reduce the ignore file to the repository's tooling and outputs while preserving environment-file protection.
+- Remove redundant CSS declarations and obsolete mobile-header overrides, preserving the rendered layout.
+- Keep the brand asset guide as editable documentation instead of rewriting it during PNG generation.
+
 ## 2.0.0-alpha.6
 
 - Add two 512×1024 portrait PNGs on the espresso background: the full logo with wordmark and tagline, and a larger standalone 420×420 brand mark, both rendered directly from the source identity.

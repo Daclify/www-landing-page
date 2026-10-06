@@ -209,7 +209,6 @@ h1 {
   font-size: clamp(48px, 5.3vw, 78px);
   margin-top: 28px;
   line-height: 1.08;
-  font-weight: 550;
 }
 h1 > span {
   display: block;
@@ -811,9 +810,6 @@ summary::-webkit-details-marker {
 .detail-section {
   padding-block: 55px;
 }
-.detail-section .section-heading {
-  grid-template-columns: 70px 1fr;
-}
 .detail-section .section-heading h2 {
   font-size: clamp(27px, 2.8vw, 36px);
 }
@@ -967,7 +963,6 @@ summary::-webkit-details-marker {
   }
   .header-inner {
     min-height: 85px;
-    gap: 8px;
   }
   .header-end {
     gap: 3px;
@@ -976,13 +971,10 @@ summary::-webkit-details-marker {
     padding: 1px;
   }
   .language-nav a {
-    min-width: 35px;
-    min-height: 44px;
     font-size: 10px;
   }
   .mobile-menu summary {
     gap: 3px;
-    padding-inline: 7px;
   }
   .hero {
     padding-top: 50px;
@@ -1001,9 +993,6 @@ summary::-webkit-details-marker {
   .button {
     padding-inline: 16px;
     font-size: 12px;
-  }
-  .product-note {
-    font-size: 11px;
   }
   .hero-art {
     padding-inline: 8px;
@@ -1072,9 +1061,6 @@ summary::-webkit-details-marker {
   .card-top {
     margin-bottom: 21px;
   }
-  .feature-card h3 {
-    font-size: 24px;
-  }
   .principles {
     gap: 17px;
     margin-top: 28px;
@@ -1119,10 +1105,6 @@ summary::-webkit-details-marker {
   .detail-hero h1 {
     font-size: 42px;
   }
-  .detail-section .section-heading {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
   .detail-section {
     padding-block: 40px;
   }
@@ -1130,16 +1112,6 @@ summary::-webkit-details-marker {
 @media (max-width: 360px) {
   .container {
     width: calc(100% - 32px);
-  }
-  .header-inner {
-    gap: 2px;
-  }
-  .language-nav a {
-    min-width: 30px;
-  }
-  .mobile-menu summary {
-    font-size: 11px;
-    padding-inline: 3px;
   }
   .preview-flow {
     gap: 8px;
