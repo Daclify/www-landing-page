@@ -47,6 +47,42 @@ test('language links preserve the topic and expose complete translated pages', a
   await expect(page).toHaveURL(/\/modules\/$/);
 });
 
+test('CommunityIQ project links work on localized homepages without JavaScript', async ({
+  browser,
+  baseURL,
+  isMobile,
+}) => {
+  if (!baseURL) throw new Error('Preview base URL is required');
+  const context = await browser.newContext({
+    javaScriptEnabled: false,
+    baseURL,
+    viewport: { width: isMobile ? 390 : 1440, height: 900 },
+  });
+  try {
+    await context.route('https://community-iq.com/**', (route) =>
+      route.fulfill({
+        contentType: 'text/html',
+        body: '<!doctype html><html lang="en"><title>CommunityIQ destination</title><main>CommunityIQ destination</main></html>',
+      }),
+    );
+    const page = await context.newPage();
+    for (const item of [
+      { path: '/', link: 'Explore CommunityIQ' },
+      { path: '/es/', link: 'Conoce CommunityIQ' },
+      { path: '/pl/', link: 'Poznaj CommunityIQ' },
+    ]) {
+      await page.goto(item.path);
+      await expect(page.getByRole('heading', { name: /CommunityIQ/ })).toBeVisible();
+      const link = page.getByRole('link', { name: item.link, exact: true });
+      await expect(link).toHaveAttribute('href', 'https://community-iq.com/');
+      await link.click();
+      await expect(page).toHaveURL('https://community-iq.com/');
+    }
+  } finally {
+    await context.close();
+  }
+});
+
 test('localized primary actions navigate to the app and its handbook', async ({ page }) => {
   // A deterministic destination tests navigation without assuming the future host is live.
   await page.route('https://app.daclify.com/**', async (route) => {

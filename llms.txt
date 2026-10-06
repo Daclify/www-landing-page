@@ -4,6 +4,10 @@
 
 Use the app to explore DAO workspaces and the versioned handbook for accounts, voting, projects, treasury and document guides. The roadmap identifies planned capabilities, including social/Telegram login, managed recovery, independent deployments, hosted services and future chain integrations. Prices and delivery dates for these options are not announced. Encryption protects document content; public blockchain activity may remain visible.
 
+## CommunityIQ
+
+- [CommunityIQ](https://community-iq.com/): CommunityIQ brings people, ideas and shared knowledge together. It will use Daclify as its main DAO software to help its communities organize members, make decisions and manage shared resources.
+
 ## App and documentation
 
 - [Daclify app](https://app.daclify.com/): DAO Hub and community workspaces.

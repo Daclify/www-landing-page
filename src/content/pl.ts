@@ -17,6 +17,11 @@ export const pl: SiteCopy = {
   docsNav: 'Dokumentacja',
   benefits: ['CZŁONKOWIE', 'GŁOSOWANIA', 'PROJEKTY', 'SKARBIEC', 'DOKUMENTY'],
   community: 'Dołącz do społeczności',
+  communityIq: {
+    title: 'Zarządzanie DAO dla CommunityIQ',
+    text: 'CommunityIQ łączy ludzi, pomysły i wspólną wiedzę. Będzie korzystać z Daclify jako głównego oprogramowania do zarządzania DAO, aby pomagać swoim społecznościom organizować członkostwo, podejmować decyzje i zarządzać wspólnymi zasobami.',
+    linkLabel: 'Poznaj CommunityIQ',
+  },
   more: 'Dowiedz się więcej',
   footer: 'Narzędzia dla społeczności, które decydują razem.',
   footerNote:

@@ -33,6 +33,11 @@ export interface SiteCopy {
   docsNav: string;
   benefits: readonly [string, string, string, string, string];
   community: string;
+  communityIq: {
+    title: string;
+    text: string;
+    linkLabel: string;
+  };
   more: string;
   footer: string;
   footerNote: string;

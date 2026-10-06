@@ -19,6 +19,7 @@ The preview is at `http://127.0.0.1:4179`. It serves the generated `dist/` direc
 ## Edit content and branding
 
 - `src/content/en.ts`, `es.ts`, `pl.ts`: complete localized copy; do not edit generated HTML or Markdown.
+- Their `communityIq` copy supplies the homepage project feature and Markdown exports. The user-confirmed relationship is expressed as planned use of Daclify as CommunityIQ's main DAO software; its public URL lives in `src/routes.ts`.
 - `src/types.ts`: shared typed content contract.
 - `src/routes.ts`: canonical origin, language/topic paths, app, handbook and community links.
 - `src/render.ts`: shared accessible HTML, metadata, JSON-LD and machine-readable text.

@@ -6,6 +6,12 @@ https://daclify.com/
 
 Run your community in one place. Manage members, vote on proposals, fund projects and keep documents organized—with rules your members can see and understand.
 
+## DAO governance for CommunityIQ
+
+CommunityIQ brings people, ideas and shared knowledge together. It will use Daclify as its main DAO software to help its communities organize members, make decisions and manage shared resources.
+
+[Explore CommunityIQ](https://community-iq.com/)
+
 ## From a good idea to something you can build.
 
 Give your community a clear way to make decisions and act on them. Keep the proposal, the budget and the work connected, so everyone can follow what happens next.

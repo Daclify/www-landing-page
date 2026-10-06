@@ -6,6 +6,12 @@ https://daclify.com/es/
 
 Organiza tu comunidad en un solo lugar. Gestiona miembros, vota propuestas, financia proyectos y ordena documentos, con reglas que todos puedan consultar y entender.
 
+## Gobernanza DAO para CommunityIQ
+
+CommunityIQ conecta personas, ideas y conocimiento compartido. Usará Daclify como su plataforma principal para gestionar DAOs y ayudar a sus comunidades a organizar miembros, tomar decisiones y administrar recursos compartidos.
+
+[Conoce CommunityIQ](https://community-iq.com/)
+
 ## De una buena idea a algo que podéis construir.
 
 Dale a tu comunidad un proceso claro para decidir y actuar. Conecta la propuesta, el presupuesto y el trabajo para que todos puedan seguir el siguiente paso.

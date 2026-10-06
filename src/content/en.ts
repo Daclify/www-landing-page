@@ -17,6 +17,11 @@ export const en: SiteCopy = {
   docsNav: 'Docs',
   benefits: ['MEMBERSHIP', 'VOTING', 'PROJECT FUNDING', 'TREASURY', 'SHARED RECORDS'],
   community: 'Join the community',
+  communityIq: {
+    title: 'DAO governance for CommunityIQ',
+    text: 'CommunityIQ brings people, ideas and shared knowledge together. It will use Daclify as its main DAO software to help its communities organize members, make decisions and manage shared resources.',
+    linkLabel: 'Explore CommunityIQ',
+  },
   more: 'Learn more',
   footer: 'Tools for communities that decide together.',
   footerNote:

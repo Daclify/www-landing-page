@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0-alpha.8
+
+- Feature CommunityIQ's planned use of Daclify as its main DAO software on all three localized homepages, with a direct project link.
+- Include the same relationship in homepage Markdown and the LLM discovery/full-text exports.
+- Verify localized copy and project navigation without JavaScript on desktop and mobile.
+
 ## 2.0.0-alpha.7
 
 - Reduce the ignore file to the repository's tooling and outputs while preserving environment-file protection.

@@ -42,6 +42,54 @@ test('English has a self-referencing canonical and all language alternatives', (
   assert.match(html, /hreflang="x-default"/);
 });
 
+test('localized homepages feature CommunityIQ with its planned DAO software and project link', () => {
+  const cases = [
+    {
+      path: '/',
+      heading: 'DAO governance for CommunityIQ',
+      relationship: /will use Daclify as its main DAO software/,
+      link: 'Explore CommunityIQ',
+    },
+    {
+      path: '/es/',
+      heading: 'Gobernanza DAO para CommunityIQ',
+      relationship: /usará Daclify como su plataforma principal para gestionar DAOs/i,
+      link: 'Conoce CommunityIQ',
+    },
+    {
+      path: '/pl/',
+      heading: 'Zarządzanie DAO dla CommunityIQ',
+      relationship:
+        /będzie korzystać z Daclify jako głównego oprogramowania do zarządzania DAO/i,
+      link: 'Poznaj CommunityIQ',
+    },
+  ];
+  for (const item of cases) {
+    const main = elements(parse(load(item.path))).find((node) => node.tagName === 'main');
+    assert.ok(main);
+    const section = elements(main).find(
+      (node) =>
+        node.tagName === 'section' &&
+        elements(node).some((child) => child.tagName === 'h2' && text(child) === item.heading),
+    );
+    assert.ok(section, `${item.path}: missing CommunityIQ section`);
+    assert.match(text(section), item.relationship);
+    const link = elements(section).find((node) => node.tagName === 'a');
+    assert.ok(link);
+    assert.equal(attr(link, 'href'), 'https://community-iq.com/');
+    assert.equal(text(link), item.link);
+    const markdown = readFileSync(resolve(root, `.${item.path}index.md`), 'utf8');
+    assert.ok(markdown.includes(`## ${item.heading}`));
+    assert.match(markdown, item.relationship);
+    assert.ok(markdown.includes(`[${item.link}](https://community-iq.com/)`));
+    const full = readFileSync(resolve(root, 'llms-full.txt'), 'utf8');
+    assert.ok(full.includes(markdown.trimEnd()));
+  }
+  const llms = readFileSync(resolve(root, 'llms.txt'), 'utf8');
+  assert.ok(llms.includes('[CommunityIQ](https://community-iq.com/)'));
+  assert.match(llms, /will use Daclify as its main DAO software/);
+});
+
 test('brand matches the frontend d. tile and wordmark instead of a new symbol', () => {
   for (const path of paths.flat()) {
     const nodes = elements(parse(load(path)));

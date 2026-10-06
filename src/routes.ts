@@ -6,6 +6,7 @@ export const appUrl = 'https://app.daclify.com/';
 // Verified against daclify-frontend/src/main.ts: /docs/:topic?.
 export const docsUrl = 'https://app.daclify.com/docs';
 export const communityUrl = 'https://t.me/daclify';
+export const communityIqUrl = 'https://community-iq.com/';
 export const routes: Record<Locale, Record<PageId, string>> = {
   en: {
     home: '/',

@@ -6,6 +6,12 @@ https://daclify.com/pl/
 
 Prowadź swoją społeczność w jednym miejscu. Zarządzaj członkami, głosuj nad propozycjami, finansuj projekty i porządkuj dokumenty — według zasad, które każdy może poznać i zrozumieć.
 
+## Zarządzanie DAO dla CommunityIQ
+
+CommunityIQ łączy ludzi, pomysły i wspólną wiedzę. Będzie korzystać z Daclify jako głównego oprogramowania do zarządzania DAO, aby pomagać swoim społecznościom organizować członkostwo, podejmować decyzje i zarządzać wspólnymi zasobami.
+
+[Poznaj CommunityIQ](https://community-iq.com/)
+
 ## Od dobrego pomysłu do wspólnego działania.
 
 Daj społeczności jasny sposób podejmowania i realizowania decyzji. Połącz propozycję, budżet i pracę, aby każdy wiedział, jaki jest następny krok.

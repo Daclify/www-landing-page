@@ -17,6 +17,11 @@ export const es: SiteCopy = {
   docsNav: 'Documentación',
   benefits: ['MIEMBROS', 'VOTACIONES', 'PROYECTOS', 'TESORERÍA', 'DOCUMENTOS'],
   community: 'Únete a la comunidad',
+  communityIq: {
+    title: 'Gobernanza DAO para CommunityIQ',
+    text: 'CommunityIQ conecta personas, ideas y conocimiento compartido. Usará Daclify como su plataforma principal para gestionar DAOs y ayudar a sus comunidades a organizar miembros, tomar decisiones y administrar recursos compartidos.',
+    linkLabel: 'Conoce CommunityIQ',
+  },
   more: 'Más información',
   footer: 'Herramientas para comunidades que deciden juntas.',
   footerNote:
