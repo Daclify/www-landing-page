@@ -4,6 +4,14 @@ An informative, static product website for Daclify in English, Spanish and Polis
 
 The app destination is `https://app.daclify.com/`; the handbook is `https://app.daclify.com/docs`, matching the frontend's `/docs/:topic?` route. Both URLs are centralized in `src/routes.ts` and appear in every page's main actions, footer and Markdown export. The handbook is also in desktop/mobile navigation and `llms.txt`. These are the user's planned deployment destinations; this website change does not deploy or qualify the app. Confirm the app/handbook host, HTTPS and SPA route fallback before publishing the launch-facing website.
 
+## Product documentation and recovery claims
+
+The current application development version is 0.6.0-alpha.1; this static website has its own independent package version. Product rules and generated handbook text belong to [core documentation](https://github.com/Daclify/daclify-backend-core/blob/main/docs/README.md) and the module guide bundle. The website explains them in localized promotional copy; it does not implement login, vaults, governance or recovery.
+
+Use the [recovery runbook](https://github.com/Daclify/daclify-backend-core/blob/main/docs/disaster-recovery.md) when describing resilience. Existing contracts preserve DAO/member state after a service failure, but each member needs their own current keys or activated wallet. One recovered administrator cannot recover everyone else's private keys. Lost social-login pairings need a database backup or fresh pairing. Private documents need original decryption keys, surviving encrypted grants and durable ciphertext; an IPFS hash alone is not a storage guarantee. Managed recovery remains unavailable and must not be promoted as a qualified service.
+
+The handbook's recovery topic is `/docs/recovery`, while `/status` in the app distinguishes configuration from live qualification. Keep these claims consistent across English, Spanish and Polish whenever public copy changes. The website retains its roadmap distinctions for independent routing, providers and other capabilities awaiting qualification.
+
 ## Work locally
 
 Use Node 24.21+ within Node 24 and npm 11.19+ within npm 11.
