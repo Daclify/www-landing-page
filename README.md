@@ -43,7 +43,7 @@ Obsolete partner logos, previous Daclify images, the old favicon and language fl
 
 Build/export operate on a trusted local checkout. Preflight is not an atomic multi-file deployment or protection against a hostile process changing paths concurrently. Disk/write failures can still interrupt output replacement. Use the static host's deployment/promotion facilities to publish a complete `dist/` artifact.
 
-Prefer publishing **only `dist/`** on a static host. The site expects domain-root hosting, directory index support and real 404 responses. It does not use a catch-all SPA rewrite. No host, GitHub Pages site, DNS configuration or production deployment was created or changed by this rebuild. Verification CI does not deploy.
+Prefer publishing **only `dist/`** on a static host. The site expects domain-root hosting, directory index support and real 404 responses. It does not use a catch-all SPA rewrite. No host, GitHub Pages site, DNS configuration or production deployment was created or changed by this rebuild. Build and test locally on the Mac. GitHub verification is manual-only (`workflow_dispatch`); pushes and pull requests do not start it, and it does not deploy.
 
 Canonical origin remains `https://daclify.com` from the previous website. Confirm the actual production host, HTTPS and www-to-canonical redirect before publication. See [SEO and publication notes](docs/seo.md).
 
