@@ -56,6 +56,7 @@ La app incluye un manual con buscador para cuentas, configuración de DAOs, vota
 
 Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.
 
-- [Abrir la app](https://app.daclify.com/)
-- [Leer la documentación](https://app.daclify.com/docs)
+- [App de prueba](https://testnet.app.daclify.com/)
+- Abrir la app — Pronto
+- [Leer la documentación](https://testnet.app.daclify.com/docs)
 - [Únete a la comunidad](https://t.me/daclify)

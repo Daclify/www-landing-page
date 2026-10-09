@@ -29,6 +29,8 @@ export interface SiteCopy {
   status: Record<Status, string>;
   productNote: string;
   app: string;
+  soon: string;
+  testApp: string;
   docs: string;
   docsNav: string;
   benefits: readonly [string, string, string, string, string];

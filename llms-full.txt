@@ -103,8 +103,9 @@ Open the app to explore the DAO Hub. Read the handbook for accounts, DAO setup, 
 
 Explore DAOs in the app, find the tools your community needs and use the handbook to learn how they work.
 
-- [Open app](https://app.daclify.com/)
-- [Read the docs](https://app.daclify.com/docs)
+- [Test App](https://testnet.app.daclify.com/)
+- Open app — Soon
+- [Read the docs](https://testnet.app.daclify.com/docs)
 - [Join the community](https://t.me/daclify)
 
 
@@ -168,8 +169,9 @@ The app includes a searchable handbook for accounts, DAO setup, voting, projects
 
 Explore DAOs in the app, find the tools your community needs and use the handbook to learn how they work.
 
-- [Open app](https://app.daclify.com/)
-- [Read the docs](https://app.daclify.com/docs)
+- [Test App](https://testnet.app.daclify.com/)
+- Open app — Soon
+- [Read the docs](https://testnet.app.daclify.com/docs)
 - [Join the community](https://t.me/daclify)
 
 
@@ -237,8 +239,9 @@ Automation, notifications and selected integrations are on the roadmap as option
 
 Explore DAOs in the app, find the tools your community needs and use the handbook to learn how they work.
 
-- [Open app](https://app.daclify.com/)
-- [Read the docs](https://app.daclify.com/docs)
+- [Test App](https://testnet.app.daclify.com/)
+- Open app — Soon
+- [Read the docs](https://testnet.app.daclify.com/docs)
 - [Join the community](https://t.me/daclify)
 
 
@@ -301,8 +304,9 @@ Compact information fits in contract records; larger documents use IPFS referenc
 
 Explore DAOs in the app, find the tools your community needs and use the handbook to learn how they work.
 
-- [Open app](https://app.daclify.com/)
-- [Read the docs](https://app.daclify.com/docs)
+- [Test App](https://testnet.app.daclify.com/)
+- Open app — Soon
+- [Read the docs](https://testnet.app.daclify.com/docs)
 - [Join the community](https://t.me/daclify)
 
 
@@ -374,8 +378,9 @@ Our aim is a useful free governance foundation, with optional paid capabilities 
 
 Explore DAOs in the app, find the tools your community needs and use the handbook to learn how they work.
 
-- [Open app](https://app.daclify.com/)
-- [Read the docs](https://app.daclify.com/docs)
+- [Test App](https://testnet.app.daclify.com/)
+- Open app — Soon
+- [Read the docs](https://testnet.app.daclify.com/docs)
 - [Join the community](https://t.me/daclify)
 
 
@@ -484,8 +489,9 @@ Abre la app para explorar el Hub de DAOs. Consulta el manual para aprender sobre
 
 Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.
 
-- [Abrir la app](https://app.daclify.com/)
-- [Leer la documentación](https://app.daclify.com/docs)
+- [App de prueba](https://testnet.app.daclify.com/)
+- Abrir la app — Pronto
+- [Leer la documentación](https://testnet.app.daclify.com/docs)
 - [Únete a la comunidad](https://t.me/daclify)
 
 
@@ -549,8 +555,9 @@ La app incluye un manual con buscador para cuentas, configuración de DAOs, vota
 
 Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.
 
-- [Abrir la app](https://app.daclify.com/)
-- [Leer la documentación](https://app.daclify.com/docs)
+- [App de prueba](https://testnet.app.daclify.com/)
+- Abrir la app — Pronto
+- [Leer la documentación](https://testnet.app.daclify.com/docs)
 - [Únete a la comunidad](https://t.me/daclify)
 
 
@@ -618,8 +625,9 @@ La automatización, las notificaciones y algunas integraciones están en la hoja
 
 Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.
 
-- [Abrir la app](https://app.daclify.com/)
-- [Leer la documentación](https://app.daclify.com/docs)
+- [App de prueba](https://testnet.app.daclify.com/)
+- Abrir la app — Pronto
+- [Leer la documentación](https://testnet.app.daclify.com/docs)
 - [Únete a la comunidad](https://t.me/daclify)
 
 
@@ -682,8 +690,9 @@ La información compacta se guarda en registros del contrato y los documentos gr
 
 Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.
 
-- [Abrir la app](https://app.daclify.com/)
-- [Leer la documentación](https://app.daclify.com/docs)
+- [App de prueba](https://testnet.app.daclify.com/)
+- Abrir la app — Pronto
+- [Leer la documentación](https://testnet.app.daclify.com/docs)
 - [Únete a la comunidad](https://t.me/daclify)
 
 
@@ -755,8 +764,9 @@ Queremos una base útil de gobernanza gratuita, con capacidades de pago opcional
 
 Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.
 
-- [Abrir la app](https://app.daclify.com/)
-- [Leer la documentación](https://app.daclify.com/docs)
+- [App de prueba](https://testnet.app.daclify.com/)
+- Abrir la app — Pronto
+- [Leer la documentación](https://testnet.app.daclify.com/docs)
 - [Únete a la comunidad](https://t.me/daclify)
 
 
@@ -865,8 +875,9 @@ Otwórz aplikację i poznaj Hub DAO. W podręczniku znajdziesz informacje o kont
 
 Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
 
-- [Otwórz aplikację](https://app.daclify.com/)
-- [Czytaj dokumentację](https://app.daclify.com/docs)
+- [Aplikacja testowa](https://testnet.app.daclify.com/)
+- Otwórz aplikację — Wkrótce
+- [Czytaj dokumentację](https://testnet.app.daclify.com/docs)
 - [Dołącz do społeczności](https://t.me/daclify)
 
 
@@ -930,8 +941,9 @@ Aplikacja zawiera podręcznik z wyszukiwarką: konta, konfiguracja DAO, głosowa
 
 Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
 
-- [Otwórz aplikację](https://app.daclify.com/)
-- [Czytaj dokumentację](https://app.daclify.com/docs)
+- [Aplikacja testowa](https://testnet.app.daclify.com/)
+- Otwórz aplikację — Wkrótce
+- [Czytaj dokumentację](https://testnet.app.daclify.com/docs)
 - [Dołącz do społeczności](https://t.me/daclify)
 
 
@@ -999,8 +1011,9 @@ Automatyzacja, powiadomienia i wybrane integracje są w planie rozwoju jako usł
 
 Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
 
-- [Otwórz aplikację](https://app.daclify.com/)
-- [Czytaj dokumentację](https://app.daclify.com/docs)
+- [Aplikacja testowa](https://testnet.app.daclify.com/)
+- Otwórz aplikację — Wkrótce
+- [Czytaj dokumentację](https://testnet.app.daclify.com/docs)
 - [Dołącz do społeczności](https://t.me/daclify)
 
 
@@ -1063,8 +1076,9 @@ Krótkie informacje mieszczą się w zapisach kontraktu, a większe dokumenty ko
 
 Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
 
-- [Otwórz aplikację](https://app.daclify.com/)
-- [Czytaj dokumentację](https://app.daclify.com/docs)
+- [Aplikacja testowa](https://testnet.app.daclify.com/)
+- Otwórz aplikację — Wkrótce
+- [Czytaj dokumentację](https://testnet.app.daclify.com/docs)
 - [Dołącz do społeczności](https://t.me/daclify)
 
 
@@ -1136,8 +1150,9 @@ Dążymy do użytecznej, bezpłatnej podstawy zarządzania oraz opcjonalnych pł
 
 Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
 
-- [Otwórz aplikację](https://app.daclify.com/)
-- [Czytaj dokumentację](https://app.daclify.com/docs)
+- [Aplikacja testowa](https://testnet.app.daclify.com/)
+- Otwórz aplikację — Wkrótce
+- [Czytaj dokumentację](https://testnet.app.daclify.com/docs)
 - [Dołącz do społeczności](https://t.me/daclify)
 
 

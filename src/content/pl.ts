@@ -13,6 +13,8 @@ export const pl: SiteCopy = {
   status: { planned: 'W planie rozwoju' },
   productNote: 'Wasze zasady. Wasi członkowie. Wspólne miejsce do działania.',
   app: 'Otwórz aplikację',
+  soon: 'Wkrótce',
+  testApp: 'Aplikacja testowa',
   docs: 'Czytaj dokumentację',
   docsNav: 'Dokumentacja',
   benefits: ['CZŁONKOWIE', 'GŁOSOWANIA', 'PROJEKTY', 'SKARBIEC', 'DOKUMENTY'],

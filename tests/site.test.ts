@@ -117,11 +117,21 @@ test('brand matches the frontend d. tile and wordmark instead of a new symbol', 
   assert.equal(existsSync(resolve(root, 'assets/brand-mark.svg')), false);
 });
 
-test('every page offers localized app and handbook actions in the main user journey', () => {
+test('every page marks the main app soon and links to the test app and handbook', () => {
   const labels = [
-    { app: 'Open app', docs: 'Read the docs', navigation: 'Docs' },
-    { app: 'Abrir la app', docs: 'Leer la documentación', navigation: 'Documentación' },
-    { app: 'Otwórz aplikację', docs: 'Czytaj dokumentację', navigation: 'Dokumentacja' },
+    { app: 'Open app — Soon', testApp: 'Test App', docs: 'Read the docs', navigation: 'Docs' },
+    {
+      app: 'Abrir la app — Pronto',
+      testApp: 'App de prueba',
+      docs: 'Leer la documentación',
+      navigation: 'Documentación',
+    },
+    {
+      app: 'Otwórz aplikację — Wkrótce',
+      testApp: 'Aplikacja testowa',
+      docs: 'Czytaj dokumentację',
+      navigation: 'Dokumentacja',
+    },
   ];
   for (const group of paths) {
     for (const [index, path] of group.entries()) {
@@ -133,17 +143,23 @@ test('every page offers localized app and handbook actions in the main user jour
         assert.ok(regions.length >= 1, `${path}: missing ${className}`);
         for (const region of regions) {
           const links = elements(region).filter((node) => node.tagName === 'a');
+          const pending = elements(region).find((node) => node.tagName === 'button');
+          assert.ok(pending, `${path}: missing main app status`);
+          assert.equal(text(pending), label.app);
+          assert.equal(attr(pending, 'disabled'), '');
+          assert.equal(attr(pending, 'href'), undefined);
           assert.ok(
             links.some(
               (link) =>
-                attr(link, 'href') === 'https://app.daclify.com/' && text(link) === label.app,
+                attr(link, 'href') === 'https://testnet.app.daclify.com/' &&
+                text(link) === label.testApp,
             ),
             `${path}: missing app action`,
           );
           assert.ok(
             links.some(
               (link) =>
-                attr(link, 'href') === 'https://app.daclify.com/docs' &&
+                attr(link, 'href') === 'https://testnet.app.daclify.com/docs' &&
                 text(link) === label.docs,
             ),
             `${path}: missing handbook action`,
@@ -158,11 +174,15 @@ test('every page offers localized app and handbook actions in the main user jour
           elements(region).some(
             (node) =>
               node.tagName === 'a' &&
-              attr(node, 'href') === 'https://app.daclify.com/docs' &&
+              attr(node, 'href') === 'https://testnet.app.daclify.com/docs' &&
               text(node) === label.navigation,
           ),
         );
       }
+      assert.equal(
+        nodes.some((node) => attr(node, 'href')?.startsWith('https://app.daclify.com')),
+        false,
+      );
       const hero = nodes.find((node) => attr(node, 'class')?.split(' ').includes('hero'));
       assert.ok(hero);
       assert.doesNotMatch(
@@ -176,12 +196,15 @@ test('every page offers localized app and handbook actions in the main user jour
 test('readable exports identify the product and link to the app and its public handbook', () => {
   for (const path of paths.flat()) {
     const markdown = readFileSync(resolve(root, `.${path}index.md`), 'utf8');
-    assert.ok(markdown.includes('https://app.daclify.com/'));
-    assert.ok(markdown.includes('https://app.daclify.com/docs'));
+    assert.ok(markdown.includes('https://testnet.app.daclify.com/'));
+    assert.ok(markdown.includes('https://testnet.app.daclify.com/docs'));
+    assert.doesNotMatch(markdown, /https:\/\/app\.daclify\.com/);
+    assert.match(markdown, /Soon|Pronto|Wkrótce/);
   }
   const llms = readFileSync(resolve(root, 'llms.txt'), 'utf8');
-  assert.ok(llms.includes('[Daclify app](https://app.daclify.com/)'));
-  assert.ok(llms.includes('[Daclify handbook](https://app.daclify.com/docs)'));
+  assert.ok(llms.includes('[Daclify test app](https://testnet.app.daclify.com/)'));
+  assert.ok(llms.includes('[Daclify handbook](https://testnet.app.daclify.com/docs)'));
+  assert.ok(llms.includes('Daclify main app: coming soon.'));
   assert.doesNotMatch(llms, /platform in development|not a qualified production release/);
 });
 

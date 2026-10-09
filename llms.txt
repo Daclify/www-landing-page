@@ -2,7 +2,7 @@
 
 > Daclify is a modular DAO platform for membership, governance, funded work, contributor payments and shared documents.
 
-Use the app to explore DAO workspaces and the versioned handbook for accounts, voting, projects, treasury and document guides. The roadmap identifies planned capabilities, including social/Telegram login, managed recovery, independent deployments, hosted services and future chain integrations. Prices and delivery dates for these options are not announced. Encryption protects document content; public blockchain activity may remain visible.
+Use the test app to explore DAO workspaces and the versioned handbook for accounts, voting, projects, treasury and document guides. The roadmap identifies planned capabilities, including social/Telegram login, managed recovery, independent deployments, hosted services and future chain integrations. Prices and delivery dates for these options are not announced. Encryption protects document content; public blockchain activity may remain visible.
 
 ## CommunityIQ
 
@@ -10,8 +10,9 @@ Use the app to explore DAO workspaces and the versioned handbook for accounts, v
 
 ## App and documentation
 
-- [Daclify app](https://app.daclify.com/): DAO Hub and community workspaces.
-- [Daclify handbook](https://app.daclify.com/docs): Product guides in the app; check versions and deployment-specific feature availability.
+- [Daclify test app](https://testnet.app.daclify.com/): Testnet DAO Hub and community workspaces.
+- Daclify main app: coming soon.
+- [Daclify handbook](https://testnet.app.daclify.com/docs): Product guides in the app; check versions and deployment-specific feature availability.
 
 ## English
 

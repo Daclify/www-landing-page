@@ -60,6 +60,7 @@ Automation, notifications and selected integrations are on the roadmap as option
 
 Explore DAOs in the app, find the tools your community needs and use the handbook to learn how they work.
 
-- [Open app](https://app.daclify.com/)
-- [Read the docs](https://app.daclify.com/docs)
+- [Test App](https://testnet.app.daclify.com/)
+- Open app — Soon
+- [Read the docs](https://testnet.app.daclify.com/docs)
 - [Join the community](https://t.me/daclify)

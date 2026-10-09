@@ -83,9 +83,11 @@ test('CommunityIQ project links work on localized homepages without JavaScript',
   }
 });
 
-test('localized primary actions navigate to the app and its handbook', async ({ page }) => {
+test('localized actions disable the main app and navigate to testnet and its handbook', async ({
+  page,
+}) => {
   // A deterministic destination tests navigation without assuming the future host is live.
-  await page.route('https://app.daclify.com/**', async (route) => {
+  await page.route('https://testnet.app.daclify.com/**', async (route) => {
     await route.fulfill({
       contentType: 'text/html',
       body: '<!doctype html><html lang="en"><title>Destination fixture</title><main>Destination fixture</main></html>',
@@ -93,15 +95,20 @@ test('localized primary actions navigate to the app and its handbook', async ({ 
   });
   for (const path of ['/', '/es/', '/pl/']) {
     await page.goto(path);
+    const pending = page.locator('.hero .hero-actions button');
+    await expect(pending).toBeDisabled();
+    await expect(pending).toContainText(/Soon|Pronto|Wkrótce/);
+    await expect(page.locator('.footer-pending')).toBeDisabled();
+    await expect(page.locator('a[href^="https://app.daclify.com"]')).toHaveCount(0);
     const app = page.locator('.hero .hero-actions .primary');
-    await expect(app).toHaveAttribute('href', 'https://app.daclify.com/');
+    await expect(app).toHaveAttribute('href', 'https://testnet.app.daclify.com/');
     await app.click();
-    await expect(page).toHaveURL('https://app.daclify.com/');
+    await expect(page).toHaveURL('https://testnet.app.daclify.com/');
     await page.goto(path);
-    const docs = page.locator('.hero .hero-actions .secondary');
-    await expect(docs).toHaveAttribute('href', 'https://app.daclify.com/docs');
+    const docs = page.locator('.hero .hero-actions a.secondary');
+    await expect(docs).toHaveAttribute('href', 'https://testnet.app.daclify.com/docs');
     await docs.click();
-    await expect(page).toHaveURL('https://app.daclify.com/docs');
+    await expect(page).toHaveURL('https://testnet.app.daclify.com/docs');
   }
 });
 
@@ -116,7 +123,7 @@ test('the handbook is reachable through desktop and mobile navigation without Ja
       baseURL,
       viewport: { width, height: 900 },
     });
-    await context.route('https://app.daclify.com/**', async (route) => {
+    await context.route('https://testnet.app.daclify.com/**', async (route) => {
       await route.fulfill({
         contentType: 'text/html',
         body: '<!doctype html><html lang="en"><title>Handbook fixture</title><main>Handbook fixture</main></html>',
@@ -127,7 +134,7 @@ test('the handbook is reachable through desktop and mobile navigation without Ja
     const region = width === 390 ? '.mobile-menu' : '.desktop-nav';
     if (width === 390) await page.locator('.mobile-menu summary').click();
     await page.locator(region).getByRole('link', { name: 'Docs', exact: true }).click();
-    await expect(page).toHaveURL('https://app.daclify.com/docs');
+    await expect(page).toHaveURL('https://testnet.app.daclify.com/docs');
     await context.close();
   }
 });

@@ -13,6 +13,8 @@ export const en: SiteCopy = {
   status: { planned: 'On the roadmap' },
   productNote: 'Your rules. Your members. Your shared workspace.',
   app: 'Open app',
+  soon: 'Soon',
+  testApp: 'Test App',
   docs: 'Read the docs',
   docsNav: 'Docs',
   benefits: ['MEMBERSHIP', 'VOTING', 'PROJECT FUNDING', 'TREASURY', 'SHARED RECORDS'],

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0-alpha.9
+
+- Mark the main app as Soon with non-clickable disabled controls across all localized pages and footers.
+- Add Test App actions to `testnet.app.daclify.com` and point the handbook to the test app's docs.
+- Keep Markdown and LLM discovery exports consistent with app availability; verify native disabled controls, navigation and responsive accessibility.
+
 ## 2.0.0-alpha.8
 
 - Feature CommunityIQ's planned use of Daclify as its main DAO software on all three localized homepages, with a direct project link.

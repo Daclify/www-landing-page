@@ -2,7 +2,7 @@
 
 An informative, static product website for Daclify in English, Spanish and Polish. The amber/espresso identity follows the V2 product foundations. Copy explains membership, voting, funded work and shared documents in plain language, with direct app and handbook actions. Planned capabilities remain on the roadmap; prices, delivery dates and unsupported AI features are not invented.
 
-The app destination is `https://app.daclify.com/`; the handbook is `https://app.daclify.com/docs`, matching the frontend's `/docs/:topic?` route. Both URLs are centralized in `src/routes.ts` and appear in every page's main actions, footer and Markdown export. The handbook is also in desktop/mobile navigation and `llms.txt`. These are the user's planned deployment destinations; this website change does not deploy or qualify the app. Confirm the app/handbook host, HTTPS and SPA route fallback before publishing the launch-facing website.
+The main app at `app.daclify.com` is marked **Soon** with a native disabled button and no destination link. Every page and footer offers an active localized **Test App** link to `https://testnet.app.daclify.com/`. The handbook points to `https://testnet.app.daclify.com/docs`, matching the frontend's `/docs/:topic?` route, including desktop/mobile navigation. Active URLs are centralized in `src/routes.ts`; Markdown and LLM exports distinguish the test app from the upcoming main app. English, Spanish and Polish share this availability policy. This website change does not deploy or qualify either app; live destination availability must be checked separately.
 
 ## Product documentation and recovery claims
 

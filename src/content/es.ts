@@ -13,6 +13,8 @@ export const es: SiteCopy = {
   status: { planned: 'En la hoja de ruta' },
   productNote: 'Tus reglas. Tus miembros. Un espacio compartido.',
   app: 'Abrir la app',
+  soon: 'Pronto',
+  testApp: 'App de prueba',
   docs: 'Leer la documentación',
   docsNav: 'Documentación',
   benefits: ['MIEMBROS', 'VOTACIONES', 'PROYECTOS', 'TESORERÍA', 'DOCUMENTOS'],

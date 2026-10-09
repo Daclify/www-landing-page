@@ -2,9 +2,9 @@ import type { Locale, PageId } from './types.ts';
 export const locales: readonly Locale[] = ['en', 'es', 'pl'];
 export const pages: readonly PageId[] = ['home', 'platform', 'modules', 'privacy', 'roadmap'];
 export const origin = 'https://daclify.com';
-export const appUrl = 'https://app.daclify.com/';
+export const testAppUrl = 'https://testnet.app.daclify.com/';
 // Verified against daclify-frontend/src/main.ts: /docs/:topic?.
-export const docsUrl = 'https://app.daclify.com/docs';
+export const docsUrl = 'https://testnet.app.daclify.com/docs';
 export const communityUrl = 'https://t.me/daclify';
 export const communityIqUrl = 'https://community-iq.com/';
 export const routes: Record<Locale, Record<PageId, string>> = {

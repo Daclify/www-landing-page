@@ -64,6 +64,7 @@ Dążymy do użytecznej, bezpłatnej podstawy zarządzania oraz opcjonalnych pł
 
 Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
 
-- [Otwórz aplikację](https://app.daclify.com/)
-- [Czytaj dokumentację](https://app.daclify.com/docs)
+- [Aplikacja testowa](https://testnet.app.daclify.com/)
+- Otwórz aplikację — Wkrótce
+- [Czytaj dokumentację](https://testnet.app.daclify.com/docs)
 - [Dołącz do społeczności](https://t.me/daclify)
