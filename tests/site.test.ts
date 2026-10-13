@@ -1,3 +1,4 @@
+import { locales, pages, routes } from '../src/routes.ts';
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { readFileSync, existsSync } from 'node:fs';
@@ -25,13 +26,7 @@ function record(value: unknown): value is Record<string, unknown> {
 
 const root = resolve(process.env.SITE_DIR ?? '.');
 const origin = 'https://daclify.com';
-const paths = [
-  ['/', '/es/', '/pl/'],
-  ['/platform/', '/es/plataforma/', '/pl/platforma/'],
-  ['/modules/', '/es/modulos/', '/pl/moduly/'],
-  ['/privacy/', '/es/privacidad/', '/pl/prywatnosc/'],
-  ['/roadmap/', '/es/hoja-de-ruta/', '/pl/plan-rozwoju/'],
-];
+const paths = pages.map((page) => locales.map((locale) => routes[locale][page]));
 const languages = ['en', 'es', 'pl'];
 const load = (path: string) => readFileSync(resolve(root, `.${path}index.html`), 'utf8');
 
@@ -289,7 +284,7 @@ for (const group of paths) {
 
 test('sitemap, crawler instructions and machine-readable content cover all languages', () => {
   const sitemap = readFileSync(resolve(root, 'sitemap.xml'), 'utf8');
-  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 15);
+  assert.equal((sitemap.match(/<loc>/g) ?? []).length, pages.length * locales.length);
   for (const path of paths.flat()) assert.ok(sitemap.includes(`<loc>${origin}${path}</loc>`));
   assert.doesNotMatch(sitemap, /<lastmod>|<priority>|<changefreq>/);
   const robots = readFileSync(resolve(root, 'robots.txt'), 'utf8');

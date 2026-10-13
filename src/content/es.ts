@@ -1,6 +1,7 @@
 import type { SiteCopy } from '../types.ts';
 export const es: SiteCopy = {
   nav: {
+    'mini-apps': 'Mini apps',
     home: 'Inicio',
     platform: 'Plataforma',
     modules: 'Módulos',
@@ -14,6 +15,7 @@ export const es: SiteCopy = {
   productNote: 'Tus reglas. Tus miembros. Un espacio compartido.',
   app: 'Abrir la app',
   soon: 'Pronto',
+  miniAppsCta: 'Explora mini apps en testnet',
   testApp: 'App de prueba',
   docs: 'Leer la documentación',
   docsNav: 'Documentación',
@@ -80,6 +82,53 @@ export const es: SiteCopy = {
     note: 'Una comunidad. Herramientas conectadas. Responsabilidades claras.',
   },
   pages: {
+    'mini-apps': {
+      title: 'Mini apps comunitarias y conexiones de IA — Daclify',
+      description:
+        'Crea herramientas para tu comunidad con tu propia interfaz y base de datos. Conecta identidad, membresía DAO y permisos limitados; consulta la guía de testnet.',
+      eyebrow: 'TU COMUNIDAD. TUS HERRAMIENTAS.',
+      heading: 'Crea las herramientas\nque necesita tu comunidad.',
+      lead: 'Conserva tu app, alojamiento y base de datos. Conecta a los miembros y las decisiones compartidas con Daclify, sin pedir al fundador que configure todo.',
+      sections: [
+        {
+          title: 'De una idea a una app conectada',
+          text: 'Las mini apps permiten crear herramientas útiles para las necesidades de cada comunidad. Tu app conserva su interfaz, sus datos y su alojamiento. Daclify aporta identidad verificada, membresía DAO actual y las actividades que la comunidad elige registrar. Publicar una app en el directorio y darle permisos en una DAO son decisiones separadas.',
+          bullets: [
+            '1. Un administrador de la comunidad registra el origen HTTPS y la dirección exacta de retorno del inicio de sesión.',
+            '2. La persona que crea la app descarga la configuración pública y el proyecto inicial compatible y configura una base de datos persistente.',
+            '3. Los miembros inician sesión, eligen permisos limitados y completan una tarea de prueba cuyo recibo se puede comprobar en la DAO.',
+          ],
+        },
+        {
+          title: 'Tu base de datos, conectada correctamente',
+          text: 'Empieza con la receta documentada de SQLite o PostgreSQL. Vincula cada registro a la app y comunidad correctas, determina su propietario mediante identidad verificada y conserva el trabajo pendiente durante los reintentos y la recuperación. La reconexión mantiene la cuenta, pero la app comprueba los permisos actuales. El alojamiento de bases de datos para mini apps es un servicio futuro.',
+          bullets: [
+            'Guarda juntos el cambio de negocio y la actividad pendiente para conservar el mismo evento al reintentar.',
+            'Publica tu propia política de conservación y limpieza de textos, fotos, registros y copias de seguridad.',
+          ],
+        },
+        {
+          title: 'Personas, participantes de IA o ambos',
+          text: 'Las comunidades pueden conectar sistemas de IA con acciones limitadas según sus reglas de gobierno. Los flujos MCP locales y HTTP están en proceso de validación para su lanzamiento. La app muestra los transportes admitidos en cada despliegue; cada versión de cliente y mecanismo de firma necesita pruebas propias. Los perfiles privados y la firma ilimitada de tesorería quedan fuera de las primeras herramientas de IA.',
+          bullets: [
+            'Un asistente usa los permisos aprobados de su miembro. Un agente inscrito conserva los límites de su guardián y de la política DAO.',
+            'Se puede revocar una conexión de IA. El acceso al servicio y la autorización de firma tienen controles distintos.',
+          ],
+        },
+        {
+          title: 'Descubre apps con propiedad clara',
+          text: 'El directorio comunitario está en proceso de validación para su lanzamiento. Verificar al responsable demuestra control del origen HTTPS; no certifica la app ni le da acceso a tu DAO. Cada comunidad elige sus apps, revisa sus políticas de datos y concede solo los permisos necesarios.',
+        },
+        {
+          title: 'Privacidad y salida visibles',
+          text: 'Los perfiles cifrados en la cadena están diseñados para el usuario y las personas autorizadas. Eliminar las claves controladas limita el acceso futuro, pero el historial público y las copias de destinatarios pueden permanecer. La salida permite abandonar todas las DAOs, eliminar la cuenta y ofrecer el cierre explícito de una DAO con un único miembro, conservando los derechos pendientes. Estas funciones requieren validación del despliegue antes de su lanzamiento público.',
+        },
+        {
+          title: 'Prueba la app de testnet y consulta su disponibilidad',
+          text: 'La página Mini apps y las guías de creación están disponibles en la app de pruebas. El directorio, MCP y las funciones del ciclo de cuenta siguen sujetos a validación de lanzamiento y despliegue. La app principal llegará pronto. Consulta la guía del despliegue antes de depender de un transporte, proveedor o función.',
+        },
+      ],
+    },
     home: {
       title: 'Daclify — Herramientas DAO para comunidades que deciden juntas',
       description:
@@ -88,6 +137,17 @@ export const es: SiteCopy = {
       heading: 'Tu comunidad.\nTus decisiones.\nTu futuro.',
       lead: 'Organiza tu comunidad en un solo lugar. Gestiona miembros, vota propuestas, financia proyectos y ordena documentos, con reglas que todos puedan consultar y entender.',
       sections: [
+        {
+          title: 'Apps pensadas para tu comunidad',
+          text: 'Un planificador de jardines, un tablón de servicios o un panel comunitario puede usar la membresía de Daclify y registrar resultados concretos. Elige tu propia interfaz y base de datos.',
+          cards: [
+            {
+              title: 'Mini apps',
+              text: 'Conserva tu app, alojamiento y base de datos. Conecta a los miembros y las decisiones compartidas con Daclify, sin pedir al fundador que configure todo.',
+              link: 'mini-apps',
+            },
+          ],
+        },
         {
           title: 'De una buena idea a algo que podéis construir.',
           text: 'Dale a tu comunidad un proceso claro para decidir y actuar. Conecta la propuesta, el presupuesto y el trabajo para que todos puedan seguir el siguiente paso.',

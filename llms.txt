@@ -2,6 +2,8 @@
 
 > Daclify is a modular DAO platform for membership, governance, funded work, contributor payments and shared documents.
 
+Community mini apps keep their own hosting and database while connecting verified identity and limited DAO permissions. The test app has a Mini apps page and builder guides. Directory, MCP and account lifecycle capabilities remain subject to release/deployment qualification; hosted app databases are future work.
+
 Use the test app to explore DAO workspaces and the versioned handbook for accounts, voting, projects, treasury and document guides. The roadmap identifies planned capabilities, including social/Telegram login, managed recovery, independent deployments, hosted services and future chain integrations. Prices and delivery dates for these options are not announced. Encryption protects document content; public blockchain activity may remain visible.
 
 ## CommunityIQ
@@ -21,6 +23,7 @@ Use the test app to explore DAO workspaces and the versioned handbook for accoun
 - [DAO voting, project funding and contributor payments | Daclify](https://daclify.com/modules/): Discover Daclify modules for DAO voting, milestone funding, payroll and shared documents. Choose the tools that fit how your community works. Markdown: https://daclify.com/modules/index.md
 - [Private DAO documents and encrypted shared records | Daclify](https://daclify.com/privacy/): Keep DAO documents organized and protect private content with encryption. Understand member access, recovery keys and the limits of public blockchain records. Markdown: https://daclify.com/privacy/index.md
 - [Daclify roadmap — accounts, DAO deployments and integrations](https://daclify.com/roadmap/): Follow Daclify’s roadmap for social and Telegram login, independent DAO contracts, hosted services and future blockchain integrations. Explore the app and handbook. Markdown: https://daclify.com/roadmap/index.md
+- [Community mini apps and AI connections — Daclify](https://daclify.com/mini-apps/): Build community tools with your own interface and database. Connect Daclify identity, DAO membership and limited permissions; explore the testnet guide. Markdown: https://daclify.com/mini-apps/index.md
 
 ## Español
 
@@ -29,6 +32,7 @@ Use the test app to explore DAO workspaces and the versioned handbook for accoun
 - [Votaciones DAO, proyectos y pagos a colaboradores | Daclify](https://daclify.com/es/modulos/): Descubre los módulos de Daclify para votaciones, financiación por hitos, pagos y documentos compartidos. Elige las herramientas que necesita tu comunidad. Markdown: https://daclify.com/es/modulos/index.md
 - [Documentos DAO privados y registros cifrados | Daclify](https://daclify.com/es/privacidad/): Organiza documentos de tu DAO y protege el contenido privado mediante cifrado. Comprende el acceso de miembros, la recuperación y los límites de la blockchain pública. Markdown: https://daclify.com/es/privacidad/index.md
 - [Hoja de ruta de Daclify — cuentas, DAOs e integraciones](https://daclify.com/es/hoja-de-ruta/): Conoce la hoja de ruta de Daclify: acceso social y Telegram, contratos DAO propios, servicios alojados y futuras conexiones blockchain. Explora la app y su manual. Markdown: https://daclify.com/es/hoja-de-ruta/index.md
+- [Mini apps comunitarias y conexiones de IA — Daclify](https://daclify.com/es/mini-apps/): Crea herramientas para tu comunidad con tu propia interfaz y base de datos. Conecta identidad, membresía DAO y permisos limitados; consulta la guía de testnet. Markdown: https://daclify.com/es/mini-apps/index.md
 
 ## Polski
 
@@ -37,6 +41,7 @@ Use the test app to explore DAO workspaces and the versioned handbook for accoun
 - [Głosowania DAO, finansowanie projektów i płatności | Daclify](https://daclify.com/pl/moduly/): Poznaj moduły Daclify do głosowań DAO, finansowania etapów, płatności i wspólnych dokumentów. Wybierz narzędzia pasujące do pracy Twojej społeczności. Markdown: https://daclify.com/pl/moduly/index.md
 - [Prywatne dokumenty DAO i szyfrowane zapisy | Daclify](https://daclify.com/pl/prywatnosc/): Porządkuj dokumenty DAO i chroń prywatną treść szyfrowaniem. Poznaj zasady dostępu członków, odzyskiwania kluczy i ograniczenia publicznego blockchaina. Markdown: https://daclify.com/pl/prywatnosc/index.md
 - [Plan rozwoju Daclify — konta, wdrożenia DAO i integracje](https://daclify.com/pl/plan-rozwoju/): Poznaj plany Daclify: logowanie społecznościowe i Telegram, własne kontrakty DAO, usługi hostowane i przyszłe integracje blockchain. Otwórz aplikację i podręcznik. Markdown: https://daclify.com/pl/plan-rozwoju/index.md
+- [Miniaplikacje społeczności i połączenia AI — Daclify](https://daclify.com/pl/mini-apps/): Twórz narzędzia społeczności z własnym interfejsem i bazą danych. Połącz tożsamość Daclify, członkostwo DAO i ograniczone uprawnienia; sprawdź poradnik testnetu. Markdown: https://daclify.com/pl/mini-apps/index.md
 
 ## Optional
 

@@ -12,6 +12,15 @@ CommunityIQ brings people, ideas and shared knowledge together. It will use Dacl
 
 [Explore CommunityIQ](https://community-iq.com/)
 
+## Apps built around your community
+
+A garden planner, local service board or community dashboard can use Daclify membership and record selected outcomes. Keep the interface and database that fit your project.
+
+### Mini apps
+
+Keep your app, hosting and database. Connect your members and shared decisions through Daclify, without asking the founder to set it up.
+
+
 ## From a good idea to something you can build.
 
 Give your community a clear way to make decisions and act on them. Keep the proposal, the budget and the work connected, so everyone can follow what happens next.

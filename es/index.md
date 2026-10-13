@@ -12,6 +12,15 @@ CommunityIQ conecta personas, ideas y conocimiento compartido. Usará Daclify co
 
 [Conoce CommunityIQ](https://community-iq.com/)
 
+## Apps pensadas para tu comunidad
+
+Un planificador de jardines, un tablón de servicios o un panel comunitario puede usar la membresía de Daclify y registrar resultados concretos. Elige tu propia interfaz y base de datos.
+
+### Mini apps
+
+Conserva tu app, alojamiento y base de datos. Conecta a los miembros y las decisiones compartidas con Daclify, sin pedir al fundador que configure todo.
+
+
 ## De una buena idea a algo que podéis construir.
 
 Dale a tu comunidad un proceso claro para decidir y actuar. Conecta la propuesta, el presupuesto y el trabajo para que todos puedan seguir el siguiente paso.

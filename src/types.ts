@@ -1,5 +1,5 @@
 export type Locale = 'en' | 'es' | 'pl';
-export type PageId = 'home' | 'platform' | 'modules' | 'privacy' | 'roadmap';
+export type PageId = 'home' | 'platform' | 'modules' | 'privacy' | 'roadmap' | 'mini-apps';
 export type Status = 'planned';
 export interface Card {
   title: string;
@@ -31,6 +31,7 @@ export interface SiteCopy {
   app: string;
   soon: string;
   testApp: string;
+  miniAppsCta: string;
   docs: string;
   docsNav: string;
   benefits: readonly [string, string, string, string, string];

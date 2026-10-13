@@ -1,13 +1,8 @@
+import { locales, pages, routes } from '../../src/routes.ts';
 import { expect, test } from '@playwright/test';
 import { AxeBuilder } from '@axe-core/playwright';
 
-const groups = [
-  ['/', '/es/', '/pl/'],
-  ['/platform/', '/es/plataforma/', '/pl/platforma/'],
-  ['/modules/', '/es/modulos/', '/pl/moduly/'],
-  ['/privacy/', '/es/privacidad/', '/pl/prywatnosc/'],
-  ['/roadmap/', '/es/hoja-de-ruta/', '/pl/plan-rozwoju/'],
-];
+const groups = pages.map((page) => locales.map((locale) => routes[locale][page]));
 
 for (const path of groups.flat()) {
   test(`${path} renders accessible information with no page errors`, async ({ page }) => {

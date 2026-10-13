@@ -14,6 +14,15 @@ CommunityIQ brings people, ideas and shared knowledge together. It will use Dacl
 
 [Explore CommunityIQ](https://community-iq.com/)
 
+## Apps built around your community
+
+A garden planner, local service board or community dashboard can use Daclify membership and record selected outcomes. Keep the interface and database that fit your project.
+
+### Mini apps
+
+Keep your app, hosting and database. Connect your members and shared decisions through Daclify, without asking the founder to set it up.
+
+
 ## From a good idea to something you can build.
 
 Give your community a clear way to make decisions and act on them. Keep the proposal, the budget and the work connected, so everyone can follow what happens next.
@@ -386,6 +395,68 @@ Explore DAOs in the app, find the tools your community needs and use the handboo
 
 ---
 
+# Community mini apps and AI connections — Daclify
+
+> Build community tools with your own interface and database. Connect Daclify identity, DAO membership and limited permissions; explore the testnet guide.
+
+https://daclify.com/mini-apps/
+
+Keep your app, hosting and database. Connect your members and shared decisions through Daclify, without asking the founder to set it up.
+
+## From an idea to a connected app
+
+Mini apps let communities build useful tools around their own needs. Your app keeps its own interface, business data and hosting. Daclify supplies verified identity, current DAO membership and the selected accountable activity your community chooses to record. A directory listing and DAO permission are separate decisions.
+
+- 1. A community administrator registers the app’s exact HTTPS origin and login callback.
+- 2. The builder downloads public configuration and a matching starter, then deploys persistent database storage.
+- 3. Members sign in, choose limited permissions and complete a test item whose receipt can be checked in their DAO.
+
+## Your database, connected properly
+
+Start with the documented SQLite or PostgreSQL recipe. Bind every record to the correct app and community, derive ownership from verified identity, and preserve pending work across retries and recovery. Members keep their account through reconnection; the app still checks current permissions. Hosted mini-app databases are a future service.
+
+- Keep business changes and pending activity together so a retry preserves the same event.
+- Publish your own retention and cleanup policy for personal text, photos, logs and backups.
+
+## People, AI participants, or both
+
+Communities can connect AI harnesses with explicitly limited actions under their governance rules. Local and HTTP MCP journeys are undergoing release qualification. The app shows which transports a deployment supports; individual harness versions and signing arrangements need their own evidence. Private profiles and unrestricted treasury signing are outside the initial AI tools.
+
+- A human assistant uses its member’s approved permissions. An enrolled agent retains its guardian and policy limits.
+- An AI connection can be revoked. Signing access and service access have separate controls.
+
+## Discover apps with clear ownership
+
+The community directory is undergoing release qualification. Maintainer verification proves control of an app’s HTTPS origin; it does not certify the app or give it access to your DAO. Communities remain responsible for choosing an app, reviewing its data policy and granting only the permissions they need.
+
+
+
+## Privacy and leaving stay visible
+
+Encrypted on-chain profiles are designed for the user and authorized recipients. Removing controlled keys limits future access, while public history and recipient copies may remain. Account exit offers leaving all DAOs, account removal and explicit closure for a sole-member DAO, while preserving outstanding claims. These lifecycle features require deployment qualification before public release.
+
+
+
+## Try the test app, follow its availability
+
+The Mini apps page and builder guides are available in the test app. Discovery, MCP and account lifecycle capabilities remain subject to release and deployment qualification. The main app is coming soon. Check the connected deployment’s guide before relying on a particular transport, provider or feature.
+
+
+
+[Explore mini apps on testnet](https://testnet.app.daclify.com/mini-apps)
+
+## Give your community a place to move forward.
+
+Explore DAOs in the app, find the tools your community needs and use the handbook to learn how they work.
+
+- [Test App](https://testnet.app.daclify.com/)
+- Open app — Soon
+- [Read the docs](https://testnet.app.daclify.com/docs)
+- [Join the community](https://t.me/daclify)
+
+
+---
+
 # Daclify — Herramientas DAO para comunidades que deciden juntas
 
 > Gestiona miembros de tu DAO, vota propuestas, financia proyectos y organiza documentos con Daclify. Explora la app y aprende a usarla con su manual.
@@ -399,6 +470,15 @@ Organiza tu comunidad en un solo lugar. Gestiona miembros, vota propuestas, fina
 CommunityIQ conecta personas, ideas y conocimiento compartido. Usará Daclify como su plataforma principal para gestionar DAOs y ayudar a sus comunidades a organizar miembros, tomar decisiones y administrar recursos compartidos.
 
 [Conoce CommunityIQ](https://community-iq.com/)
+
+## Apps pensadas para tu comunidad
+
+Un planificador de jardines, un tablón de servicios o un panel comunitario puede usar la membresía de Daclify y registrar resultados concretos. Elige tu propia interfaz y base de datos.
+
+### Mini apps
+
+Conserva tu app, alojamiento y base de datos. Conecta a los miembros y las decisiones compartidas con Daclify, sin pedir al fundador que configure todo.
+
 
 ## De una buena idea a algo que podéis construir.
 
@@ -772,6 +852,68 @@ Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad
 
 ---
 
+# Mini apps comunitarias y conexiones de IA — Daclify
+
+> Crea herramientas para tu comunidad con tu propia interfaz y base de datos. Conecta identidad, membresía DAO y permisos limitados; consulta la guía de testnet.
+
+https://daclify.com/es/mini-apps/
+
+Conserva tu app, alojamiento y base de datos. Conecta a los miembros y las decisiones compartidas con Daclify, sin pedir al fundador que configure todo.
+
+## De una idea a una app conectada
+
+Las mini apps permiten crear herramientas útiles para las necesidades de cada comunidad. Tu app conserva su interfaz, sus datos y su alojamiento. Daclify aporta identidad verificada, membresía DAO actual y las actividades que la comunidad elige registrar. Publicar una app en el directorio y darle permisos en una DAO son decisiones separadas.
+
+- 1. Un administrador de la comunidad registra el origen HTTPS y la dirección exacta de retorno del inicio de sesión.
+- 2. La persona que crea la app descarga la configuración pública y el proyecto inicial compatible y configura una base de datos persistente.
+- 3. Los miembros inician sesión, eligen permisos limitados y completan una tarea de prueba cuyo recibo se puede comprobar en la DAO.
+
+## Tu base de datos, conectada correctamente
+
+Empieza con la receta documentada de SQLite o PostgreSQL. Vincula cada registro a la app y comunidad correctas, determina su propietario mediante identidad verificada y conserva el trabajo pendiente durante los reintentos y la recuperación. La reconexión mantiene la cuenta, pero la app comprueba los permisos actuales. El alojamiento de bases de datos para mini apps es un servicio futuro.
+
+- Guarda juntos el cambio de negocio y la actividad pendiente para conservar el mismo evento al reintentar.
+- Publica tu propia política de conservación y limpieza de textos, fotos, registros y copias de seguridad.
+
+## Personas, participantes de IA o ambos
+
+Las comunidades pueden conectar sistemas de IA con acciones limitadas según sus reglas de gobierno. Los flujos MCP locales y HTTP están en proceso de validación para su lanzamiento. La app muestra los transportes admitidos en cada despliegue; cada versión de cliente y mecanismo de firma necesita pruebas propias. Los perfiles privados y la firma ilimitada de tesorería quedan fuera de las primeras herramientas de IA.
+
+- Un asistente usa los permisos aprobados de su miembro. Un agente inscrito conserva los límites de su guardián y de la política DAO.
+- Se puede revocar una conexión de IA. El acceso al servicio y la autorización de firma tienen controles distintos.
+
+## Descubre apps con propiedad clara
+
+El directorio comunitario está en proceso de validación para su lanzamiento. Verificar al responsable demuestra control del origen HTTPS; no certifica la app ni le da acceso a tu DAO. Cada comunidad elige sus apps, revisa sus políticas de datos y concede solo los permisos necesarios.
+
+
+
+## Privacidad y salida visibles
+
+Los perfiles cifrados en la cadena están diseñados para el usuario y las personas autorizadas. Eliminar las claves controladas limita el acceso futuro, pero el historial público y las copias de destinatarios pueden permanecer. La salida permite abandonar todas las DAOs, eliminar la cuenta y ofrecer el cierre explícito de una DAO con un único miembro, conservando los derechos pendientes. Estas funciones requieren validación del despliegue antes de su lanzamiento público.
+
+
+
+## Prueba la app de testnet y consulta su disponibilidad
+
+La página Mini apps y las guías de creación están disponibles en la app de pruebas. El directorio, MCP y las funciones del ciclo de cuenta siguen sujetos a validación de lanzamiento y despliegue. La app principal llegará pronto. Consulta la guía del despliegue antes de depender de un transporte, proveedor o función.
+
+
+
+[Explora mini apps en testnet](https://testnet.app.daclify.com/mini-apps)
+
+## Dale a tu comunidad un espacio para avanzar.
+
+Explora las DAOs en la app, encuentra las herramientas que necesita tu comunidad y consulta el manual para aprender a utilizarlas.
+
+- [App de prueba](https://testnet.app.daclify.com/)
+- Abrir la app — Pronto
+- [Leer la documentación](https://testnet.app.daclify.com/docs)
+- [Únete a la comunidad](https://t.me/daclify)
+
+
+---
+
 # Daclify — Narzędzia DAO dla społeczności, które decydują razem
 
 > Zarządzaj członkami DAO, głosuj nad propozycjami, finansuj projekty i porządkuj dokumenty z Daclify. Poznaj aplikację i dowiedz się więcej w podręczniku.
@@ -785,6 +927,15 @@ Prowadź swoją społeczność w jednym miejscu. Zarządzaj członkami, głosuj 
 CommunityIQ łączy ludzi, pomysły i wspólną wiedzę. Będzie korzystać z Daclify jako głównego oprogramowania do zarządzania DAO, aby pomagać swoim społecznościom organizować członkostwo, podejmować decyzje i zarządzać wspólnymi zasobami.
 
 [Poznaj CommunityIQ](https://community-iq.com/)
+
+## Aplikacje dopasowane do społeczności
+
+Planer ogrodu, lokalna tablica usług lub panel społeczności może korzystać z członkostwa Daclify i zapisywać wybrane wyniki. Wybierz interfejs i bazę danych odpowiednie dla projektu.
+
+### Miniaplikacje
+
+Zachowaj swoją aplikację, hosting i bazę danych. Połącz członków i wspólne decyzje przez Daclify bez proszenia założyciela o konfigurację.
+
 
 ## Od dobrego pomysłu do wspólnego działania.
 
@@ -1145,6 +1296,68 @@ Dążymy do użytecznej, bezpłatnej podstawy zarządzania oraz opcjonalnych pł
 - Wybieraj narzędzia, które pomagają społeczności.
 - Sprawdzaj dostępne funkcje i wymagania wdrożenia w aplikacji.
 - Dziel się uwagami i potrzebami ze społecznością Daclify.
+
+## Daj swojej społeczności miejsce do działania.
+
+Poznaj DAO w aplikacji, znajdź narzędzia potrzebne Twojej społeczności i sprawdź w podręczniku, jak z nich korzystać.
+
+- [Aplikacja testowa](https://testnet.app.daclify.com/)
+- Otwórz aplikację — Wkrótce
+- [Czytaj dokumentację](https://testnet.app.daclify.com/docs)
+- [Dołącz do społeczności](https://t.me/daclify)
+
+
+---
+
+# Miniaplikacje społeczności i połączenia AI — Daclify
+
+> Twórz narzędzia społeczności z własnym interfejsem i bazą danych. Połącz tożsamość Daclify, członkostwo DAO i ograniczone uprawnienia; sprawdź poradnik testnetu.
+
+https://daclify.com/pl/mini-apps/
+
+Zachowaj swoją aplikację, hosting i bazę danych. Połącz członków i wspólne decyzje przez Daclify bez proszenia założyciela o konfigurację.
+
+## Od pomysłu do połączonej aplikacji
+
+Miniaplikacje pozwalają tworzyć przydatne narzędzia odpowiadające potrzebom społeczności. Aplikacja zachowuje własny interfejs, dane i hosting. Daclify zapewnia zweryfikowaną tożsamość, aktualne członkostwo DAO i wybrane działania, które społeczność chce rejestrować. Wpis w katalogu i uprawnienia DAO to osobne decyzje.
+
+- 1. Administrator społeczności rejestruje dokładny adres HTTPS aplikacji i adres powrotu po logowaniu.
+- 2. Twórca pobiera publiczną konfigurację i zgodny projekt startowy, a następnie uruchamia trwałą bazę danych.
+- 3. Członkowie logują się, wybierają ograniczone uprawnienia i wykonują zadanie próbne z potwierdzeniem widocznym w DAO.
+
+## Twoja baza danych, poprawnie połączona
+
+Zacznij od udokumentowanego przykładu SQLite lub PostgreSQL. Powiąż każdy rekord z właściwą aplikacją i społecznością, ustalaj właściciela przez zweryfikowaną tożsamość i zachowuj oczekujące działania podczas ponowień i odzyskiwania. Ponowne połączenie zachowuje konto, lecz aplikacja nadal sprawdza aktualne uprawnienia. Hosting baz miniaplikacji pozostaje przyszłą usługą.
+
+- Zapisuj zmianę biznesową i oczekujące działanie razem, aby ponowienie zachowało to samo zdarzenie.
+- Opublikuj własne zasady przechowywania i usuwania tekstów, zdjęć, logów i kopii zapasowych.
+
+## Ludzie, uczestnicy AI lub obie grupy
+
+Społeczności mogą łączyć systemy AI z ograniczonymi działaniami zgodnie ze swoimi zasadami zarządzania. Lokalne i HTTP połączenia MCP przechodzą kwalifikację wydania. Aplikacja pokazuje transporty obsługiwane przez dany wdrożony system; każda wersja klienta i sposób podpisywania potrzebują własnych dowodów. Profile prywatne i nieograniczone podpisy skarbca są poza pierwszym zestawem narzędzi AI.
+
+- Asystent korzysta z zatwierdzonych uprawnień swojego członka. Zarejestrowany agent zachowuje ograniczenia opiekuna i polityki DAO.
+- Połączenie AI można odwołać. Dostęp do usługi i uprawnienie do podpisu mają osobne kontrolki.
+
+## Odkrywaj aplikacje z jasną odpowiedzialnością
+
+Katalog społeczności przechodzi kwalifikację wydania. Weryfikacja opiekuna potwierdza kontrolę nad adresem HTTPS; nie certyfikuje aplikacji ani nie daje jej dostępu do DAO. Społeczność wybiera aplikacje, sprawdza ich zasady danych i nadaje tylko potrzebne uprawnienia.
+
+
+
+## Widoczna prywatność i możliwość odejścia
+
+Szyfrowane profile w łańcuchu są projektowane dla użytkownika i upoważnionych odbiorców. Usunięcie kontrolowanych kluczy ogranicza przyszły dostęp, ale historia publiczna i kopie odbiorców mogą pozostać. Wyjście pozwala opuścić wszystkie DAO, usunąć konto i świadomie wybrać zamknięcie DAO z jednym członkiem przy zachowaniu należnych roszczeń. Funkcje wymagają kwalifikacji wdrożenia przed publicznym wydaniem.
+
+
+
+## Sprawdź aplikację testową i jej dostępność
+
+Strona Mini apps i poradniki dla twórców są dostępne w aplikacji testowej. Katalog, MCP i funkcje cyklu życia konta nadal wymagają kwalifikacji wydania i wdrożenia. Aplikacja główna pojawi się wkrótce. Zanim oprzesz się na określonym transporcie, dostawcy lub funkcji, sprawdź poradnik danego wdrożenia.
+
+
+
+[Poznaj miniaplikacje w testnecie](https://testnet.app.daclify.com/mini-apps)
 
 ## Daj swojej społeczności miejsce do działania.
 

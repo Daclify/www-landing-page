@@ -1,6 +1,7 @@
 import type { SiteCopy } from '../types.ts';
 export const en: SiteCopy = {
   nav: {
+    'mini-apps': 'Mini apps',
     home: 'Home',
     platform: 'Platform',
     modules: 'Modules',
@@ -14,6 +15,7 @@ export const en: SiteCopy = {
   productNote: 'Your rules. Your members. Your shared workspace.',
   app: 'Open app',
   soon: 'Soon',
+  miniAppsCta: 'Explore mini apps on testnet',
   testApp: 'Test App',
   docs: 'Read the docs',
   docsNav: 'Docs',
@@ -80,6 +82,53 @@ export const en: SiteCopy = {
     note: 'One community. Connected tools. Clear responsibilities.',
   },
   pages: {
+    'mini-apps': {
+      title: 'Community mini apps and AI connections — Daclify',
+      description:
+        'Build community tools with your own interface and database. Connect Daclify identity, DAO membership and limited permissions; explore the testnet guide.',
+      eyebrow: 'YOUR COMMUNITY. YOUR TOOLS.',
+      heading: 'Build the tools\nyour community needs.',
+      lead: 'Keep your app, hosting and database. Connect your members and shared decisions through Daclify, without asking the founder to set it up.',
+      sections: [
+        {
+          title: 'From an idea to a connected app',
+          text: 'Mini apps let communities build useful tools around their own needs. Your app keeps its own interface, business data and hosting. Daclify supplies verified identity, current DAO membership and the selected accountable activity your community chooses to record. A directory listing and DAO permission are separate decisions.',
+          bullets: [
+            '1. A community administrator registers the app’s exact HTTPS origin and login callback.',
+            '2. The builder downloads public configuration and a matching starter, then deploys persistent database storage.',
+            '3. Members sign in, choose limited permissions and complete a test item whose receipt can be checked in their DAO.',
+          ],
+        },
+        {
+          title: 'Your database, connected properly',
+          text: 'Start with the documented SQLite or PostgreSQL recipe. Bind every record to the correct app and community, derive ownership from verified identity, and preserve pending work across retries and recovery. Members keep their account through reconnection; the app still checks current permissions. Hosted mini-app databases are a future service.',
+          bullets: [
+            'Keep business changes and pending activity together so a retry preserves the same event.',
+            'Publish your own retention and cleanup policy for personal text, photos, logs and backups.',
+          ],
+        },
+        {
+          title: 'People, AI participants, or both',
+          text: 'Communities can connect AI harnesses with explicitly limited actions under their governance rules. Local and HTTP MCP journeys are undergoing release qualification. The app shows which transports a deployment supports; individual harness versions and signing arrangements need their own evidence. Private profiles and unrestricted treasury signing are outside the initial AI tools.',
+          bullets: [
+            'A human assistant uses its member’s approved permissions. An enrolled agent retains its guardian and policy limits.',
+            'An AI connection can be revoked. Signing access and service access have separate controls.',
+          ],
+        },
+        {
+          title: 'Discover apps with clear ownership',
+          text: 'The community directory is undergoing release qualification. Maintainer verification proves control of an app’s HTTPS origin; it does not certify the app or give it access to your DAO. Communities remain responsible for choosing an app, reviewing its data policy and granting only the permissions they need.',
+        },
+        {
+          title: 'Privacy and leaving stay visible',
+          text: 'Encrypted on-chain profiles are designed for the user and authorized recipients. Removing controlled keys limits future access, while public history and recipient copies may remain. Account exit offers leaving all DAOs, account removal and explicit closure for a sole-member DAO, while preserving outstanding claims. These lifecycle features require deployment qualification before public release.',
+        },
+        {
+          title: 'Try the test app, follow its availability',
+          text: 'The Mini apps page and builder guides are available in the test app. Discovery, MCP and account lifecycle capabilities remain subject to release and deployment qualification. The main app is coming soon. Check the connected deployment’s guide before relying on a particular transport, provider or feature.',
+        },
+      ],
+    },
     home: {
       title: 'Daclify — DAO tools for communities that govern together',
       description:
@@ -88,6 +137,17 @@ export const en: SiteCopy = {
       heading: 'Your community.\nYour decisions.\nYour future.',
       lead: 'Run your community in one place. Manage members, vote on proposals, fund projects and keep documents organized—with rules your members can see and understand.',
       sections: [
+        {
+          title: 'Apps built around your community',
+          text: 'A garden planner, local service board or community dashboard can use Daclify membership and record selected outcomes. Keep the interface and database that fit your project.',
+          cards: [
+            {
+              title: 'Mini apps',
+              text: 'Keep your app, hosting and database. Connect your members and shared decisions through Daclify, without asking the founder to set it up.',
+              link: 'mini-apps',
+            },
+          ],
+        },
         {
           title: 'From a good idea to something you can build.',
           text: 'Give your community a clear way to make decisions and act on them. Keep the proposal, the budget and the work connected, so everyone can follow what happens next.',

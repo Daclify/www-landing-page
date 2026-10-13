@@ -3,6 +3,7 @@ import { content } from './content/index.ts';
 import { brandLockup, brandMark as mark } from './brand.ts';
 import {
   testAppUrl,
+  miniAppsUrl,
   communityUrl,
   communityIqUrl,
   docsUrl,
@@ -41,9 +42,9 @@ function nav(locale: Locale, pageId: PageId): string {
       .join('') + `<a href="${docsUrl}">${escapeHtml(content[locale].docsNav)}</a>`
   );
 }
-function appActions(locale: Locale): string {
+function appActions(locale: Locale, pageId?: PageId): string {
   const copy = content[locale];
-  return `<div class="hero-actions"><a class="button primary" href="${testAppUrl}">${escapeHtml(copy.testApp)}${arrow}</a><button class="button secondary" type="button" disabled>${escapeHtml(copy.app)} — ${escapeHtml(copy.soon)}</button><a class="button secondary" href="${docsUrl}">${escapeHtml(copy.docs)}${arrow}</a></div>`;
+  return `<div class="hero-actions"><a class="button primary" href="${testAppUrl}">${escapeHtml(copy.testApp)}${arrow}</a><button class="button secondary" type="button" disabled>${escapeHtml(copy.app)} — ${escapeHtml(copy.soon)}</button><a class="button secondary" href="${docsUrl}">${escapeHtml(copy.docs)}${arrow}</a>${pageId === 'mini-apps' ? `<a class="button secondary" href="${miniAppsUrl}">${escapeHtml(copy.miniAppsCta)}${arrow}</a>` : ''}</div>`;
 }
 function card(locale: Locale, item: Card, index: number): string {
   const copy = content[locale];
@@ -172,11 +173,11 @@ ${!home ? `<div class="container breadcrumbs"><a href="${routes[locale].home}">$
     )
     .join(
       '',
-    )}</h1><p class="hero-lead">${escapeHtml(page.lead)}</p>${appActions(locale)}<p class="product-note"><span class="status-dot" aria-hidden="true"></span><span>${escapeHtml(copy.productNote)}</span></p></div>${home ? preview(locale) : `<div class="detail-emblem" aria-hidden="true">${mark}<span>${escapeHtml(copy.nav[pageId])}</span></div>`}</section>
+    )}</h1><p class="hero-lead">${escapeHtml(page.lead)}</p>${appActions(locale, pageId)}<p class="product-note"><span class="status-dot" aria-hidden="true"></span><span>${escapeHtml(copy.productNote)}</span></p></div>${home ? preview(locale) : `<div class="detail-emblem" aria-hidden="true">${mark}<span>${escapeHtml(copy.nav[pageId])}</span></div>`}</section>
 ${home ? `<div class="brand-strip"><div class="container">${copy.benefits.map((benefit) => `<span>${escapeHtml(benefit)}</span>`).join('')}</div></div>` : ''}
 <div class="container content">${home ? `<section class="content-section" aria-labelledby="community-iq-title"><div class="section-heading"><span class="section-index" aria-hidden="true">↗</span><div><h2 id="community-iq-title">${escapeHtml(copy.communityIq.title)}</h2><p class="section-lead">${escapeHtml(copy.communityIq.text)}</p><a class="text-link" href="${communityIqUrl}">${escapeHtml(copy.communityIq.linkLabel)}${arrow}</a></div></div></section>` : ''}${page.sections.map((item, index) => section(locale, item, index, home)).join('')}</div>
 ${home ? `<section class="container faq-section" aria-labelledby="faq-title"><div><p class="eyebrow">FAQ</p><h2 id="faq-title">${escapeHtml(copy.questions)}</h2></div><div class="faq-list">${copy.faq.map((item) => `<details><summary>${escapeHtml(item.question)}<span aria-hidden="true">＋</span></summary><p>${escapeHtml(item.answer)}</p></details>`).join('')}</div></section>` : ''}
-<section class="container closing-section" aria-labelledby="closing-title"><div class="closing-orbit" aria-hidden="true"></div><p class="eyebrow">DACLIFY</p><h2 id="closing-title">${escapeHtml(copy.ctaTitle)}</h2><p>${escapeHtml(copy.ctaText)}</p>${appActions(locale)}</section>
+<section class="container closing-section" aria-labelledby="closing-title"><div class="closing-orbit" aria-hidden="true"></div><p class="eyebrow">DACLIFY</p><h2 id="closing-title">${escapeHtml(copy.ctaTitle)}</h2><p>${escapeHtml(copy.ctaText)}</p>${appActions(locale, pageId)}</section>
 </main>
 <footer class="site-footer"><div class="container footer-main"><div><a class="brand" href="${routes[locale].home}">${brandLockup}</a><p class="footer-tagline">${escapeHtml(copy.footer)}</p><p class="footer-note">${escapeHtml(copy.footerNote)}</p></div><nav aria-label="${escapeHtml(copy.menu)}">${nav(locale, pageId)}</nav><div class="footer-links"><a href="${testAppUrl}">${escapeHtml(copy.testApp)}${arrow}</a><button class="footer-pending" type="button" disabled>${escapeHtml(copy.app)} — ${escapeHtml(copy.soon)}</button><a href="${docsUrl}">${escapeHtml(copy.docs)}${arrow}</a><a href="${communityUrl}">${escapeHtml(copy.community)}${arrow}</a><a href="https://github.com/Daclify">GitHub ${arrow}</a></div></div><div class="container footer-bottom"><span>© Daclify</span><span>EN / ES / PL</span><span>${escapeHtml(copy.productNote)}</span></div></footer>
 </body>
@@ -200,7 +201,7 @@ export function renderMarkdown(locale: Locale, pageId: PageId): string {
     pageId === 'home'
       ? `\n\n## ${copy.questions}\n\n${copy.faq.map((item) => `### ${item.question}\n\n${item.answer}`).join('\n\n')}`
       : '';
-  return `# ${page.title}\n\n> ${page.description}\n\n${origin}${routes[locale][pageId]}\n\n${page.lead}\n\n${communityIq}${sections}${faq}\n\n## ${copy.ctaTitle}\n\n${copy.ctaText}\n\n- [${copy.testApp}](${testAppUrl})\n- ${copy.app} — ${copy.soon}\n- [${copy.docs}](${docsUrl})\n- [${copy.community}](${communityUrl})\n`;
+  return `# ${page.title}\n\n> ${page.description}\n\n${origin}${routes[locale][pageId]}\n\n${page.lead}\n\n${communityIq}${sections}${faq}${pageId === 'mini-apps' ? '\n\n[' + copy.miniAppsCta + '](' + miniAppsUrl + ')' : ''}\n\n## ${copy.ctaTitle}\n\n${copy.ctaText}\n\n- [${copy.testApp}](${testAppUrl})\n- ${copy.app} — ${copy.soon}\n- [${copy.docs}](${docsUrl})\n- [${copy.community}](${communityUrl})\n`;
 }
 
 export function renderSitemap(): string {
@@ -208,5 +209,5 @@ export function renderSitemap(): string {
 }
 
 export function renderLlms(): string {
-  return `# Daclify\n\n> Daclify is a modular DAO platform for membership, governance, funded work, contributor payments and shared documents.\n\nUse the test app to explore DAO workspaces and the versioned handbook for accounts, voting, projects, treasury and document guides. The roadmap identifies planned capabilities, including social/Telegram login, managed recovery, independent deployments, hosted services and future chain integrations. Prices and delivery dates for these options are not announced. Encryption protects document content; public blockchain activity may remain visible.\n\n## CommunityIQ\n\n- [CommunityIQ](${communityIqUrl}): ${content.en.communityIq.text}\n\n## App and documentation\n\n- [Daclify test app](${testAppUrl}): Testnet DAO Hub and community workspaces.\n- Daclify main app: coming soon.\n- [Daclify handbook](${docsUrl}): Product guides in the app; check versions and deployment-specific feature availability.\n\n${locales.map((locale) => `## ${languageNames[locale]}\n\n${pages.map((pageId) => `- [${content[locale].pages[pageId].title}](${origin}${routes[locale][pageId]}): ${content[locale].pages[pageId].description} Markdown: ${origin}${routes[locale][pageId]}index.md`).join('\n')}`).join('\n\n')}\n\n## Optional\n\n- [Full website text](${origin}/llms-full.txt): Complete public content in all three languages.\n- [Daclify community](${communityUrl}): Project discussion and feedback.\n- [Daclify GitHub organization](https://github.com/Daclify): Public organization profile; repository availability varies.\n`;
+  return `# Daclify\n\n> Daclify is a modular DAO platform for membership, governance, funded work, contributor payments and shared documents.\n\nCommunity mini apps keep their own hosting and database while connecting verified identity and limited DAO permissions. The test app has a Mini apps page and builder guides. Directory, MCP and account lifecycle capabilities remain subject to release/deployment qualification; hosted app databases are future work.\n\nUse the test app to explore DAO workspaces and the versioned handbook for accounts, voting, projects, treasury and document guides. The roadmap identifies planned capabilities, including social/Telegram login, managed recovery, independent deployments, hosted services and future chain integrations. Prices and delivery dates for these options are not announced. Encryption protects document content; public blockchain activity may remain visible.\n\n## CommunityIQ\n\n- [CommunityIQ](${communityIqUrl}): ${content.en.communityIq.text}\n\n## App and documentation\n\n- [Daclify test app](${testAppUrl}): Testnet DAO Hub and community workspaces.\n- Daclify main app: coming soon.\n- [Daclify handbook](${docsUrl}): Product guides in the app; check versions and deployment-specific feature availability.\n\n${locales.map((locale) => `## ${languageNames[locale]}\n\n${pages.map((pageId) => `- [${content[locale].pages[pageId].title}](${origin}${routes[locale][pageId]}): ${content[locale].pages[pageId].description} Markdown: ${origin}${routes[locale][pageId]}index.md`).join('\n')}`).join('\n\n')}\n\n## Optional\n\n- [Full website text](${origin}/llms-full.txt): Complete public content in all three languages.\n- [Daclify community](${communityUrl}): Project discussion and feedback.\n- [Daclify GitHub organization](https://github.com/Daclify): Public organization profile; repository availability varies.\n`;
 }

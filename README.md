@@ -39,11 +39,11 @@ The preview is at `http://127.0.0.1:4179`. It serves the generated `dist/` direc
 - `tools/social.ts`: explicit localized 1200×630 social-card, favicon and portrait logo generation. Run `npm run assets:social` after relevant headline/design changes; this requires Playwright Chromium. Commit the reviewed PNGs. Ordinary builds do not require a browser.
 - `assets/README.md`: editable brand asset guide; image generation writes only PNGs.
 
-English stays at `/`; Spanish uses `/es/`, Polish `/pl/`. Each language has home, platform, modules, privacy and roadmap pages with localized slugs. Language links preserve the topic. HTML contains self-canonical URLs and reciprocal en/es/pl/x-default alternates.
+English stays at `/`; Spanish uses `/es/`, Polish `/pl/`. Each language has home, platform, modules, privacy, roadmap and mini-app pages with localized slugs. Language links preserve the topic. HTML contains self-canonical URLs and reciprocal en/es/pl/x-default alternates.
 
 ## Build and export
 
-`npm run build` reads and renders all inputs before replacing the disposable `dist/` output, preserving the last successful preview when an input is missing or invalid. It emits 15 HTML pages, page Markdown, declared public assets/fonts/licenses, `robots.txt`, `sitemap.xml`, `llms.txt` and `llms-full.txt`. `site-files.json` records the generated files. `tools/build.ts` owns the public asset list: authoring notes such as `assets/README.md` and unrelated asset additions are excluded. Register new runtime assets there. No contract/application/backend dependency is required.
+`npm run build` reads and renders all inputs before replacing the disposable `dist/` output, preserving the last successful preview when an input is missing or invalid. It emits 18 HTML pages, page Markdown, declared public assets/fonts/licenses, `robots.txt`, `sitemap.xml`, `llms.txt` and `llms-full.txt`. `site-files.json` records the generated files. `tools/build.ts` owns the public asset list: authoring notes such as `assets/README.md` and unrelated asset additions are excluded. Register new runtime assets there. No contract/application/backend dependency is required.
 
 `npm run export` also copies the generated static files to the repository root for compatibility with the previous plain-HTML hosting workflow. It requires a non-empty, unique manifest, validates all source/destination paths, rejects linked or non-file artifacts and reads all source bytes before the first write. Preflight failures leave current exports unchanged. `npm run check:export` detects missing or stale exported files without rewriting them. If removing a route, explicitly review and remove obsolete root exports; the exporter never deletes unrelated files.
 
@@ -66,7 +66,7 @@ npm run format:check
 npm run check:export
 ```
 
-Node tests cover complete language/topic routes, metadata consistency, JSON-LD, internal links, social-image dimensions, crawler files, Markdown and escaping, plus isolated build/export/HTTP failure fixtures. Playwright covers all 15 pages in desktop/mobile Chromium with axe scans, topic-preserving language changes, no-JavaScript navigation/FAQ, 320px and intermediate desktop layouts, touch targets and reduced motion.
+Node tests cover complete language/topic routes, metadata consistency, JSON-LD, internal links, social-image dimensions, crawler files, Markdown and escaping, plus isolated build/export/HTTP failure fixtures. Playwright covers all 18 pages in desktop/mobile Chromium with axe scans, topic-preserving language changes, no-JavaScript navigation/FAQ, 320px and intermediate desktop layouts, touch targets and reduced motion.
 
 `npm run test:e2e` builds its own checkout and starts a dedicated server at `http://127.0.0.1:4180`; it never reuses an existing server. Keep that port free for the suite. The interactive preview stays on 4179, or use `PORT=4186 npm run dev`. Preview file reads are confined to the resolved output directory; links to outside files are rejected, missing files return 404 and unexpected read errors return a generic 500 with an operator diagnostic. CI checks exported output and does not publish.
 
