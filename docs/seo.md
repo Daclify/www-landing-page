@@ -16,7 +16,7 @@ Fonts and images are local; the informational website has no client application 
 
 ## Before publication
 
-1. Confirm that `https://daclify.com` is the intended canonical production origin. Live-host validation was not established by this implementation. The previous repository uses this origin; the GitHub Pages API did not provide an existing Pages configuration.
+1. Confirm that `https://daclify.com` is the intended canonical production origin. The documentation audit verified this live origin and the `www` redirect against the generated site. See the dated cross-repository deployment evidence in core for the exact checks. The original rebuild did not establish a hosting account or GitHub Pages configuration.
 2. Publish the generated `dist/` at the domain root or use the explicit root export. Configure HTTPS and a permanent redirect from alternative hosts to the canonical host. Root-relative asset paths are intentional; subdirectory project hosting needs a separate base-path design.
 3. Ensure all directory pages return 200, missing pages return 404, crawler files have their expected content types, and the host does not return the homepage for every unknown path.
 4. Keep preview/staging hosts out of the production index through host-level access controls or an `X-Robots-Tag: noindex` policy. Do not modify the production sitemap to list temporary preview hosts.
